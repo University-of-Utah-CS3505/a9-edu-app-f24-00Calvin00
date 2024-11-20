@@ -111,7 +111,8 @@ HEADERS += \
     teachingwindow.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    teachingwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
