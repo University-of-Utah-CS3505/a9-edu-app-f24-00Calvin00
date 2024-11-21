@@ -2,12 +2,14 @@
 #include "ui_TeachingWindow.h"
 
 TeachingWindow::TeachingWindow(QWidget *parent)
-    : QMainWindow(parent), ui(new Ui::TeachingWindow) {
+    : QMainWindow(parent), ui(new Ui::TeachingWindow)
+{
     ui->setupUi(this);
 
     // Set up the teaching content here, e.g., animations or pop-ups
 }
 
-TeachingWindow::~TeachingWindow() {
+TeachingWindow::~TeachingWindow()
+{
     delete ui;
 }
