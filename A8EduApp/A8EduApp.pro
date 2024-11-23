@@ -57,6 +57,10 @@ SOURCES += \
     Box2D/Rope/b2Rope.cpp \
     main.cpp \
     mainwindow.cpp \
+    quizdragdropwidget.cpp \
+    quizmatchingwidget.cpp \
+    quizzinghomewidget.cpp \
+    resultswidget.cpp \
     startwidget.cpp \
     teachingmodel.cpp \
     teachingwidget.cpp \
@@ -111,6 +115,10 @@ HEADERS += \
     Box2D/Dynamics/b2WorldCallbacks.h \
     Box2D/Rope/b2Rope.h \
     mainwindow.h \
+    quizdragdropwidget.h \
+    quizmatchingwidget.h \
+    quizzinghomewidget.h \
+    resultswidget.h \
     startwidget.h \
     teachingmodel.h \
     teachingwidget.h \
@@ -118,6 +126,10 @@ HEADERS += \
 
 FORMS += \
     mainwindow.ui \
+    quizdragdropwidget.ui \
+    quizmatchingwidget.ui \
+    quizzinghomewidget.ui \
+    resultswidget.ui \
     startwidget.ui \
     teachingwidget.ui \
     teachingwindow.ui

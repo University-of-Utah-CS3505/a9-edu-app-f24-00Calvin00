@@ -21,8 +21,28 @@ MainWindow::MainWindow(QWidget *parent)
     teachingWidget = new TeachingWidget(this);
     stackedWidget->addWidget(teachingWidget);
 
+    quizzingHomeWidget = new QuizzingHomeWidget(this);
+    stackedWidget->addWidget(quizzingHomeWidget);
+
+    quizMatchingWidget = new QuizMatchingWidget(this);
+    stackedWidget->addWidget(quizMatchingWidget);
+
+    quizDragDropWidget = new QuizDragDropWidget(this);
+    stackedWidget->addWidget(quizDragDropWidget);
+
+    resultsWidget = new ResultsWidget(this);
+    stackedWidget->addWidget(resultsWidget);
+
+    // Connect the StartWidget's learnButtonClicked signal to switch to TeachingWidget
+    connect(startWidget, &StartWidget::learnButtonClicked, this, &MainWindow::showTeachingWidget);
+
     // Connect the StartWidget's startButtonClicked signal to switch to TeachingWidget
-    connect(startWidget, &StartWidget::startButtonClicked, this, &MainWindow::showTeachingWidget);
+    connect(startWidget, &StartWidget::quizButtonClicked, this, &MainWindow::showQuizzingWidget);
+
+    // Connect the StartWidget's resultsButtonClicked signal to switch to TeachingWidget
+    connect(startWidget, &StartWidget::resultsButtonClicked, this, &MainWindow::showResultsWidget);
+
+    connect(quizzingHomeWidget, &QuizzingHomeWidget::matchingButtonClicked, this, &MainWindow::showMatchingWidget);
 
     // Set start widget as first page
     stackedWidget->setCurrentWidget(startWidget);
@@ -35,5 +55,25 @@ MainWindow::~MainWindow()
 void MainWindow::showTeachingWidget()
 {
     stackedWidget->setCurrentWidget(teachingWidget);
+}
+
+void MainWindow::showQuizzingWidget()
+{
+    stackedWidget->setCurrentWidget(quizzingHomeWidget);
+}
+
+void MainWindow::showMatchingWidget()
+{
+    stackedWidget->setCurrentWidget(quizMatchingWidget);
+}
+
+void MainWindow::showDragDropWidget()
+{
+    stackedWidget->setCurrentWidget(quizDragDropWidget);
+}
+
+void MainWindow::showResultsWidget()
+{
+    stackedWidget->setCurrentWidget(resultsWidget);
 }
 

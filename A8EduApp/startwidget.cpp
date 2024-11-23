@@ -7,7 +7,10 @@ StartWidget::StartWidget(QWidget *parent)
     ui->setupUi(this);
 
     // Connect the start button to emit a signal
-    connect(ui->learnButton, &QPushButton::clicked, this, &StartWidget::startButtonClicked);
+    connect(ui->learnButton, &QPushButton::clicked, this, &StartWidget::learnButtonClicked);
+    connect(ui->quizButton, &QPushButton::clicked, this, &StartWidget::quizButtonClicked);
+    connect(ui->resultsButton, &QPushButton::clicked, this, &StartWidget::resultsButtonClicked);
+
 }
 
 StartWidget::~StartWidget()

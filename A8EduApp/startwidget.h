@@ -14,8 +14,11 @@ public:
     explicit StartWidget(QWidget *parent = nullptr);
     ~StartWidget();
 
+
 signals:
-    void startButtonClicked();
+    void learnButtonClicked();
+    void quizButtonClicked();
+    void resultsButtonClicked();
 
 private:
     Ui::StartWidget *ui;

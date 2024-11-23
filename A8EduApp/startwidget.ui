@@ -23,7 +23,33 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string>LEARN</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="quizButton">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>130</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>QUIZ</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="resultsButton">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>130</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>RESULTS</string>
    </property>
   </widget>
  </widget>
