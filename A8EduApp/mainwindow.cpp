@@ -44,6 +44,8 @@ MainWindow::MainWindow(QWidget *parent)
 
     connect(quizzingHomeWidget, &QuizzingHomeWidget::matchingButtonClicked, this, &MainWindow::showMatchingWidget);
 
+    connect(quizzingHomeWidget, &QuizzingHomeWidget::dragDropButtonClicked, this, &MainWindow::showDragDropWidget);
+
     // Set start widget as first page
     stackedWidget->setCurrentWidget(startWidget);
 }
