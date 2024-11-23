@@ -1,35 +1,39 @@
 #include "mainwindow.h"
-#include "ui_mainwindow.h"
+#include <QScreen>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
 {
-    ui->setupUi(this);
+    QScreen *screen = QGuiApplication::primaryScreen();
+    QRect screenGeometry = screen->geometry();
 
-    //Connects
-    connect(ui->learnButton, &QPushButton::clicked, this, &MainWindow::openTeachingWindow);
+    // Set window size half the screen size
+    this->resize(screenGeometry.width() / 2, screenGeometry.height() / 2);
+
+    stackedWidget = new QStackedWidget(this);
+    setCentralWidget(stackedWidget); // StackedWidget as central widget
+
+    // Create StartWidget and add it to the QStackedWidget
+    startWidget = new StartWidget(this);
+    stackedWidget->addWidget(startWidget);
+
+    // Create TeachingWidget and add it to the QStackedWidget
+    teachingWidget = new TeachingWidget(this);
+    stackedWidget->addWidget(teachingWidget);
+
+    // Connect the StartWidget's startButtonClicked signal to switch to TeachingWidget
+    connect(startWidget, &StartWidget::startButtonClicked, this, &MainWindow::showTeachingWidget);
+
+    // Set start widget as first page
+    stackedWidget->setCurrentWidget(startWidget);
 }
 
 MainWindow::~MainWindow()
 {
-    delete ui;
 }
 
-void MainWindow::openTeachingWindow()
+void MainWindow::showTeachingWidget()
 {
-    if (!teachingWindow)
-    {
-        teachingWindow = new TeachingWindow();
-    }
-
-    this->hide();              // Hide MainWindow
-    teachingWindow->show();    // Display TeachingWindow
-
-    // Connecting TeachingWindow's close signal back to MainWindow
-    connect(teachingWindow, &TeachingWindow::destroyed, this, [this]()
-    {
-        this->show();          // Show MainWindow when TeachingWindow is closed
-    });
+    stackedWidget->setCurrentWidget(teachingWidget);
 }
 

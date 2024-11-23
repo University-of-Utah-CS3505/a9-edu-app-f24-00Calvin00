@@ -2,27 +2,24 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include<teachingwindow.h>
+#include <QStackedWidget>
+#include "startwidget.h"
+#include "teachingwidget.h"
 
-QT_BEGIN_NAMESPACE
-namespace Ui {
-class MainWindow;
-}
-QT_END_NAMESPACE
-
-class MainWindow : public QMainWindow
-{
+class MainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
+    explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-private slots:
-    void openTeachingWindow();
-
 private:
-    Ui::MainWindow *ui;
-    TeachingWindow *teachingWindow;
+    QStackedWidget *stackedWidget;
+    StartWidget *startWidget;
+    TeachingWidget *teachingWidget;
+
+private slots:
+    void showTeachingWidget();
 };
+
 #endif // MAINWINDOW_H

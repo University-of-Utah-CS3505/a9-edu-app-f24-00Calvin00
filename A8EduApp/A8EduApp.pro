@@ -57,7 +57,9 @@ SOURCES += \
     Box2D/Rope/b2Rope.cpp \
     main.cpp \
     mainwindow.cpp \
+    startwidget.cpp \
     teachingmodel.cpp \
+    teachingwidget.cpp \
     teachingwindow.cpp
 
 HEADERS += \
@@ -109,11 +111,15 @@ HEADERS += \
     Box2D/Dynamics/b2WorldCallbacks.h \
     Box2D/Rope/b2Rope.h \
     mainwindow.h \
+    startwidget.h \
     teachingmodel.h \
+    teachingwidget.h \
     teachingwindow.h
 
 FORMS += \
     mainwindow.ui \
+    startwidget.ui \
+    teachingwidget.ui \
     teachingwindow.ui
 
 # Default rules for deployment.

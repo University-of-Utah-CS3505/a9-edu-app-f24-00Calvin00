@@ -16,8 +16,6 @@ public:
 
 private:
     Ui::TeachingWindow *ui;
-
-    // Add private methods or member variables specific to TeachingWindow
 };
 
 #endif // TEACHINGWINDOW_H
