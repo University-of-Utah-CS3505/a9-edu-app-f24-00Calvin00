@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>950</width>
+    <width>972</width>
     <height>550</height>
    </rect>
   </property>
@@ -168,118 +168,87 @@ background-color: rgb(207, 213, 255);</string>
     </item>
    </layout>
   </widget>
-  <widget class="DropLabel" name="answer1">
+  <widget class="QWidget" name="gridLayoutWidget_2">
    <property name="geometry">
     <rect>
-     <x>850</x>
-     <y>220</y>
-     <width>71</width>
-     <height>20</height>
+     <x>280</x>
+     <y>150</y>
+     <width>661</width>
+     <height>341</height>
     </rect>
    </property>
-   <property name="text">
-    <string>Drop Here</string>
-   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="text">
+       <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis laoreet erat. Ut hendrerit ligula eget odio auctor mollis. Nullam dignissim nisi et ullamcorper ultricies. Integer nec neque non neque lobortis scelerisque. Donec in orci consequat,________ dui ac, posuere odio. Pellentesque scelerisque at magna vitae venenatis.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis laoreet erat. Ut hendrerit ligula eget odio auctor mollis. Nullam dignissim nisi et ullamcorper ultricies. Integer nec neque non neque lobortis scelerisque. Donec in orci ____________, vehicula dui ac, posuere odio. Pellentesque scelerisque at magna vitae venenatis.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_8">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis laoreet erat. Ut hendrerit ligula eget odio auctor mollis. Nullam dignissim nisi et ullamcorper ultricies. Integer nec neque non neque lobortis scelerisque. Donec in orci _______________, vehicula dui ac, posuere odio. Pellentesque scelerisque at magna vitae venenatis.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="DropLabel" name="answer1">
+      <property name="text">
+       <string>Drop Here</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="DropLabel" name="answer2">
+      <property name="text">
+       <string>Drop Here</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="DropLabel" name="answer1_2">
+      <property name="text">
+       <string>Drop Here</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
-  <widget class="DropLabel" name="answer2">
-   <property name="geometry">
-    <rect>
-     <x>820</x>
-     <y>440</y>
-     <width>91</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Drop Here</string>
-   </property>
-  </widget>
-  <widget class="DropLabel" name="answer1_2">
-   <property name="geometry">
-    <rect>
-     <x>830</x>
-     <y>330</y>
-     <width>71</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Drop Here</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_6">
-   <property name="geometry">
-    <rect>
-     <x>311</x>
-     <y>161</y>
-     <width>609</width>
-     <height>106</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>11</pointsize>
-    </font>
-   </property>
-   <property name="lineWidth">
-    <number>1</number>
-   </property>
-   <property name="text">
-    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis laoreet erat. Ut hendrerit ligula eget odio auctor mollis. Nullam dignissim nisi et ullamcorper ultricies. Integer nec neque non neque lobortis scelerisque. Donec in orci consequat,________ dui ac, posuere odio. Pellentesque scelerisque at magna vitae venenatis.</string>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_7">
-   <property name="geometry">
-    <rect>
-     <x>311</x>
-     <y>384</y>
-     <width>609</width>
-     <height>106</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>11</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis laoreet erat. Ut hendrerit ligula eget odio auctor mollis. Nullam dignissim nisi et ullamcorper ultricies. Integer nec neque non neque lobortis scelerisque. Donec in orci ____________, vehicula dui ac, posuere odio. Pellentesque scelerisque at magna vitae venenatis.</string>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_8">
-   <property name="geometry">
-    <rect>
-     <x>311</x>
-     <y>273</y>
-     <width>609</width>
-     <height>105</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>11</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis laoreet erat. Ut hendrerit ligula eget odio auctor mollis. Nullam dignissim nisi et ullamcorper ultricies. Integer nec neque non neque lobortis scelerisque. Donec in orci _______________, vehicula dui ac, posuere odio. Pellentesque scelerisque at magna vitae venenatis.</string>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <zorder>label</zorder>
-  <zorder>label_2</zorder>
-  <zorder>gridLayoutWidget</zorder>
-  <zorder>verticalLayoutWidget</zorder>
-  <zorder>answer1</zorder>
-  <zorder>answer2</zorder>
-  <zorder>answer1_2</zorder>
  </widget>
  <customwidgets>
   <customwidget>
