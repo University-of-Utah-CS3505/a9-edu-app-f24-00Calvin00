@@ -61,6 +61,7 @@ SOURCES += \
     mainwindow.cpp \
     quizdragdropwidget.cpp \
     quizmatchingwidget.cpp \
+    quizmodel.cpp \
     quizzinghomewidget.cpp \
     resultswidget.cpp \
     startwidget.cpp \
@@ -121,6 +122,7 @@ HEADERS += \
     mainwindow.h \
     quizdragdropwidget.h \
     quizmatchingwidget.h \
+    quizmodel.h \
     quizzinghomewidget.h \
     resultswidget.h \
     startwidget.h \
