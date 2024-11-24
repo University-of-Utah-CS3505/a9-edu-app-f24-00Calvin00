@@ -1,8 +1,8 @@
 #include "mainwindow.h"
 #include <QScreen>
 
-MainWindow::MainWindow(QWidget *parent, QuizModel *quizModel)
-    : QMainWindow(parent), quizModel(quizModel)
+MainWindow::MainWindow(QWidget *parent, QuizModel *QuizModel)
+    : QMainWindow(parent), quizModel(QuizModel)
 {
     QScreen *screen = QGuiApplication::primaryScreen();
     QRect screenGeometry = screen->geometry();

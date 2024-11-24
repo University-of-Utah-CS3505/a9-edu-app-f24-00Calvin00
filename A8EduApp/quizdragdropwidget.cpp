@@ -1,9 +1,10 @@
 #include "quizdragdropwidget.h"
 #include "ui_quizdragdropwidget.h"
 
-QuizDragDropWidget::QuizDragDropWidget(QWidget *parent)
-    : QWidget(parent)
-    , ui(new Ui::QuizDragDropWidget)
+QuizDragDropWidget::QuizDragDropWidget(QWidget *parent, QuizModel *QuizModel)
+    : QWidget(parent) ,
+    ui(new Ui::QuizDragDropWidget),
+    quizModel(QuizModel)
 {
     ui->setupUi(this);
 }
