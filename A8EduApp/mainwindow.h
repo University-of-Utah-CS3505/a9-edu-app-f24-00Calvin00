@@ -9,12 +9,13 @@
 #include "quizmatchingwidget.h"
 #include "quizzinghomewidget.h"
 #include "resultswidget.h"
+#include "quizmodel.h"
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr);
+    explicit MainWindow(QWidget *parent = nullptr, QuizModel *quizModel = nullptr);
     ~MainWindow();
 
 private:
@@ -25,6 +26,8 @@ private:
     QuizDragDropWidget *quizDragDropWidget;
     QuizMatchingWidget *quizMatchingWidget;
     ResultsWidget *resultsWidget;
+
+    QuizModel *quizModel;  // Quiz model to manage questions and scores
 
 
 private slots:

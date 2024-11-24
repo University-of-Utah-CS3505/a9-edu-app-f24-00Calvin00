@@ -13,7 +13,9 @@ int main(int argc, char *argv[])
     a.setStyle(QStyleFactory::create("Windows"));
     a.setFont(QFont("MS Sans Serif", 10));
 
-    MainWindow w;
+    QuizModel quizModel;
+    MainWindow w(nullptr, &quizModel);
+
     w.show();
     return a.exec();
 }
