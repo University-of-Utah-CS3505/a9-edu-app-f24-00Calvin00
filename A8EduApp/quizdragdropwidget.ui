@@ -81,7 +81,15 @@ background-color: rgb(207, 213, 255);</string>
      <height>381</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout"/>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="DraggableLabel" name="label_3">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QWidget" name="verticalLayoutWidget_2">
    <property name="geometry">
@@ -95,6 +103,13 @@ background-color: rgb(207, 213, 255);</string>
    <layout class="QVBoxLayout" name="verticalLayout_2"/>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>DraggableLabel</class>
+   <extends>QLabel</extends>
+   <header>draggablelabel.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

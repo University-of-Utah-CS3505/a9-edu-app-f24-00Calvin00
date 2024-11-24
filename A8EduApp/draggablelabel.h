@@ -2,18 +2,20 @@
 #define DRAGGABLELABEL_H
 
 #include <QLabel>
-#include <QDrag>
+#include <QMouseEvent>
 
-class DraggableLabel : public QLabel
-{
+class DraggableLabel : public QLabel {
     Q_OBJECT
 
 public:
-    explicit DraggableLabel(const QString &text, QWidget *parent = nullptr);
+    explicit DraggableLabel(QWidget *parent = nullptr);  // Make sure this constructor exists
 
 protected:
-    // Handles the drag start event
     void mousePressEvent(QMouseEvent *event) override;
+    void mouseMoveEvent(QMouseEvent *event) override;
+
+private:
+    QPoint offset;  // The offset for dragging
 };
 
 #endif // DRAGGABLELABEL_H
