@@ -2,7 +2,6 @@
 #define QUIZDRAGDROPWIDGET_H
 
 #include <QWidget>
-#include "draggablelabel.h"
 
 namespace Ui {
 class QuizDragDropWidget;

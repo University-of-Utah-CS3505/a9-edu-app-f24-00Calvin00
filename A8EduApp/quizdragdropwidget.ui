@@ -16,7 +16,7 @@
   <property name="styleSheet">
    <string notr="true"/>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="title">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -44,7 +44,7 @@ background-color: rgb(207, 213, 255);</string>
     <string> Quiz Time!</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="instructions">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -81,31 +81,7 @@ background-color: rgb(207, 213, 255);</string>
      <height>201</height>
     </rect>
    </property>
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="1">
-     <widget class="DraggableLabel" name="vocab2">
-      <property name="font">
-       <font>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Vocab2</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="1">
-     <widget class="DraggableLabel" name="vocab6">
-      <property name="font">
-       <font>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Vocab6</string>
-      </property>
-     </widget>
-    </item>
+   <layout class="QGridLayout" name="VocabSelection">
     <item row="0" column="0">
      <widget class="DraggableLabel" name="vocab1">
       <property name="font">
@@ -154,6 +130,18 @@ background-color: rgb(207, 213, 255);</string>
       </property>
      </widget>
     </item>
+    <item row="0" column="1">
+     <widget class="DraggableLabel" name="vocab2">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Vocab2</string>
+      </property>
+     </widget>
+    </item>
     <item row="2" column="0">
      <widget class="DraggableLabel" name="vocab5">
       <property name="font">
@@ -166,6 +154,18 @@ background-color: rgb(207, 213, 255);</string>
       </property>
      </widget>
     </item>
+    <item row="2" column="1">
+     <widget class="DraggableLabel" name="vocab6">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Vocab6</string>
+      </property>
+     </widget>
+    </item>
    </layout>
   </widget>
   <widget class="QWidget" name="gridLayoutWidget_2">
@@ -173,13 +173,13 @@ background-color: rgb(207, 213, 255);</string>
     <rect>
      <x>280</x>
      <y>150</y>
-     <width>661</width>
+     <width>671</width>
      <height>341</height>
     </rect>
    </property>
-   <layout class="QGridLayout" name="gridLayout_2">
+   <layout class="QGridLayout" name="DefineSection">
     <item row="2" column="0">
-     <widget class="QLabel" name="label_6">
+     <widget class="QLabel" name="definition1">
       <property name="font">
        <font>
         <pointsize>11</pointsize>
@@ -197,7 +197,7 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="3" column="0">
-     <widget class="QLabel" name="label_7">
+     <widget class="QLabel" name="definition2">
       <property name="font">
        <font>
         <pointsize>11</pointsize>
@@ -212,7 +212,7 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QLabel" name="label_8">
+     <widget class="QLabel" name="definition3">
       <property name="font">
        <font>
         <pointsize>11</pointsize>
@@ -241,13 +241,26 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="3" column="1">
-     <widget class="DropLabel" name="answer1_2">
+     <widget class="DropLabel" name="answer3">
       <property name="text">
        <string>Drop Here</string>
       </property>
      </widget>
     </item>
    </layout>
+  </widget>
+  <widget class="QPushButton" name="submitButton">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>480</y>
+     <width>151</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Submit Answers</string>
+   </property>
   </widget>
  </widget>
  <customwidgets>

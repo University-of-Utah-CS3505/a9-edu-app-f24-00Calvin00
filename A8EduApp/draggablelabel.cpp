@@ -6,17 +6,18 @@
 DraggableLabel::DraggableLabel(QWidget *parent)
     : QLabel(parent)
 {
-    setAlignment(Qt::AlignCenter);  // Center align text for better appearance
-    setFrameStyle(QFrame::Box);     // Add a box frame for visual clarity
+    setAlignment(Qt::AlignCenter);
+    setFrameStyle(QFrame::Box);
 }
 
 void DraggableLabel::mousePressEvent(QMouseEvent *event)
 {
-    if (event->button() == Qt::LeftButton) {
-        // Set a custom cursor during dragging
+    if (event->button() == Qt::LeftButton)
+    {
+        // Set a closed hand cursor to show dragging
         setCursor(Qt::ClosedHandCursor);
 
-        // Create the QMimeData and QDrag objects as before
+        // Store data to transfer to dropped area
         QMimeData *mimeData = new QMimeData;
         mimeData->setText(this->text());
 
@@ -41,9 +42,9 @@ void DraggableLabel::mouseReleaseEvent(QMouseEvent *event)
 
 void DraggableLabel::mouseMoveEvent(QMouseEvent *event)
 {
-    // Only move if the left mouse button is held down
-    if (event->buttons() & Qt::LeftButton) {
+    if (event->buttons() & Qt::LeftButton)
+    {
         move(event->globalPos() - offset);  // Move the widget while dragging
     }
-    event->accept();  // Accept the event
+    event->accept();
 }

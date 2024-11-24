@@ -13,7 +13,7 @@ DropLabel::DropLabel(QWidget *parent)
 void DropLabel::dragEnterEvent(QDragEnterEvent *event)
 {
     if (event->mimeData()->hasText()) {
-        // Change the background color to indicate a valid drop target
+        // Change background color to show valid drop target
         setStyleSheet("background-color: rgb(207, 213, 255);");
         event->acceptProposedAction();
     }
@@ -21,12 +21,12 @@ void DropLabel::dragEnterEvent(QDragEnterEvent *event)
 
 void DropLabel::dragLeaveEvent(QDragLeaveEvent *event)
 {
-    // Reset the background when the drag leaves the drop area
     setStyleSheet("background-color: transparent;");
 }
 
 void DropLabel::dropEvent(QDropEvent *event)
 {
+    // Get stored data from the dropped label
     QString droppedText = event->mimeData()->text();
     setText(droppedText);
 
