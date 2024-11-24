@@ -21,13 +21,13 @@ MainWindow::MainWindow(QWidget *parent, QuizModel *QuizModel)
     teachingWidget = new TeachingWidget(this);
     stackedWidget->addWidget(teachingWidget);
 
-    quizzingHomeWidget = new QuizzingHomeWidget(this);
+    quizzingHomeWidget = new QuizzingHomeWidget(this, quizModel);
     stackedWidget->addWidget(quizzingHomeWidget);
 
-    quizMatchingWidget = new QuizMatchingWidget(this);
+    quizMatchingWidget = new QuizMatchingWidget(this, quizModel);
     stackedWidget->addWidget(quizMatchingWidget);
 
-    quizDragDropWidget = new QuizDragDropWidget(this);
+    quizDragDropWidget = new QuizDragDropWidget(this, quizModel);
     stackedWidget->addWidget(quizDragDropWidget);
 
     resultsWidget = new ResultsWidget(this);
