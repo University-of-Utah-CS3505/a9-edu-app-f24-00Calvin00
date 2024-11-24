@@ -72,35 +72,77 @@ background-color: rgb(207, 213, 255);</string>
     <string> Check your understanding: Drag the correct vocab words to complete the definitions.</string>
    </property>
   </widget>
-  <widget class="QWidget" name="verticalLayoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>140</y>
-     <width>131</width>
-     <height>381</height>
-    </rect>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
-     <widget class="DraggableLabel" name="label_3">
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
   <widget class="QWidget" name="verticalLayoutWidget_2">
    <property name="geometry">
     <rect>
-     <x>230</x>
+     <x>300</x>
      <y>140</y>
-     <width>641</width>
+     <width>571</width>
      <height>381</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2"/>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>220</y>
+     <width>221</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="DraggableLabel" name="label_4">
+      <property name="text">
+       <string>Vocab2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="DraggableLabel" name="label_8">
+      <property name="text">
+       <string>Vocab7</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="DraggableLabel" name="label_7">
+      <property name="text">
+       <string>Vocab6</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="DraggableLabel" name="label_6">
+      <property name="text">
+       <string>Vocab5</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="DraggableLabel" name="label_3">
+      <property name="text">
+       <string>Vocab3</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="DraggableLabel" name="label_5">
+      <property name="text">
+       <string>Vocab1 </string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="DraggableLabel" name="label_9">
+      <property name="text">
+       <string>Vocab4</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <customwidgets>
