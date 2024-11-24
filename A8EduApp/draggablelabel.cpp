@@ -13,26 +13,31 @@ DraggableLabel::DraggableLabel(QWidget *parent)
 void DraggableLabel::mousePressEvent(QMouseEvent *event)
 {
     if (event->button() == Qt::LeftButton) {
-        // Record the offset of the mouse position within the label
-        offset = event->pos();
+        // Set a custom cursor during dragging
+        setCursor(Qt::ClosedHandCursor);
 
-        // Create a QMimeData object to hold the data being dragged
+        // Create the QMimeData and QDrag objects as before
         QMimeData *mimeData = new QMimeData;
-        mimeData->setText(this->text());  // Use the label's text as data
+        mimeData->setText(this->text());
 
-        // Create a QDrag object to manage the drag operation
         QDrag *drag = new QDrag(this);
         drag->setMimeData(mimeData);
-
-        // Optionally, set a pixmap for the drag cursor (use the label's appearance)
         drag->setPixmap(this->grab());
 
         // Start the drag operation
-        drag->exec(Qt::MoveAction);  // Allow moving the object
+        drag->exec(Qt::MoveAction);
     }
 
-    QLabel::mousePressEvent(event);  // Call the base class's implementation
+    QLabel::mousePressEvent(event);
 }
+
+void DraggableLabel::mouseReleaseEvent(QMouseEvent *event)
+{
+    // Reset the cursor to the normal state when dragging ends
+    setCursor(Qt::ArrowCursor);
+    QLabel::mouseReleaseEvent(event);
+}
+
 
 void DraggableLabel::mouseMoveEvent(QMouseEvent *event)
 {
