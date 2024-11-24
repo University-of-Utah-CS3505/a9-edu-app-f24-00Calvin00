@@ -81,7 +81,29 @@ background-color: rgb(207, 213, 255);</string>
      <height>381</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout_2"/>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="DropLabel" name="label_3">
+      <property name="text">
+       <string>Drop Here</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="DropLabel" name="label_5">
+      <property name="text">
+       <string>Drop Here</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="DropLabel" name="label_4">
+      <property name="text">
+       <string>Drop Here</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">
@@ -94,49 +116,49 @@ background-color: rgb(207, 213, 255);</string>
    </property>
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="1">
-     <widget class="DraggableLabel" name="label_4">
+     <widget class="DraggableLabel" name="vocab2">
       <property name="text">
        <string>Vocab2</string>
       </property>
      </widget>
     </item>
     <item row="2" column="2">
-     <widget class="DraggableLabel" name="label_8">
+     <widget class="DraggableLabel" name="vocab7">
       <property name="text">
        <string>Vocab7</string>
       </property>
      </widget>
     </item>
     <item row="2" column="1">
-     <widget class="DraggableLabel" name="label_7">
+     <widget class="DraggableLabel" name="vocab6">
       <property name="text">
        <string>Vocab6</string>
       </property>
      </widget>
     </item>
     <item row="2" column="0">
-     <widget class="DraggableLabel" name="label_6">
+     <widget class="DraggableLabel" name="vocab5">
       <property name="text">
        <string>Vocab5</string>
       </property>
      </widget>
     </item>
     <item row="0" column="2">
-     <widget class="DraggableLabel" name="label_3">
+     <widget class="DraggableLabel" name="vocab3">
       <property name="text">
        <string>Vocab3</string>
       </property>
      </widget>
     </item>
     <item row="0" column="0">
-     <widget class="DraggableLabel" name="label_5">
+     <widget class="DraggableLabel" name="vocab1">
       <property name="text">
        <string>Vocab1 </string>
       </property>
      </widget>
     </item>
     <item row="1" column="1">
-     <widget class="DraggableLabel" name="label_9">
+     <widget class="DraggableLabel" name="vocab4">
       <property name="text">
        <string>Vocab4</string>
       </property>
@@ -150,6 +172,11 @@ background-color: rgb(207, 213, 255);</string>
    <class>DraggableLabel</class>
    <extends>QLabel</extends>
    <header>draggablelabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>DropLabel</class>
+   <extends>QLabel</extends>
+   <header>droplabel.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

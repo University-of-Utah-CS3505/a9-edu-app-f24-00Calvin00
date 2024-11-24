@@ -56,6 +56,7 @@ SOURCES += \
     Box2D/Dynamics/b2WorldCallbacks.cpp \
     Box2D/Rope/b2Rope.cpp \
     draggablelabel.cpp \
+    droplabel.cpp \
     main.cpp \
     mainwindow.cpp \
     quizdragdropwidget.cpp \
@@ -116,6 +117,7 @@ HEADERS += \
     Box2D/Dynamics/b2WorldCallbacks.h \
     Box2D/Rope/b2Rope.h \
     draggablelabel.h \
+    droplabel.h \
     mainwindow.h \
     quizdragdropwidget.h \
     quizmatchingwidget.h \
