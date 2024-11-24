@@ -9,6 +9,7 @@
 #include "quizmatchingwidget.h"
 #include "quizzinghomewidget.h"
 #include "resultswidget.h"
+#include "introtoguthealthwidget.h"
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
@@ -25,6 +26,7 @@ private:
     QuizDragDropWidget *quizDragDropWidget;
     QuizMatchingWidget *quizMatchingWidget;
     ResultsWidget *resultsWidget;
+    IntroToGutHealthWidget *introToGutHealthWidget;
 
 
 private slots:
@@ -33,6 +35,7 @@ private slots:
     void showResultsWidget();
     void showMatchingWidget();
     void showDragDropWidget();
+    void showIntroToGutHealthWidget();
 };
 
 #endif // MAINWINDOW_H

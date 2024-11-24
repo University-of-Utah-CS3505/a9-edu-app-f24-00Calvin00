@@ -33,13 +33,19 @@ MainWindow::MainWindow(QWidget *parent)
     resultsWidget = new ResultsWidget(this);
     stackedWidget->addWidget(resultsWidget);
 
-    // Connect the StartWidget's learnButtonClicked signal to switch to TeachingWidget
-    connect(startWidget, &StartWidget::learnButtonClicked, this, &MainWindow::showTeachingWidget);
+    introToGutHealthWidget = new IntroToGutHealthWidget(this);
+    stackedWidget->addWidget(introToGutHealthWidget);
 
-    // Connect the StartWidget's startButtonClicked signal to switch to TeachingWidget
+
+    // Connect the StartWidget's learnButtonClicked signal to switch to startWidget
+    connect(startWidget, &StartWidget::learnButtonClicked, this, &MainWindow::showTeachingWidget);
+    \
+    connect(teachingWidget, &TeachingWidget::introToGutButtonClicked, this, &MainWindow::showIntroToGutHealthWidget);
+
+    // Connect the StartWidget's startButtonClicked signal to switch to startWidget
     connect(startWidget, &StartWidget::quizButtonClicked, this, &MainWindow::showQuizzingWidget);
 
-    // Connect the StartWidget's resultsButtonClicked signal to switch to TeachingWidget
+    // Connect the StartWidget's resultsButtonClicked signal to switch to startWidget
     connect(startWidget, &StartWidget::resultsButtonClicked, this, &MainWindow::showResultsWidget);
 
     connect(quizzingHomeWidget, &QuizzingHomeWidget::matchingButtonClicked, this, &MainWindow::showMatchingWidget);
@@ -77,5 +83,10 @@ void MainWindow::showDragDropWidget()
 void MainWindow::showResultsWidget()
 {
     stackedWidget->setCurrentWidget(resultsWidget);
+}
+
+void MainWindow::showIntroToGutHealthWidget()
+{
+    stackedWidget->setCurrentWidget(introToGutHealthWidget);
 }
 
