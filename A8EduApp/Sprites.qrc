@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/sprites">
+        <file>happyPoo.png.png</file>
+        <file>pooing.png.png</file>
+        <file>sadPoo.png.png</file>
+        <file>toilet.png.png</file>
+    </qresource>
+</RCC>
