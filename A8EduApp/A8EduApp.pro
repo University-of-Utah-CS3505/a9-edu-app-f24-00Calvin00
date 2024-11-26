@@ -55,12 +55,10 @@ SOURCES += \
     Box2D/Dynamics/b2World.cpp \
     Box2D/Dynamics/b2WorldCallbacks.cpp \
     Box2D/Rope/b2Rope.cpp \
-<<<<<<< HEAD
+    howtostayhealthywidget.cpp \
     introtoguthealthwidget.cpp \
-=======
     draggablelabel.cpp \
     droplabel.cpp \
->>>>>>> main
     main.cpp \
     mainwindow.cpp \
     quizdragdropwidget.cpp \
@@ -71,7 +69,7 @@ SOURCES += \
     startwidget.cpp \
     teachingmodel.cpp \
     teachingwidget.cpp \
-    teachingwindow.cpp
+    whyguthealthwidget.cpp
 
 HEADERS += \
     Box2D/Box2D.h \
@@ -121,12 +119,10 @@ HEADERS += \
     Box2D/Dynamics/b2World.h \
     Box2D/Dynamics/b2WorldCallbacks.h \
     Box2D/Rope/b2Rope.h \
-<<<<<<< HEAD
+    howtostayhealthywidget.h \
     introtoguthealthwidget.h \
-=======
     draggablelabel.h \
     droplabel.h \
->>>>>>> main
     mainwindow.h \
     quizdragdropwidget.h \
     quizmatchingwidget.h \
@@ -136,9 +132,10 @@ HEADERS += \
     startwidget.h \
     teachingmodel.h \
     teachingwidget.h \
-    teachingwindow.h
+    whyguthealthwidget.h
 
 FORMS += \
+    howtostayhealthywidget.ui \
     introtoguthealthwidget.ui \
     mainwindow.ui \
     quizdragdropwidget.ui \
@@ -147,7 +144,7 @@ FORMS += \
     resultswidget.ui \
     startwidget.ui \
     teachingwidget.ui \
-    teachingwindow.ui
+    whyguthealthwidget.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

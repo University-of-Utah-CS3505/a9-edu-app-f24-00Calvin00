@@ -9,11 +9,11 @@
 #include "quizmatchingwidget.h"
 #include "quizzinghomewidget.h"
 #include "resultswidget.h"
-<<<<<<< HEAD
 #include "introtoguthealthwidget.h"
-=======
+#include "whyguthealthwidget.h"
+#include "howtostayhealthywidget.h"
 #include "quizmodel.h"
->>>>>>> main
+
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
@@ -31,7 +31,8 @@ private:
     QuizMatchingWidget *quizMatchingWidget;
     ResultsWidget *resultsWidget;
     IntroToGutHealthWidget *introToGutHealthWidget;
-
+    WhyGutHealthWidget *whyGutHealthWidget;
+    HowToStayHealthyWidget *howToStayHealthyWidget;
     QuizModel *quizModel;  // Quiz model to manage questions and scores
 
 
@@ -42,6 +43,8 @@ private slots:
     void showMatchingWidget();
     void showDragDropWidget();
     void showIntroToGutHealthWidget();
+    void showWhyGutHealthWidget();
+    void showHowToStayHealthyWidget();
 };
 
 #endif // MAINWINDOW_H

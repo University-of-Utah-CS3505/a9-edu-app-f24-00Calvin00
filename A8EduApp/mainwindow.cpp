@@ -17,10 +17,6 @@ MainWindow::MainWindow(QWidget *parent, QuizModel *QuizModel)
     startWidget = new StartWidget(this);
     stackedWidget->addWidget(startWidget);
 
-    // Create TeachingWidget and add it to the QStackedWidget
-    teachingWidget = new TeachingWidget(this);
-    stackedWidget->addWidget(teachingWidget);
-
     quizzingHomeWidget = new QuizzingHomeWidget(this, quizModel);
     stackedWidget->addWidget(quizzingHomeWidget);
 
@@ -33,14 +29,29 @@ MainWindow::MainWindow(QWidget *parent, QuizModel *QuizModel)
     resultsWidget = new ResultsWidget(this);
     stackedWidget->addWidget(resultsWidget);
 
+    // Create all teaching widget/windows
+
+    teachingWidget = new TeachingWidget(this);
+    stackedWidget->addWidget(teachingWidget);
+
     introToGutHealthWidget = new IntroToGutHealthWidget(this);
     stackedWidget->addWidget(introToGutHealthWidget);
 
+    whyGutHealthWidget = new WhyGutHealthWidget(this);
+    stackedWidget->addWidget(whyGutHealthWidget);
 
-    // Connect the StartWidget's learnButtonClicked signal to switch to startWidget
+    howToStayHealthyWidget = new HowToStayHealthyWidget(this);
+    stackedWidget->addWidget(howToStayHealthyWidget);
+
+
+    // Connections for Learning modules
     connect(startWidget, &StartWidget::learnButtonClicked, this, &MainWindow::showTeachingWidget);
     \
     connect(teachingWidget, &TeachingWidget::introToGutButtonClicked, this, &MainWindow::showIntroToGutHealthWidget);
+
+    connect(teachingWidget, &TeachingWidget::whyGutHealthButtonClicked, this, &MainWindow::showWhyGutHealthWidget);
+
+    connect(teachingWidget, &TeachingWidget::howToStayHealthyButtonClicked, this, &MainWindow::showHowToStayHealthyWidget);
 
     // Connect the StartWidget's startButtonClicked signal to switch to startWidget
     connect(startWidget, &StartWidget::quizButtonClicked, this, &MainWindow::showQuizzingWidget);
@@ -88,5 +99,15 @@ void MainWindow::showResultsWidget()
 void MainWindow::showIntroToGutHealthWidget()
 {
     stackedWidget->setCurrentWidget(introToGutHealthWidget);
+}
+
+void MainWindow::showWhyGutHealthWidget()
+{
+    stackedWidget->setCurrentWidget(whyGutHealthWidget);
+}
+
+void MainWindow::showHowToStayHealthyWidget()
+{
+    stackedWidget->setCurrentWidget(howToStayHealthyWidget);
 }
 

@@ -7,6 +7,8 @@ TeachingWidget::TeachingWidget(QWidget *parent)
     ui->setupUi(this);
 
     connect(ui->introToGutButton, &QPushButton::clicked, this, &TeachingWidget::introToGutButtonClicked);
+    connect(ui->whyGutHealthButton, &QPushButton::clicked, this, &TeachingWidget::whyGutHealthButtonClicked);
+    connect(ui->howToStayHealthyButton, &QPushButton::clicked, this, &TeachingWidget::howToStayHealthyButtonClicked);
 }
 
 TeachingWidget::~TeachingWidget()
