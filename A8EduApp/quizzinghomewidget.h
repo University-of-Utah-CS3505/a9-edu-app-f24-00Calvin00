@@ -2,6 +2,7 @@
 #define QUIZZINGHOMEWIDGET_H
 
 #include <QWidget>
+#include "quizmodel.h"
 
 namespace Ui {
 class QuizzingHomeWidget;
@@ -12,7 +13,7 @@ class QuizzingHomeWidget : public QWidget
     Q_OBJECT
 
 public:
-    explicit QuizzingHomeWidget(QWidget *parent = nullptr);
+    explicit QuizzingHomeWidget(QWidget *parent = nullptr, QuizModel *quizModel = nullptr);
     ~QuizzingHomeWidget();
 
 signals:
@@ -21,6 +22,7 @@ signals:
 
 private:
     Ui::QuizzingHomeWidget *ui;
+    QuizModel *quizModel;
 };
 
 #endif // QUIZZINGHOMEWIDGET_H

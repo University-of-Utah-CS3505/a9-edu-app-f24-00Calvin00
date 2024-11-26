@@ -6,27 +6,275 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>972</width>
+    <height>550</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLabel" name="title">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: black;
+background-color: rgb(207, 213, 255);</string>
+   </property>
+   <property name="text">
+    <string> Quiz Time!</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="instructions">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>80</y>
+     <width>831</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: black;
+background-color: rgb(207, 213, 255);</string>
+   </property>
+   <property name="text">
+    <string> Check your understanding: Drag the correct vocab words to complete the definitions.</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>220</y>
+     <width>221</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="VocabSelection">
+    <item row="0" column="0">
+     <widget class="DraggableLabel" name="vocab1">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Vocab1 </string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="DraggableLabel" name="vocab4">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Vocab4</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="DraggableLabel" name="vocab3">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Vocab3</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="DraggableLabel" name="vocab7">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Vocab7</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="DraggableLabel" name="vocab2">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Vocab2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="DraggableLabel" name="vocab5">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Vocab5</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="DraggableLabel" name="vocab6">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Vocab6</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>150</y>
+     <width>671</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="DefineSection">
+    <item row="2" column="0">
+     <widget class="QLabel" name="definition1">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="text">
+       <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis laoreet erat. Ut hendrerit ligula eget odio auctor mollis. Nullam dignissim nisi et ullamcorper ultricies. Integer nec neque non neque lobortis scelerisque. Donec in orci consequat,________ dui ac, posuere odio. Pellentesque scelerisque at magna vitae venenatis.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="definition2">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis laoreet erat. Ut hendrerit ligula eget odio auctor mollis. Nullam dignissim nisi et ullamcorper ultricies. Integer nec neque non neque lobortis scelerisque. Donec in orci ____________, vehicula dui ac, posuere odio. Pellentesque scelerisque at magna vitae venenatis.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="definition3">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis laoreet erat. Ut hendrerit ligula eget odio auctor mollis. Nullam dignissim nisi et ullamcorper ultricies. Integer nec neque non neque lobortis scelerisque. Donec in orci _______________, vehicula dui ac, posuere odio. Pellentesque scelerisque at magna vitae venenatis.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="DropLabel" name="answer1">
+      <property name="text">
+       <string>Drop Here</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="DropLabel" name="answer2">
+      <property name="text">
+       <string>Drop Here</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="DropLabel" name="answer3">
+      <property name="text">
+       <string>Drop Here</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="submitButton">
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>60</y>
-     <width>221</width>
+     <y>480</y>
+     <width>151</width>
      <height>24</height>
     </rect>
    </property>
    <property name="text">
-    <string>Quiz DragNDrop Placeholder Button</string>
+    <string>Submit Answers</string>
    </property>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>DraggableLabel</class>
+   <extends>QLabel</extends>
+   <header>draggablelabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>DropLabel</class>
+   <extends>QLabel</extends>
+   <header>droplabel.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

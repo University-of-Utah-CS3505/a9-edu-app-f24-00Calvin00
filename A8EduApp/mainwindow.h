@@ -9,13 +9,17 @@
 #include "quizmatchingwidget.h"
 #include "quizzinghomewidget.h"
 #include "resultswidget.h"
+<<<<<<< HEAD
 #include "introtoguthealthwidget.h"
+=======
+#include "quizmodel.h"
+>>>>>>> main
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr);
+    explicit MainWindow(QWidget *parent = nullptr, QuizModel *quizModel = nullptr);
     ~MainWindow();
 
 private:
@@ -27,6 +31,8 @@ private:
     QuizMatchingWidget *quizMatchingWidget;
     ResultsWidget *resultsWidget;
     IntroToGutHealthWidget *introToGutHealthWidget;
+
+    QuizModel *quizModel;  // Quiz model to manage questions and scores
 
 
 private slots:

@@ -55,11 +55,17 @@ SOURCES += \
     Box2D/Dynamics/b2World.cpp \
     Box2D/Dynamics/b2WorldCallbacks.cpp \
     Box2D/Rope/b2Rope.cpp \
+<<<<<<< HEAD
     introtoguthealthwidget.cpp \
+=======
+    draggablelabel.cpp \
+    droplabel.cpp \
+>>>>>>> main
     main.cpp \
     mainwindow.cpp \
     quizdragdropwidget.cpp \
     quizmatchingwidget.cpp \
+    quizmodel.cpp \
     quizzinghomewidget.cpp \
     resultswidget.cpp \
     startwidget.cpp \
@@ -115,10 +121,16 @@ HEADERS += \
     Box2D/Dynamics/b2World.h \
     Box2D/Dynamics/b2WorldCallbacks.h \
     Box2D/Rope/b2Rope.h \
+<<<<<<< HEAD
     introtoguthealthwidget.h \
+=======
+    draggablelabel.h \
+    droplabel.h \
+>>>>>>> main
     mainwindow.h \
     quizdragdropwidget.h \
     quizmatchingwidget.h \
+    quizmodel.h \
     quizzinghomewidget.h \
     resultswidget.h \
     startwidget.h \

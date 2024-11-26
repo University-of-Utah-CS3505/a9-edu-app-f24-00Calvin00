@@ -1,8 +1,8 @@
 #include "mainwindow.h"
 #include <QScreen>
 
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
+MainWindow::MainWindow(QWidget *parent, QuizModel *QuizModel)
+    : QMainWindow(parent), quizModel(QuizModel)
 {
     QScreen *screen = QGuiApplication::primaryScreen();
     QRect screenGeometry = screen->geometry();
@@ -21,13 +21,13 @@ MainWindow::MainWindow(QWidget *parent)
     teachingWidget = new TeachingWidget(this);
     stackedWidget->addWidget(teachingWidget);
 
-    quizzingHomeWidget = new QuizzingHomeWidget(this);
+    quizzingHomeWidget = new QuizzingHomeWidget(this, quizModel);
     stackedWidget->addWidget(quizzingHomeWidget);
 
-    quizMatchingWidget = new QuizMatchingWidget(this);
+    quizMatchingWidget = new QuizMatchingWidget(this, quizModel);
     stackedWidget->addWidget(quizMatchingWidget);
 
-    quizDragDropWidget = new QuizDragDropWidget(this);
+    quizDragDropWidget = new QuizDragDropWidget(this, quizModel);
     stackedWidget->addWidget(quizDragDropWidget);
 
     resultsWidget = new ResultsWidget(this);
