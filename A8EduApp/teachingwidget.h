@@ -2,6 +2,9 @@
 #define TEACHINGWIDGET_H
 
 #include <QWidget>
+#include <introtoguthealthwidget.h>
+#include <whyguthealthwidget.h>
+#include <howtostayhealthywidget.h>
 
 namespace Ui {
 class TeachingWidget;
@@ -16,6 +19,14 @@ public:
 
 private:
     Ui::TeachingWidget *ui;
+    IntroToGutHealthWidget *introToGutHealthWidget;
+    WhyGutHealthWidget *whyGutHealthWidget;
+    HowToStayHealthyWidget *howToStayHealthyWidget;
+
+signals:
+    void introToGutButtonClicked();
+    void whyGutHealthButtonClicked();
+    void howToStayHealthyButtonClicked();
 };
 
 #endif // TEACHINGWIDGET_H
