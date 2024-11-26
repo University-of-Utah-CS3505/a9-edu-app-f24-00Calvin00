@@ -59,6 +59,7 @@ SOURCES += \
     droplabel.cpp \
     main.cpp \
     mainwindow.cpp \
+    physics.cpp \
     quizdragdropwidget.cpp \
     quizmatchingwidget.cpp \
     quizmodel.cpp \
@@ -120,6 +121,7 @@ HEADERS += \
     draggablelabel.h \
     droplabel.h \
     mainwindow.h \
+    physics.h \
     quizdragdropwidget.h \
     quizmatchingwidget.h \
     quizmodel.h \
