@@ -1,16 +1,26 @@
 #ifndef PHYSICS_H
 #define PHYSICS_H
 
-#include <QMainWindow>
-// #include <QObject>
 #include <QWidget>
+#include <Box2D/Box2D.h>
+#include <QTimer>
 
-class Physics
+class Physics : public QWidget
 {
-    // Q_OBJECT
+    Q_OBJECT
 public:
-    Physics();
+    explicit Physics(QWidget *parent = nullptr);
+    void paintEvent(QPaintEvent *);
+signals:
 
+public slots:
+    void updateWorld();
+
+private:
+    b2World world;
+    b2Body* body;
+    QTimer timer;
+    QImage image;
 };
 
-#endif // PHYSICS_H
+#endif // SCENEWIDGET_H
