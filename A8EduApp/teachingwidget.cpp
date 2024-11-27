@@ -1,6 +1,7 @@
 #include "teachingwidget.h"
 #include "ui_teachingwidget.h"
 
+//Test
 TeachingWidget::TeachingWidget(QWidget *parent)
     : QWidget(parent), ui(new Ui::TeachingWidget)
 {
