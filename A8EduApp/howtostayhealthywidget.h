@@ -15,6 +15,9 @@ public:
     explicit HowToStayHealthyWidget(QWidget *parent = nullptr);
     ~HowToStayHealthyWidget();
 
+signals:
+    void backToTeachingWidgetButtonClicked();
+
 private:
     Ui::HowToStayHealthyWidget *ui;
 };

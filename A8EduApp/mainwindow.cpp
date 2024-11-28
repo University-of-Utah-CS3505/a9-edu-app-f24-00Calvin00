@@ -52,6 +52,9 @@ MainWindow::MainWindow(QWidget *parent, QuizModel *QuizModel)
     connect(teachingWidget, &TeachingWidget::whyGutHealthButtonClicked, this, &MainWindow::showWhyGutHealthWidget);
     connect(teachingWidget, &TeachingWidget::howToStayHealthyButtonClicked, this, &MainWindow::showHowToStayHealthyWidget);
     connect(teachingWidget, &TeachingWidget::backToStartButtonClicked, this, &MainWindow::showStartWidget);
+    connect(introToGutHealthWidget, &IntroToGutHealthWidget::backToTeachingWidgetButtonClicked, this, &MainWindow::showTeachingWidget);
+    connect(whyGutHealthWidget, &WhyGutHealthWidget::backToTeachingWidgetButtonClicked, this, &MainWindow::showTeachingWidget);
+    connect(howToStayHealthyWidget, &HowToStayHealthyWidget::backToTeachingWidgetButtonClicked, this, &MainWindow::showTeachingWidget);
 
     // Connections for the quiz tab
     connect(startWidget, &StartWidget::quizButtonClicked, this, &MainWindow::showQuizzingWidget);

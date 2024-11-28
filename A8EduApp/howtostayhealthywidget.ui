@@ -16,10 +16,10 @@
   <widget class="QTextBrowser" name="textBrowser">
    <property name="geometry">
     <rect>
-     <x>15</x>
-     <y>11</y>
-     <width>731</width>
-     <height>591</height>
+     <x>25</x>
+     <y>31</y>
+     <width>721</width>
+     <height>571</height>
     </rect>
    </property>
    <property name="html">
@@ -63,6 +63,19 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;li style=&quot; font-family:'Arial','sans-serif'; color:#000000;&quot; style=&quot; margin-top:10px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Eat Omega-3 Fatty Acids:&lt;/span&gt; Found in fatty fish, flaxseeds, and walnuts, these fats support both brain and gut health. &lt;/li&gt;
 &lt;li style=&quot; font-family:'Arial','sans-serif'; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:10px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Engage in Mindful Eating:&lt;/span&gt; Chew food thoroughly and eat without distractions to support proper digestion and reduce stress on the gut. &lt;/li&gt;&lt;/ul&gt;
 &lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-weight:700; color:#000000;&quot;&gt;Conclusion:&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; color:#000000;&quot;&gt; Maintaining good gut health is an ongoing process that requires mindful dietary choices, consistent lifestyle habits, and a personalized approach to your unique needs. Small daily changes can significantly improve your gut health and overall well-being over time. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="backToTeachingWidgetButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>0</y>
+     <width>100</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
    </property>
   </widget>
  </widget>

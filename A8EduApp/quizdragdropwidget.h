@@ -17,6 +17,7 @@ public:
     ~QuizDragDropWidget();
 
 signals:
+    void showQuizzingHomeWidget();
 
 private:
     Ui::QuizDragDropWidget *ui;

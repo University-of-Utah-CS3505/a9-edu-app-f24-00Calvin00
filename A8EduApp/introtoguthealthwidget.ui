@@ -39,10 +39,10 @@
   <widget class="QTextBrowser" name="textBrowser">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>771</width>
-     <height>631</height>
+     <x>30</x>
+     <y>30</y>
+     <width>741</width>
+     <height>601</height>
     </rect>
    </property>
    <property name="html">
@@ -73,6 +73,19 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;li style=&quot; font-family:'Arial','sans-serif'; font-size:14pt; color:#000000;&quot; style=&quot; margin-top:10px; margin-bottom:10px; margin-left:37px; margin-right:37px; -qt-block-indent:0; text-indent:0px; line-height:160%;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Maintains balance&lt;/span&gt; of good and bad bacteria in your microbiome. &lt;/li&gt;
 &lt;li style=&quot; font-family:'Arial','sans-serif'; font-size:14pt; color:#000000;&quot; style=&quot; margin-top:10px; margin-bottom:20px; margin-left:37px; margin-right:37px; -qt-block-indent:0; text-indent:0px; line-height:160%;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Connects to your brain&lt;/span&gt; to influence mood and mental health. &lt;/li&gt;&lt;/ul&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:15px; margin-bottom:15px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:160%;&quot;&gt; &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="backToTeachingWidgetButton">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>0</y>
+     <width>100</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
    </property>
   </widget>
  </widget>

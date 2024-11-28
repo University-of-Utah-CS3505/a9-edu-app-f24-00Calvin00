@@ -6,6 +6,7 @@ IntroToGutHealthWidget::IntroToGutHealthWidget(QWidget *parent)
     , ui(new Ui::IntroToGutHealthWidget)
 {
     ui->setupUi(this);
+    connect(ui->backToTeachingWidgetButton, &QPushButton::clicked, this, &IntroToGutHealthWidget::backToTeachingWidgetButtonClicked);
 }
 
 IntroToGutHealthWidget::~IntroToGutHealthWidget()

@@ -16,6 +16,9 @@ public:
     explicit QuizMatchingWidget(QWidget *parent = nullptr, QuizModel *quizModel = nullptr);
     ~QuizMatchingWidget();
 
+signals:
+    void showQuizzingHomeWidget();
+
 private:
     Ui::QuizMatchingWidget *ui;
     QuizModel *quizModel;
