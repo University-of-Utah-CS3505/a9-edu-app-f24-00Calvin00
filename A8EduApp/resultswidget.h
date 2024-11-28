@@ -17,6 +17,9 @@ public:
 
 private:
     Ui::ResultsWidget *ui;
+
+signals:
+    void backToStartButtonClicked();
 };
 
 #endif // RESULTSWIDGET_H

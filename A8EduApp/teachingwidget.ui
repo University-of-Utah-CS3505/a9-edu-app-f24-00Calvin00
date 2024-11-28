@@ -52,6 +52,19 @@
     <string>How to keep your gut healthy</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="backToStartButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>100</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

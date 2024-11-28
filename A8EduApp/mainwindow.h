@@ -37,6 +37,7 @@ private:
 
 
 private slots:
+    void showStartWidget();
     void showTeachingWidget();
     void showQuizzingWidget();
     void showResultsWidget();
