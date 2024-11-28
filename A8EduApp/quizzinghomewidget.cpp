@@ -9,6 +9,7 @@ QuizzingHomeWidget::QuizzingHomeWidget(QWidget *parent, QuizModel *QuizModel)
     ui->setupUi(this);
     connect(ui->matchingButton, &QPushButton::clicked, this, &QuizzingHomeWidget::matchingButtonClicked);
     connect(ui->dragDropButton, &QPushButton::clicked, this, &QuizzingHomeWidget::dragDropButtonClicked);
+    connect(ui->backToStartButton, &QPushButton::clicked, this, &QuizzingHomeWidget::backToStartButtonClicked);
 }
 
 QuizzingHomeWidget::~QuizzingHomeWidget()

@@ -27,6 +27,7 @@ signals:
     void introToGutButtonClicked();
     void whyGutHealthButtonClicked();
     void howToStayHealthyButtonClicked();
+    void backToStartButtonClicked();
 };
 
 #endif // TEACHINGWIDGET_H
