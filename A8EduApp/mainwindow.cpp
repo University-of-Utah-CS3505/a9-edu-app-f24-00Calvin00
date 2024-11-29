@@ -52,13 +52,17 @@ MainWindow::MainWindow(QWidget *parent, QuizModel *QuizModel)
     connect(teachingWidget, &TeachingWidget::whyGutHealthButtonClicked, this, &MainWindow::showWhyGutHealthWidget);
     connect(teachingWidget, &TeachingWidget::howToStayHealthyButtonClicked, this, &MainWindow::showHowToStayHealthyWidget);
     connect(teachingWidget, &TeachingWidget::backToStartButtonClicked, this, &MainWindow::showStartWidget);
+    connect(introToGutHealthWidget, &IntroToGutHealthWidget::backToTeachingWidgetButtonClicked, this, &MainWindow::showTeachingWidget);
+    connect(whyGutHealthWidget, &WhyGutHealthWidget::backToTeachingWidgetButtonClicked, this, &MainWindow::showTeachingWidget);
+    connect(howToStayHealthyWidget, &HowToStayHealthyWidget::backToTeachingWidgetButtonClicked, this, &MainWindow::showTeachingWidget);
 
     // Connections for the quiz tab
     connect(startWidget, &StartWidget::quizButtonClicked, this, &MainWindow::showQuizzingWidget);
     connect(quizzingHomeWidget, &QuizzingHomeWidget::matchingButtonClicked, this, &MainWindow::showMatchingWidget);
     connect(quizzingHomeWidget, &QuizzingHomeWidget::dragDropButtonClicked, this, &MainWindow::showDragDropWidget);
     connect(quizzingHomeWidget, &QuizzingHomeWidget::backToStartButtonClicked, this, &MainWindow::showStartWidget);
-
+    connect(quizMatchingWidget, &QuizMatchingWidget::backToQuizHomeButtonClicked, this, &MainWindow::showQuizzingWidget);
+    connect(quizDragDropWidget, &QuizDragDropWidget::backToQuizHomeButtonClicked, this, &MainWindow::showQuizzingWidget);
     // Connections for the result tab
     connect(startWidget, &StartWidget::resultsButtonClicked, this, &MainWindow::showResultsWidget);
     connect(resultsWidget, &ResultsWidget::backToStartButtonClicked, this, &MainWindow::showStartWidget);

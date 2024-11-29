@@ -6,6 +6,7 @@ HowToStayHealthyWidget::HowToStayHealthyWidget(QWidget *parent)
     , ui(new Ui::HowToStayHealthyWidget)
 {
     ui->setupUi(this);
+    connect(ui->backToTeachingWidgetButton, &QPushButton::clicked, this, &HowToStayHealthyWidget::backToTeachingWidgetButtonClicked);
 }
 
 HowToStayHealthyWidget::~HowToStayHealthyWidget()

@@ -15,6 +15,9 @@ public:
     explicit IntroToGutHealthWidget(QWidget *parent = nullptr);
     ~IntroToGutHealthWidget();
 
+signals:
+    void backToTeachingWidgetButtonClicked();
+
 private:
     Ui::IntroToGutHealthWidget *ui;
 };

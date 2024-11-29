@@ -7,6 +7,7 @@ QuizMatchingWidget::QuizMatchingWidget(QWidget *parent, QuizModel *QuizModel)
     quizModel(QuizModel)
 {
     ui->setupUi(this);
+    connect(ui->backToQuizHomeButton, &QPushButton::clicked, this, &QuizMatchingWidget::backToQuizHomeButtonClicked);
 }
 
 QuizMatchingWidget::~QuizMatchingWidget()
