@@ -61,7 +61,8 @@ MainWindow::MainWindow(QWidget *parent, QuizModel *QuizModel)
     connect(quizzingHomeWidget, &QuizzingHomeWidget::matchingButtonClicked, this, &MainWindow::showMatchingWidget);
     connect(quizzingHomeWidget, &QuizzingHomeWidget::dragDropButtonClicked, this, &MainWindow::showDragDropWidget);
     connect(quizzingHomeWidget, &QuizzingHomeWidget::backToStartButtonClicked, this, &MainWindow::showStartWidget);
-
+    connect(quizMatchingWidget, &QuizMatchingWidget::backToQuizHomeButtonClicked, this, &MainWindow::showQuizzingWidget);
+    connect(quizDragDropWidget, &QuizDragDropWidget::backToQuizHomeButtonClicked, this, &MainWindow::showQuizzingWidget);
     // Connections for the result tab
     connect(startWidget, &StartWidget::resultsButtonClicked, this, &MainWindow::showResultsWidget);
     connect(resultsWidget, &ResultsWidget::backToStartButtonClicked, this, &MainWindow::showStartWidget);

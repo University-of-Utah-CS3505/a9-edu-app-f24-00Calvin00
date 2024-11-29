@@ -17,7 +17,7 @@ public:
     ~QuizMatchingWidget();
 
 signals:
-    void showQuizzingHomeWidget();
+    void backToQuizHomeButtonClicked();
 
 private:
     Ui::QuizMatchingWidget *ui;

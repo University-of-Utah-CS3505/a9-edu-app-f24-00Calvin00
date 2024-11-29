@@ -262,6 +262,19 @@ background-color: rgb(207, 213, 255);</string>
     <string>Submit Answers</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="backToQuizHomeButton">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>0</y>
+     <width>100</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
  </widget>
  <customwidgets>
   <customwidget>
