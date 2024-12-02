@@ -7,8 +7,8 @@ MainWindow::MainWindow(QWidget *parent, QuizModel *QuizModel)
     QScreen *screen = QGuiApplication::primaryScreen();
     QRect screenGeometry = screen->geometry();
 
-    // Set window size half the screen size
-    this->resize(screenGeometry.width() / 2, screenGeometry.height() / 2);
+    // Set window size 3/4ths the screen size
+    this->resize(screenGeometry.width() / 1.75, screenGeometry.height() / 1.75);
 
     stackedWidget = new QStackedWidget(this);
     setCentralWidget(stackedWidget); // StackedWidget as central widget
@@ -17,6 +17,7 @@ MainWindow::MainWindow(QWidget *parent, QuizModel *QuizModel)
     startWidget = new StartWidget(this);
     stackedWidget->addWidget(startWidget);
 
+    //Create quiz widgets/windows
     quizzingHomeWidget = new QuizzingHomeWidget(this, quizModel);
     stackedWidget->addWidget(quizzingHomeWidget);
 
@@ -26,11 +27,12 @@ MainWindow::MainWindow(QWidget *parent, QuizModel *QuizModel)
     quizDragDropWidget = new QuizDragDropWidget(this, quizModel);
     stackedWidget->addWidget(quizDragDropWidget);
 
+    //Create result widgets/windows
     resultsWidget = new ResultsWidget(this);
     stackedWidget->addWidget(resultsWidget);
 
-    // Create all teaching widget/windows
 
+    // Create all teaching widget/windows
     teachingWidget = new TeachingWidget(this);
     stackedWidget->addWidget(teachingWidget);
 
@@ -45,23 +47,25 @@ MainWindow::MainWindow(QWidget *parent, QuizModel *QuizModel)
 
 
     // Connections for Learning modules
-    connect(startWidget, &StartWidget::learnButtonClicked, this, &MainWindow::showTeachingWidget);
-    \
+    connect(startWidget, &StartWidget::learnButtonClicked, this, &MainWindow::showTeachingWidget);\
     connect(teachingWidget, &TeachingWidget::introToGutButtonClicked, this, &MainWindow::showIntroToGutHealthWidget);
-
     connect(teachingWidget, &TeachingWidget::whyGutHealthButtonClicked, this, &MainWindow::showWhyGutHealthWidget);
-
     connect(teachingWidget, &TeachingWidget::howToStayHealthyButtonClicked, this, &MainWindow::showHowToStayHealthyWidget);
+    connect(teachingWidget, &TeachingWidget::backToStartButtonClicked, this, &MainWindow::showStartWidget);
+    connect(introToGutHealthWidget, &IntroToGutHealthWidget::backToTeachingWidgetButtonClicked, this, &MainWindow::showTeachingWidget);
+    connect(whyGutHealthWidget, &WhyGutHealthWidget::backToTeachingWidgetButtonClicked, this, &MainWindow::showTeachingWidget);
+    connect(howToStayHealthyWidget, &HowToStayHealthyWidget::backToTeachingWidgetButtonClicked, this, &MainWindow::showTeachingWidget);
 
-    // Connect the StartWidget's startButtonClicked signal to switch to startWidget
+    // Connections for the quiz tab
     connect(startWidget, &StartWidget::quizButtonClicked, this, &MainWindow::showQuizzingWidget);
-
-    // Connect the StartWidget's resultsButtonClicked signal to switch to startWidget
-    connect(startWidget, &StartWidget::resultsButtonClicked, this, &MainWindow::showResultsWidget);
-
     connect(quizzingHomeWidget, &QuizzingHomeWidget::matchingButtonClicked, this, &MainWindow::showMatchingWidget);
-
     connect(quizzingHomeWidget, &QuizzingHomeWidget::dragDropButtonClicked, this, &MainWindow::showDragDropWidget);
+    connect(quizzingHomeWidget, &QuizzingHomeWidget::backToStartButtonClicked, this, &MainWindow::showStartWidget);
+    connect(quizMatchingWidget, &QuizMatchingWidget::backToQuizHomeButtonClicked, this, &MainWindow::showQuizzingWidget);
+    connect(quizDragDropWidget, &QuizDragDropWidget::backToQuizHomeButtonClicked, this, &MainWindow::showQuizzingWidget);
+    // Connections for the result tab
+    connect(startWidget, &StartWidget::resultsButtonClicked, this, &MainWindow::showResultsWidget);
+    connect(resultsWidget, &ResultsWidget::backToStartButtonClicked, this, &MainWindow::showStartWidget);
 
     // Set start widget as first page
     stackedWidget->setCurrentWidget(startWidget);
@@ -69,6 +73,11 @@ MainWindow::MainWindow(QWidget *parent, QuizModel *QuizModel)
 
 MainWindow::~MainWindow()
 {
+}
+
+void MainWindow::showStartWidget()
+{
+    stackedWidget->setCurrentWidget(startWidget);
 }
 
 void MainWindow::showTeachingWidget()

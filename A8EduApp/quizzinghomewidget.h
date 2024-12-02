@@ -19,6 +19,7 @@ public:
 signals:
     void matchingButtonClicked();
     void dragDropButtonClicked();
+    void backToStartButtonClicked();
 
 private:
     Ui::QuizzingHomeWidget *ui;

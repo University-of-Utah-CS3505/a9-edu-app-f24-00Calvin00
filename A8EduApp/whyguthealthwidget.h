@@ -15,6 +15,9 @@ public:
     explicit WhyGutHealthWidget(QWidget *parent = nullptr);
     ~WhyGutHealthWidget();
 
+signals:
+    void backToTeachingWidgetButtonClicked();
+
 private:
     Ui::WhyGutHealthWidget *ui;
 };

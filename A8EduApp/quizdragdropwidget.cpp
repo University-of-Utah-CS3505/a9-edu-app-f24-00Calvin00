@@ -7,6 +7,7 @@ QuizDragDropWidget::QuizDragDropWidget(QWidget *parent, QuizModel *QuizModel)
     quizModel(QuizModel)
 {
     ui->setupUi(this);
+    connect(ui->backToQuizHomeButton, &QPushButton::clicked, this, &QuizDragDropWidget::backToQuizHomeButtonClicked);
 }
 
 QuizDragDropWidget::~QuizDragDropWidget()

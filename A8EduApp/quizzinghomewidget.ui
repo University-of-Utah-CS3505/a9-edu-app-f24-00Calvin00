@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>407</width>
+    <height>294</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -37,6 +37,19 @@
    </property>
    <property name="text">
     <string>Drag and Drop Quiz</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="backToStartButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>100</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
    </property>
   </widget>
  </widget>

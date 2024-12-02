@@ -17,6 +17,7 @@ public:
     ~QuizDragDropWidget();
 
 signals:
+    void backToQuizHomeButtonClicked();
 
 private:
     Ui::QuizDragDropWidget *ui;
