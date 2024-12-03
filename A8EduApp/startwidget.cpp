@@ -1,6 +1,8 @@
 #include "startwidget.h"
 #include "ui_startwidget.h"
 
+#include <QVBoxLayout>
+
 StartWidget::StartWidget(QWidget *parent)
     : QWidget(parent), ui(new Ui::StartWidget)
 {
@@ -11,7 +13,6 @@ StartWidget::StartWidget(QWidget *parent)
     connect(ui->learnButton, &QPushButton::clicked, this, &StartWidget::learnButtonClicked);
     connect(ui->quizButton, &QPushButton::clicked, this, &StartWidget::quizButtonClicked);
     connect(ui->resultsButton, &QPushButton::clicked, this, &StartWidget::resultsButtonClicked);
-
 }
 
 StartWidget::~StartWidget()

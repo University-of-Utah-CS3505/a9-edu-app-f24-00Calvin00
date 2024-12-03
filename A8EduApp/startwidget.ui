@@ -55,10 +55,10 @@
   <widget class="Physics" name="widget" native="true">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>170</y>
-     <width>120</width>
-     <height>80</height>
+     <x>40</x>
+     <y>50</y>
+     <width>301</width>
+     <height>241</height>
     </rect>
    </property>
   </widget>
@@ -71,6 +71,11 @@
    <container>1</container>
   </customwidget>
  </customwidgets>
+ <tabstops>
+  <tabstop>learnButton</tabstop>
+  <tabstop>quizButton</tabstop>
+  <tabstop>resultsButton</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

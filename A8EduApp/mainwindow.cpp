@@ -31,7 +31,6 @@ MainWindow::MainWindow(QWidget *parent, QuizModel *QuizModel)
     resultsWidget = new ResultsWidget(this);
     stackedWidget->addWidget(resultsWidget);
 
-
     // Create all teaching widget/windows
     teachingWidget = new TeachingWidget(this);
     stackedWidget->addWidget(teachingWidget);
