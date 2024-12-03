@@ -5,4 +5,7 @@
         <file>happyPoo.png</file>
         <file>toilet.png</file>
     </qresource>
+    <qresource prefix="/gifs">
+        <file>pooedPoo.gif</file>
+    </qresource>
 </RCC>
