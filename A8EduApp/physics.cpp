@@ -58,13 +58,10 @@ void Physics::paintEvent(QPaintEvent *) {
     // Create a painter
     QPainter painter(this);
     b2Vec2 position = body->GetPosition();
-    float angle = body->GetAngle();
-
-    //    printf("%4.2f %4.2f %4.2f\n", position.x, position.y, angle);
+    // float angle = body->GetAngle();
 
     painter.drawImage((int)(position.x*20), (int)(position.y*20), image);
     painter.drawImage(200, 200, image);
-    //    qDebug() << image;
     painter.end();
 }
 
