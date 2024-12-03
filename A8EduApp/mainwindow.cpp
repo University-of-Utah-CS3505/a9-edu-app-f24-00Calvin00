@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent, QuizModel *QuizModel)
     QRect screenGeometry = screen->geometry();
 
     // Set window size 3/4ths the screen size
-    this->resize(screenGeometry.width() / 1.75, screenGeometry.height() / 1.75);
+    this->resize(screenGeometry.width() / 1.25, screenGeometry.height() / 1.25);
 
     stackedWidget = new QStackedWidget(this);
     setCentralWidget(stackedWidget); // StackedWidget as central widget
