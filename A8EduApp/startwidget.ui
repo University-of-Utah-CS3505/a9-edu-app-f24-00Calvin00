@@ -55,20 +55,20 @@
   <widget class="Physics" name="widget" native="true">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>-40</y>
-     <width>421</width>
-     <height>441</height>
+     <x>30</x>
+     <y>450</y>
+     <width>321</width>
+     <height>221</height>
     </rect>
    </property>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>310</x>
-     <y>50</y>
-     <width>241</width>
-     <height>111</height>
+     <x>0</x>
+     <y>0</y>
+     <width>531</width>
+     <height>391</height>
     </rect>
    </property>
    <property name="text">
