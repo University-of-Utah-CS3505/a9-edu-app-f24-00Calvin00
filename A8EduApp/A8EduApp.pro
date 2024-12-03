@@ -61,6 +61,7 @@ SOURCES += \
     droplabel.cpp \
     main.cpp \
     mainwindow.cpp \
+    physics.cpp \
     quizdragdropwidget.cpp \
     quizmatchingwidget.cpp \
     quizmodel.cpp \
@@ -124,6 +125,7 @@ HEADERS += \
     draggablelabel.h \
     droplabel.h \
     mainwindow.h \
+    physics.h \
     quizdragdropwidget.h \
     quizmatchingwidget.h \
     quizmodel.h \
@@ -154,3 +156,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 DISTFILES += \
     Box2D/Box2DConfig.cmake \
     Box2D/CMakeLists.txt
+
+RESOURCES += \
+    Sprites.qrc

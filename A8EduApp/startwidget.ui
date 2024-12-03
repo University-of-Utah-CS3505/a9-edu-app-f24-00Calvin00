@@ -52,7 +52,30 @@
     <string>RESULTS</string>
    </property>
   </widget>
+  <widget class="Physics" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>301</width>
+     <height>241</height>
+    </rect>
+   </property>
+  </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Physics</class>
+   <extends>QWidget</extends>
+   <header location="global">physics.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>learnButton</tabstop>
+  <tabstop>quizButton</tabstop>
+  <tabstop>resultsButton</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
