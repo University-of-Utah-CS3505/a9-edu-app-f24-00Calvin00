@@ -41,7 +41,6 @@ MainWindow::MainWindow(QWidget *parent, QuizModel *QuizModel)
     howToStayHealthyWidget = new HowToStayHealthyWidget(this);
     stackedWidget->addWidget(howToStayHealthyWidget);
 
-
     // Connections for Learning modules
     connect(startWidget, &StartWidget::learnButtonClicked, this, &MainWindow::showTeachingWidget);\
     connect(teachingWidget, &TeachingWidget::introToGutButtonClicked, this, &MainWindow::showIntroToGutHealthWidget);

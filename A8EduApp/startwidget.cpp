@@ -7,10 +7,12 @@ StartWidget::StartWidget(QWidget *parent)
 {
     ui->setupUi(this);
     ui->widget->show();
+    ui->widget->lower();
 
     QMovie *gif = new QMovie(":/gifs/pooedPoo.gif");
     ui->label->setMovie(gif);
     gif->start();
+
 
     // Connect the start button to emit a signal
     connect(ui->learnButton, &QPushButton::clicked, this, &StartWidget::learnButtonClicked);
