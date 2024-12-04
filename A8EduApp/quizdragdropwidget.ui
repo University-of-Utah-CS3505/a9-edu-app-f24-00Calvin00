@@ -19,9 +19,9 @@
   <widget class="QLabel" name="title">
    <property name="geometry">
     <rect>
-     <x>340</x>
+     <x>330</x>
      <y>20</y>
-     <width>121</width>
+     <width>141</width>
      <height>51</height>
     </rect>
    </property>
@@ -41,7 +41,10 @@
 background-color: rgb(207, 213, 255);</string>
    </property>
    <property name="text">
-    <string> Quiz Time!</string>
+    <string>Quiz Time!</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="instructions">
@@ -70,6 +73,9 @@ background-color: rgb(207, 213, 255);</string>
    </property>
    <property name="text">
     <string> Check your understanding: Drag the correct vocab words to complete the definitions.</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
   <widget class="QWidget" name="gridLayoutWidget">
