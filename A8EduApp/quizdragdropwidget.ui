@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>972</width>
-    <height>550</height>
+    <width>800</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -76,7 +76,7 @@ background-color: rgb(207, 213, 255);</string>
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>220</y>
+     <y>240</y>
      <width>221</width>
      <height>201</height>
     </rect>
@@ -172,9 +172,9 @@ background-color: rgb(207, 213, 255);</string>
    <property name="geometry">
     <rect>
      <x>280</x>
-     <y>150</y>
-     <width>671</width>
-     <height>341</height>
+     <y>130</y>
+     <width>491</width>
+     <height>421</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="DefineSection">
@@ -189,7 +189,7 @@ background-color: rgb(207, 213, 255);</string>
        <number>1</number>
       </property>
       <property name="text">
-       <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis laoreet erat. Ut hendrerit ligula eget odio auctor mollis. Nullam dignissim nisi et ullamcorper ultricies. Integer nec neque non neque lobortis scelerisque. Donec in orci consequat,________ dui ac, posuere odio. Pellentesque scelerisque at magna vitae venenatis.</string>
+       <string>Yo</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -204,7 +204,7 @@ background-color: rgb(207, 213, 255);</string>
        </font>
       </property>
       <property name="text">
-       <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis laoreet erat. Ut hendrerit ligula eget odio auctor mollis. Nullam dignissim nisi et ullamcorper ultricies. Integer nec neque non neque lobortis scelerisque. Donec in orci ____________, vehicula dui ac, posuere odio. Pellentesque scelerisque at magna vitae venenatis.</string>
+       <string>Hello</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -219,7 +219,7 @@ background-color: rgb(207, 213, 255);</string>
        </font>
       </property>
       <property name="text">
-       <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis laoreet erat. Ut hendrerit ligula eget odio auctor mollis. Nullam dignissim nisi et ullamcorper ultricies. Integer nec neque non neque lobortis scelerisque. Donec in orci _______________, vehicula dui ac, posuere odio. Pellentesque scelerisque at magna vitae venenatis.</string>
+       <string>YO</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -252,8 +252,8 @@ background-color: rgb(207, 213, 255);</string>
   <widget class="QPushButton" name="submitButton">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>480</y>
+     <x>70</x>
+     <y>560</y>
      <width>151</width>
      <height>24</height>
     </rect>
@@ -265,8 +265,8 @@ background-color: rgb(207, 213, 255);</string>
   <widget class="QPushButton" name="backToQuizHomeButton">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>0</y>
+     <x>690</x>
+     <y>10</y>
      <width>100</width>
      <height>32</height>
     </rect>
