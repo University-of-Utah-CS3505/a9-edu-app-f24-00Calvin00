@@ -19,14 +19,14 @@
   <widget class="QPushButton" name="introToGutButton">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>260</y>
+     <x>10</x>
+     <y>390</y>
      <width>531</width>
      <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(112, 112, 112);
+    <string notr="true">background-color: rgb(48, 21, 14);
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
@@ -36,14 +36,14 @@ color: rgb(255, 255, 255);</string>
   <widget class="QPushButton" name="whyGutHealthButton">
    <property name="geometry">
     <rect>
-     <x>250</x>
-     <y>330</y>
+     <x>260</x>
+     <y>460</y>
      <width>521</width>
      <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(128, 128, 128);
+    <string notr="true">background-color: rgb(48, 21, 14);
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
@@ -53,14 +53,14 @@ color: rgb(255, 255, 255);</string>
   <widget class="QPushButton" name="howToStayHealthyButton">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>400</y>
+     <x>10</x>
+     <y>530</y>
      <width>531</width>
      <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(126, 126, 126);
+    <string notr="true">background-color: rgb(48, 21, 14);
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
@@ -100,11 +100,22 @@ color: rgb(255, 255, 255);</string>
     <string/>
    </property>
   </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>60</y>
+     <width>681</width>
+     <height>291</height>
+    </rect>
+   </property>
+  </widget>
   <zorder>label</zorder>
   <zorder>introToGutButton</zorder>
   <zorder>whyGutHealthButton</zorder>
   <zorder>howToStayHealthyButton</zorder>
   <zorder>backToStartButton</zorder>
+  <zorder>graphicsView</zorder>
  </widget>
  <resources/>
  <connections/>

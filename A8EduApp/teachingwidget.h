@@ -2,6 +2,7 @@
 #define TEACHINGWIDGET_H
 
 #include <QWidget>
+#include <QGraphicsView>
 #include <introtoguthealthwidget.h>
 #include <whyguthealthwidget.h>
 #include <howtostayhealthywidget.h>
@@ -22,6 +23,9 @@ private:
     IntroToGutHealthWidget *introToGutHealthWidget;
     WhyGutHealthWidget *whyGutHealthWidget;
     HowToStayHealthyWidget *howToStayHealthyWidget;
+
+    // New private method for setting up the image
+    void setupImageView();
 
 signals:
     void introToGutButtonClicked();

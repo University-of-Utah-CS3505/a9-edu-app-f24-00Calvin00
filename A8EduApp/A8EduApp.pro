@@ -154,6 +154,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
+    ../Impact-of-Gut-Health-on-Overall-Well-being-Dr-Ram-C-Soni.jpg.webp \
+    ../gutPic1.jpeg \
     Box2D/Box2DConfig.cmake \
     Box2D/CMakeLists.txt \
     normalPoo.png
