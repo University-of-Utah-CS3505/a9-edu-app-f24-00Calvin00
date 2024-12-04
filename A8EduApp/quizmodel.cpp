@@ -66,7 +66,7 @@ int QuizModel::getTotalDragDropQuestions() const
     return dragDropQuestions.size();
 }
 
-void QuizModel::setDragDropScore(int score) const {
+void QuizModel::setDragDropScore(int score) {
     dragDropScore = score;
 }
 

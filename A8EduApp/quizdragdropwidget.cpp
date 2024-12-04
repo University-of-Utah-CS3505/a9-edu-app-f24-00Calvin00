@@ -33,7 +33,7 @@ void QuizDragDropWidget::onAnswerDropped(const QString &question, const QString 
 }
 
 void QuizDragDropWidget::onSubmitClicked() {
-    if (!quizModel) return;
+    quizModel->setDragDropScore(0);
 
     // Pass each answer to the model
     for (auto it = userAnswers.begin(); it != userAnswers.end(); ++it)
