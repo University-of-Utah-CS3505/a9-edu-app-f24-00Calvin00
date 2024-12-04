@@ -27,6 +27,8 @@ public:
     int getTotalMatchingQuestions() const;
     int getTotalDragDropQuestions() const;
 
+    void setDragDropScore(int score);
+
 private:
     // Maps for matching and drag-and-drop questions
     QMap<QString, QString> matchingQuestions;  // Questions mapped to correct answers

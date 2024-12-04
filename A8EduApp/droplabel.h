@@ -17,6 +17,15 @@ protected:
     void dragLeaveEvent(QDragLeaveEvent *event) override;
     void dropEvent(QDropEvent *event) override;
 
+public:
+    void setQuestionText(const QString &text);
+
+signals:
+    void answerDropped(const QString &question, const QString &answer);
+
+private:
+    QString questionText;
+
 };
 
 #endif // DROPLABEL_H

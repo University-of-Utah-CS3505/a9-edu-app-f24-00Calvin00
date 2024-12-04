@@ -8,6 +8,7 @@ DropLabel::DropLabel(QWidget *parent)
     setAcceptDrops(true);
     setAlignment(Qt::AlignCenter);
     setFrameStyle(QFrame::Box);
+    questionText ="";
 }
 
 void DropLabel::dragEnterEvent(QDragEnterEvent *event)
@@ -30,7 +31,15 @@ void DropLabel::dropEvent(QDropEvent *event)
     QString droppedText = event->mimeData()->text();
     setText(droppedText);
 
+    // Emit the answerDropped signal
+    emit answerDropped(questionText, droppedText);
+
     // Reset the background and show the final text after drop
     setStyleSheet("background-color: transparent;");
     event->acceptProposedAction();
+}
+
+void DropLabel::setQuestionText(const QString &text)
+{
+    questionText = text;
 }
