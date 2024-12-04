@@ -200,7 +200,7 @@ background-color: rgb(207, 213, 255);</string>
    </property>
    <layout class="QGridLayout" name="DefineSection">
     <item row="1" column="0">
-     <widget class="QLabel" name="definition3">
+     <widget class="QLabel" name="definition1">
       <property name="font">
        <font>
         <pointsize>11</pointsize>
@@ -215,7 +215,7 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="2" column="0">
-     <widget class="QLabel" name="definition1">
+     <widget class="QLabel" name="definition2">
       <property name="font">
        <font>
         <pointsize>11</pointsize>
@@ -225,7 +225,7 @@ background-color: rgb(207, 213, 255);</string>
        <number>1</number>
       </property>
       <property name="text">
-       <string>Nutrients are absorbed into your bloodstream in the ________.</string>
+       <string>Nutrients are absorbed into your bloodstream in the _____.</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -233,14 +233,14 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="4" column="0">
-     <widget class="QLabel" name="definition2">
+     <widget class="QLabel" name="definition4">
       <property name="font">
        <font>
         <pointsize>11</pointsize>
        </font>
       </property>
       <property name="text">
-       <string>The _________ is home to your gut microbiome. It also absorbs water and helps process waste</string>
+       <string>The _____ is home to your gut microbiome. It also absorbs water and helps process waste.</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -262,21 +262,21 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="4" column="1">
-     <widget class="DropLabel" name="answer3">
+     <widget class="DropLabel" name="answer4">
       <property name="text">
        <string>Drop Answer Here</string>
       </property>
      </widget>
     </item>
     <item row="3" column="0">
-     <widget class="QLabel" name="definition3_2">
+     <widget class="QLabel" name="definition3">
       <property name="font">
        <font>
         <pointsize>11</pointsize>
        </font>
       </property>
       <property name="text">
-       <string>__________ can help restore gut balance, particularly after illness or antibiotic use. </string>
+       <string>_____ can help restore gut balance, particularly after illness or antibiotic use.</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -284,7 +284,7 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="3" column="1">
-     <widget class="DropLabel" name="answer2_2">
+     <widget class="DropLabel" name="answer3">
       <property name="text">
        <string>Drop Answer Here</string>
       </property>

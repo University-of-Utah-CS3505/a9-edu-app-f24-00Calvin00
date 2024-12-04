@@ -3,9 +3,7 @@
 QuizModel::QuizModel(QObject *parent)
     : QObject(parent), matchingScore(0), dragDropScore(0)
 {
-    addDragDropQuestion("Question 1", "A");
-    addDragDropQuestion("Question 2", "B");
-    addDragDropQuestion("Question 3", "C");
+
 }
 
 void QuizModel::addMatchingQuestion(const QString &question, const QString &correctAnswer)
@@ -66,6 +64,10 @@ int QuizModel::getTotalMatchingQuestions() const
 int QuizModel::getTotalDragDropQuestions() const
 {
     return dragDropQuestions.size();
+}
+
+void QuizModel::setDragDropScore(int score) const {
+    dragDropScore = score;
 }
 
 
