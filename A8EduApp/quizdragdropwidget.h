@@ -19,9 +19,14 @@ public:
 signals:
     void backToQuizHomeButtonClicked();
 
+private slots:
+    void onAnswerDropped(const QString &question, const QString &answer);
+    void onSubmitClicked();
+
 private:
     Ui::QuizDragDropWidget *ui;
     QuizModel *quizModel;
+    QMap<QString, QString> userAnswers;
 
 };
 

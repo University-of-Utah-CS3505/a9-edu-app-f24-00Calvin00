@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>972</width>
-    <height>550</height>
+    <width>800</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,9 +19,9 @@
   <widget class="QLabel" name="title">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>330</x>
      <y>20</y>
-     <width>121</width>
+     <width>141</width>
      <height>51</height>
     </rect>
    </property>
@@ -41,7 +41,10 @@
 background-color: rgb(207, 213, 255);</string>
    </property>
    <property name="text">
-    <string> Quiz Time!</string>
+    <string>Quiz Time!</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="instructions">
@@ -49,7 +52,7 @@ background-color: rgb(207, 213, 255);</string>
     <rect>
      <x>40</x>
      <y>80</y>
-     <width>831</width>
+     <width>681</width>
      <height>31</height>
     </rect>
    </property>
@@ -71,14 +74,17 @@ background-color: rgb(207, 213, 255);</string>
    <property name="text">
     <string> Check your understanding: Drag the correct vocab words to complete the definitions.</string>
    </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
   </widget>
   <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>220</y>
-     <width>221</width>
-     <height>201</height>
+     <x>20</x>
+     <y>240</y>
+     <width>241</width>
+     <height>221</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="VocabSelection">
@@ -90,19 +96,10 @@ background-color: rgb(207, 213, 255);</string>
        </font>
       </property>
       <property name="text">
-       <string>Vocab1 </string>
+       <string>B12</string>
       </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="DraggableLabel" name="vocab4">
-      <property name="font">
-       <font>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Vocab4</string>
+      <property name="wordWrap">
+       <bool>true</bool>
       </property>
      </widget>
     </item>
@@ -114,7 +111,10 @@ background-color: rgb(207, 213, 255);</string>
        </font>
       </property>
       <property name="text">
-       <string>Vocab3</string>
+       <string>Large Intestine</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
       </property>
      </widget>
     </item>
@@ -126,7 +126,10 @@ background-color: rgb(207, 213, 255);</string>
        </font>
       </property>
       <property name="text">
-       <string>Vocab7</string>
+       <string>Serotonin</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
       </property>
      </widget>
     </item>
@@ -138,7 +141,10 @@ background-color: rgb(207, 213, 255);</string>
        </font>
       </property>
       <property name="text">
-       <string>Vocab2</string>
+       <string>Antacids</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
       </property>
      </widget>
     </item>
@@ -150,7 +156,10 @@ background-color: rgb(207, 213, 255);</string>
        </font>
       </property>
       <property name="text">
-       <string>Vocab5</string>
+       <string>Probiotics</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
       </property>
      </widget>
     </item>
@@ -162,7 +171,25 @@ background-color: rgb(207, 213, 255);</string>
        </font>
       </property>
       <property name="text">
-       <string>Vocab6</string>
+       <string>Small Intestine</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="DraggableLabel" name="vocab4">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Omega-3</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
       </property>
      </widget>
     </item>
@@ -172,14 +199,29 @@ background-color: rgb(207, 213, 255);</string>
    <property name="geometry">
     <rect>
      <x>280</x>
-     <y>150</y>
-     <width>671</width>
-     <height>341</height>
+     <y>130</y>
+     <width>491</width>
+     <height>421</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="DefineSection">
-    <item row="2" column="0">
+    <item row="1" column="0">
      <widget class="QLabel" name="definition1">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Your gut produces important vitamins like _____ and K.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="definition2">
       <property name="font">
        <font>
         <pointsize>11</pointsize>
@@ -189,29 +231,50 @@ background-color: rgb(207, 213, 255);</string>
        <number>1</number>
       </property>
       <property name="text">
-       <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis laoreet erat. Ut hendrerit ligula eget odio auctor mollis. Nullam dignissim nisi et ullamcorper ultricies. Integer nec neque non neque lobortis scelerisque. Donec in orci consequat,________ dui ac, posuere odio. Pellentesque scelerisque at magna vitae venenatis.</string>
+       <string>Nutrients are absorbed into your bloodstream in the _____.</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
       </property>
      </widget>
     </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="definition2">
+    <item row="4" column="0">
+     <widget class="QLabel" name="definition4">
       <property name="font">
        <font>
         <pointsize>11</pointsize>
        </font>
       </property>
       <property name="text">
-       <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis laoreet erat. Ut hendrerit ligula eget odio auctor mollis. Nullam dignissim nisi et ullamcorper ultricies. Integer nec neque non neque lobortis scelerisque. Donec in orci ____________, vehicula dui ac, posuere odio. Pellentesque scelerisque at magna vitae venenatis.</string>
+       <string>The _____ is home to your gut microbiome. It also absorbs water and helps process waste.</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
       </property>
      </widget>
     </item>
-    <item row="1" column="0">
+    <item row="2" column="1">
+     <widget class="DropLabel" name="answer2">
+      <property name="text">
+       <string>Drop Answer Here</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="DropLabel" name="answer1">
+      <property name="text">
+       <string>Drop Answer Here</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="DropLabel" name="answer4">
+      <property name="text">
+       <string>Drop Answer Here</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
      <widget class="QLabel" name="definition3">
       <property name="font">
        <font>
@@ -219,31 +282,17 @@ background-color: rgb(207, 213, 255);</string>
        </font>
       </property>
       <property name="text">
-       <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis laoreet erat. Ut hendrerit ligula eget odio auctor mollis. Nullam dignissim nisi et ullamcorper ultricies. Integer nec neque non neque lobortis scelerisque. Donec in orci _______________, vehicula dui ac, posuere odio. Pellentesque scelerisque at magna vitae venenatis.</string>
+       <string>_____ can help restore gut balance, particularly after illness or antibiotic use.</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
       </property>
      </widget>
     </item>
-    <item row="1" column="1">
-     <widget class="DropLabel" name="answer1">
-      <property name="text">
-       <string>Drop Here</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="1">
-     <widget class="DropLabel" name="answer2">
-      <property name="text">
-       <string>Drop Here</string>
-      </property>
-     </widget>
-    </item>
     <item row="3" column="1">
      <widget class="DropLabel" name="answer3">
       <property name="text">
-       <string>Drop Here</string>
+       <string>Drop Answer Here</string>
       </property>
      </widget>
     </item>
@@ -252,8 +301,8 @@ background-color: rgb(207, 213, 255);</string>
   <widget class="QPushButton" name="submitButton">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>480</y>
+     <x>70</x>
+     <y>560</y>
      <width>151</width>
      <height>24</height>
     </rect>
@@ -265,8 +314,8 @@ background-color: rgb(207, 213, 255);</string>
   <widget class="QPushButton" name="backToQuizHomeButton">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>0</y>
+     <x>40</x>
+     <y>10</y>
      <width>100</width>
      <height>32</height>
     </rect>
