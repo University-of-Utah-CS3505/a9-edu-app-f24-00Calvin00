@@ -1,8 +1,7 @@
 #include "teachingwidget.h"
 #include "ui_teachingwidget.h"
-#include <QGraphicsScene>
-#include <QGraphicsPixmapItem>
-#include <QPixmap>
+#include <QPainter>
+#include <QImage>
 #include <QDebug>
 
 // TeachingWidget Constructor
@@ -18,7 +17,7 @@ TeachingWidget::TeachingWidget(QWidget *parent)
     connect(ui->backToStartButton, &QPushButton::clicked, this, &TeachingWidget::backToStartButtonClicked);
 
     // Add the logic to load and display an image
-    setupImageView();
+    setupImage();
 }
 
 // TeachingWidget Destructor
@@ -27,35 +26,33 @@ TeachingWidget::~TeachingWidget()
     delete ui;
 }
 
-// Method to setup the image in QGraphicsView
-void TeachingWidget::setupImageView()
+// Method to load the image
+void TeachingWidget::setupImage()
 {
-    // Check if the QGraphicsView exists
-    if (!ui->graphicsView) {
-        qWarning("QGraphicsView 'imageView' not found in the UI file.");
-        return;
-    }
+    // Load the image into the QImage object
+    image = QImage(":/gutPic1.jpeg"); // Make sure to use the correct resource path
 
-    // Create a new QGraphicsScene
-    QGraphicsScene* scene = new QGraphicsScene(ui->graphicsView);
-
-    // Load the image into a QPixmap
-    QPixmap pixmap(":/gutPic1.jpeg"); // Replace with the correct resource path or file path
-    if (pixmap.isNull()) {
+    if (image.isNull()) {
         qWarning("Failed to load image!");
-        return;
     }
+}
 
-    // Add the pixmap as a QGraphicsPixmapItem to the scene
-    QGraphicsPixmapItem* pixmapItem = new QGraphicsPixmapItem(pixmap);
-    scene->addItem(pixmapItem);
+// Custom paintEvent to draw the image using QPainter
+void TeachingWidget::paintEvent(QPaintEvent *event)
+{
+    QPainter painter(this);
 
-    // Set the scene to the QGraphicsView
-    ui->graphicsView->setScene(scene);
-
-    // Fit the image to the view while maintaining the aspect ratio
-    ui->graphicsView->fitInView(pixmapItem, Qt::KeepAspectRatio);
+    // Check if the image is valid
+    if (!image.isNull()) {
+        // Draw the image centered in the widget
+        QRect targetRect(0, 0, width(), height());
+        QRect sourceRect(0, 0, image.width(), image.height());
+        painter.drawImage(targetRect, image, sourceRect);
+    }
 
     // Optional: Enable high-quality rendering
-    ui->graphicsView->setRenderHint(QPainter::Antialiasing);
+    painter.setRenderHint(QPainter::Antialiasing);
+
+    // End the painting
+    painter.end();
 }
