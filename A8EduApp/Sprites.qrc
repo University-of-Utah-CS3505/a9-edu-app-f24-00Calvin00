@@ -5,6 +5,7 @@
         <file>happyPoo.png</file>
         <file>toilet.png</file>
         <file>normalPoo.png</file>
+        <file>gutPic1.jpeg</file>
     </qresource>
     <qresource prefix="/gifs">
         <file>pooedPoo.gif</file>

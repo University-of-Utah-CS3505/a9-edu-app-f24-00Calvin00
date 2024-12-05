@@ -16,6 +16,11 @@ void QuizModel::addDragDropQuestion(const QString &question, const QString &corr
     dragDropQuestions.insert(question, correctAnswer);
 }
 
+void QuizModel::addFoodValue(const QString &food, const int &value)
+{
+    foodValues.insert(food, value);
+}
+
 void QuizModel::submitMatchingAnswer(const QString &question, const QString &userAnswer)
 {
     matchingUserAnswers.insert(question, userAnswer);
@@ -44,6 +49,11 @@ int QuizModel::getDragDropScore() const
     return dragDropScore;
 }
 
+int QuizModel::getCurrentMouthValue() const
+{
+    return mouthValue;
+}
+
 bool QuizModel::isMatchingAnswerCorrect(const QString &question) const
 {
     return matchingUserAnswers.contains(question) &&
@@ -54,6 +64,21 @@ bool QuizModel::isDragDropAnswerCorrect(const QString &question) const
 {
     return dragDropUserAnswers.contains(question) &&
            dragDropUserAnswers.value(question) == dragDropQuestions.value(question);
+}
+
+QString QuizModel::stateOfPoo(const int &mouthValue) const
+{
+    if (mouthValue <= 25) {
+        return "hard";
+    } else if (mouthValue > 25 && mouthValue <= 50) {
+        return "normal";
+    } else if (mouthValue > 50 && mouthValue <= 75) {
+        return "happy";
+    } else if (mouthValue > 75 && mouthValue <= 100) {
+        return "liquid";
+    } else {
+        return "explode";
+    }
 }
 
 int QuizModel::getTotalMatchingQuestions() const

@@ -2,6 +2,8 @@
 #define RESULTSWIDGET_H
 
 #include <QWidget>
+#include <draggablelabel.h>
+#include <droplabel.h>
 
 namespace Ui {
 class ResultsWidget;

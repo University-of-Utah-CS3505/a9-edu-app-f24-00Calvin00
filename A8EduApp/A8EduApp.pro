@@ -158,6 +158,7 @@ DISTFILES += \
     ../gutPic1.jpeg \
     Box2D/Box2DConfig.cmake \
     Box2D/CMakeLists.txt \
+    gutPic1.jpeg \
     normalPoo.png
 
 RESOURCES += \
