@@ -40,7 +40,7 @@ void TeachingWidget::setupImageView()
     QGraphicsScene* scene = new QGraphicsScene(ui->graphicsView);
 
     // Load the image into a QPixmap
-    QPixmap pixmap(":/../gutPic1.jpeg"); // Replace with the correct resource path or file path
+    QPixmap pixmap(":/gutPic1.jpeg"); // Replace with the correct resource path or file path
     if (pixmap.isNull()) {
         qWarning("Failed to load image!");
         return;
