@@ -97,16 +97,36 @@ li.checked::marker { content: &quot;\2612&quot;; }
   <widget class="QLabel" name="poo">
    <property name="geometry">
     <rect>
-     <x>680</x>
-     <y>30</y>
-     <width>81</width>
-     <height>201</height>
+     <x>520</x>
+     <y>20</y>
+     <width>241</width>
+     <height>211</height>
     </rect>
    </property>
    <property name="text">
     <string/>
    </property>
   </widget>
+  <widget class="QLabel" name="explosion">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>10</y>
+     <width>301</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>poo</zorder>
+  <zorder>explosion</zorder>
+  <zorder>playButton</zorder>
+  <zorder>backToStartButton</zorder>
+  <zorder>textBrowser</zorder>
+  <zorder>banana</zorder>
+  <zorder>mouth</zorder>
  </widget>
  <customwidgets>
   <customwidget>

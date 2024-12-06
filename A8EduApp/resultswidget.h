@@ -2,6 +2,7 @@
 #define RESULTSWIDGET_H
 
 #include <QWidget>
+#include <QMovie>
 #include <quizmodel.h>
 #include <draggablelabel.h>
 #include <droplabel.h>
@@ -21,10 +22,11 @@ public:
 private:
     Ui::ResultsWidget *ui;
     QuizModel *quizModel;
-    QPixmap *pooPixmap;
+    QMovie *gif;
     int mouthValue;
-    void updatePooState(QString imagePath);
+    void calculateMouthValue(const QString &food);
     void onFoodDropped();
+    void updatePooState(QString imagePath);
 
 signals:
     void backToStartButtonClicked();

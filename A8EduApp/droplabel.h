@@ -22,7 +22,7 @@ public:
 
 signals:
     void answerDropped(const QString &question, const QString &answer);
-    void foodDropped();
+    void foodDropped(const QString &food);
 
 private:
     QString questionText;

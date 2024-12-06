@@ -28,11 +28,13 @@ QuizDragDropWidget::QuizDragDropWidget(QWidget *parent, QuizModel *QuizModel)
     quizModel->addDragDropQuestion("The _____ is home to your gut microbiome. It also absorbs water and helps process waste.", "Large Intestine");
 }
 
-void QuizDragDropWidget::onAnswerDropped(const QString &question, const QString &answer) {
+void QuizDragDropWidget::onAnswerDropped(const QString &question, const QString &answer)
+{
     userAnswers[question] = answer; // Store the answer locally
 }
 
-void QuizDragDropWidget::onSubmitClicked() {
+void QuizDragDropWidget::onSubmitClicked()
+{
     quizModel->setDragDropScore(0);
 
     // Pass each answer to the model
@@ -47,7 +49,6 @@ void QuizDragDropWidget::onSubmitClicked() {
     // Show the score in a QMessageBox
     QMessageBox::information(this, "Quiz Results", QString("Your score is: %1").arg(score));
 }
-
 
 QuizDragDropWidget::~QuizDragDropWidget()
 {

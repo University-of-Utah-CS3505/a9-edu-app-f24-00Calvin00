@@ -9,5 +9,6 @@
     </qresource>
     <qresource prefix="/gifs">
         <file>pooedPoo.gif</file>
+        <file>explosion.gif</file>
     </qresource>
 </RCC>
