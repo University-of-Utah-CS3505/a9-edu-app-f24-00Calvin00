@@ -89,14 +89,14 @@ background-color: rgb(207, 213, 255);</string>
    </property>
    <layout class="QGridLayout" name="VocabSelection">
     <item row="1" column="2">
-     <widget class="DraggableLabel" name="vocab4_5">
+     <widget class="DraggableLabel" name="vocab7">
       <property name="font">
        <font>
         <bold>true</bold>
        </font>
       </property>
       <property name="text">
-       <string>Omega-3</string>
+       <string>Large Intestine</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -104,14 +104,14 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="0" column="3">
-     <widget class="DraggableLabel" name="vocab4_7">
+     <widget class="DraggableLabel" name="vocab4">
       <property name="font">
        <font>
         <bold>true</bold>
        </font>
       </property>
       <property name="text">
-       <string>Omega-3</string>
+       <string>Probiotics</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -119,7 +119,7 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="2" column="2">
-     <widget class="DraggableLabel" name="vocab4_4">
+     <widget class="DraggableLabel" name="vocab11">
       <property name="font">
        <font>
         <bold>true</bold>
@@ -134,14 +134,14 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="DraggableLabel" name="vocab4_2">
+     <widget class="DraggableLabel" name="vocab5">
       <property name="font">
        <font>
         <bold>true</bold>
        </font>
       </property>
       <property name="text">
-       <string>Omega-3</string>
+       <string>Dysbiosis</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -149,7 +149,7 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="2" column="1">
-     <widget class="DraggableLabel" name="vocab6">
+     <widget class="DraggableLabel" name="vocab10">
       <property name="font">
        <font>
         <bold>true</bold>
@@ -179,14 +179,14 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="0" column="2">
-     <widget class="DraggableLabel" name="vocab4_6">
+     <widget class="DraggableLabel" name="vocab3">
       <property name="font">
        <font>
         <bold>true</bold>
        </font>
       </property>
       <property name="text">
-       <string>Omega-3</string>
+       <string>Gut-brain Axis</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -194,14 +194,14 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="1" column="3">
-     <widget class="DraggableLabel" name="vocab4_8">
+     <widget class="DraggableLabel" name="vocab8">
       <property name="font">
        <font>
         <bold>true</bold>
        </font>
       </property>
       <property name="text">
-       <string>Omega-3</string>
+       <string>Microbiome</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -209,14 +209,14 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="2" column="3">
-     <widget class="DraggableLabel" name="vocab4_9">
+     <widget class="DraggableLabel" name="vocab12">
       <property name="font">
        <font>
         <bold>true</bold>
        </font>
       </property>
       <property name="text">
-       <string>Omega-3</string>
+       <string>Processed foods</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -224,14 +224,14 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="1" column="1">
-     <widget class="DraggableLabel" name="vocab4">
+     <widget class="DraggableLabel" name="vocab6">
       <property name="font">
        <font>
         <bold>true</bold>
        </font>
       </property>
       <property name="text">
-       <string>Omega-3</string>
+       <string>Enzymes</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -254,14 +254,14 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="2" column="0">
-     <widget class="DraggableLabel" name="vocab5">
+     <widget class="DraggableLabel" name="vocab9">
       <property name="font">
        <font>
         <bold>true</bold>
        </font>
       </property>
       <property name="text">
-       <string>Probiotics</string>
+       <string>TMAO</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -288,7 +288,7 @@ background-color: rgb(207, 213, 255);</string>
        </font>
       </property>
       <property name="text">
-       <string>The _____ is home to your gut microbiome. It also absorbs water and helps process waste.</string>
+       <string>_____ has been linked to autoimmune diseases, such as rheumatoid arthritis, and heart disease.</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -389,7 +389,7 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="5" column="1">
-     <widget class="DropLabel" name="answer4_3">
+     <widget class="DropLabel" name="answer5">
       <property name="text">
        <string>Drop Answer Here</string>
       </property>
@@ -447,14 +447,14 @@ background-color: rgb(207, 213, 255);</string>
    </property>
    <layout class="QGridLayout" name="DefineSection_2">
     <item row="5" column="0">
-     <widget class="QLabel" name="definition5_2">
+     <widget class="QLabel" name="definition10">
       <property name="font">
        <font>
         <pointsize>11</pointsize>
        </font>
       </property>
       <property name="text">
-       <string>The _____ is home to your gut microbiome. It also absorbs water and helps process waste.</string>
+       <string>The liver, pancreas, and gallbladder produce important _____ and bile to aid in digestion.</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -462,14 +462,14 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="4" column="0">
-     <widget class="QLabel" name="definition4_2">
+     <widget class="QLabel" name="definition9">
       <property name="font">
        <font>
         <pointsize>11</pointsize>
        </font>
       </property>
       <property name="text">
-       <string>The _____ is home to your gut microbiome. It also absorbs water and helps process waste.</string>
+       <string>Your gut is home to trillions of tiny organisms (bacteria, viruses, fungi) called the _____.</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -477,7 +477,7 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="2" column="1">
-     <widget class="DropLabel" name="answer2_2">
+     <widget class="DropLabel" name="answer7">
       <property name="text">
        <string>Drop Answer Here</string>
       </property>
@@ -487,14 +487,14 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="3" column="0">
-     <widget class="QLabel" name="definition3_2">
+     <widget class="QLabel" name="definition8">
       <property name="font">
        <font>
         <pointsize>11</pointsize>
        </font>
       </property>
       <property name="text">
-       <string>_____ can help restore gut balance, particularly after illness or antibiotic use.</string>
+       <string>Your gut and brain communicate via the _____.</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -502,7 +502,7 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="2" column="0">
-     <widget class="QLabel" name="definition2_2">
+     <widget class="QLabel" name="definition7">
       <property name="font">
        <font>
         <pointsize>11</pointsize>
@@ -512,22 +512,7 @@ background-color: rgb(207, 213, 255);</string>
        <number>1</number>
       </property>
       <property name="text">
-       <string>Nutrients are absorbed into your bloodstream in the _____.</string>
-      </property>
-      <property name="wordWrap">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="definition1_2">
-      <property name="font">
-       <font>
-        <pointsize>11</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Your gut produces important vitamins like _____ and K.</string>
+       <string>Food which lacks fiber, and contain many preservatives and additives are _____.</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -535,7 +520,7 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="4" column="1">
-     <widget class="DropLabel" name="answer4_2">
+     <widget class="DropLabel" name="answer9">
       <property name="text">
        <string>Drop Answer Here</string>
       </property>
@@ -545,7 +530,7 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="1" column="1">
-     <widget class="DropLabel" name="answer1_2">
+     <widget class="DropLabel" name="answer6">
       <property name="text">
        <string>Drop Answer Here</string>
       </property>
@@ -555,7 +540,7 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="5" column="1">
-     <widget class="DropLabel" name="answer4_4">
+     <widget class="DropLabel" name="answer10">
       <property name="text">
        <string>Drop Answer Here</string>
       </property>
@@ -565,9 +550,24 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="3" column="1">
-     <widget class="DropLabel" name="answer3_2">
+     <widget class="DropLabel" name="answer8">
       <property name="text">
        <string>Drop Answer Here</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="definition6">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Certain gut bacteria produce harmful chemicals like _____, which can cause cholesterol to build up.</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
