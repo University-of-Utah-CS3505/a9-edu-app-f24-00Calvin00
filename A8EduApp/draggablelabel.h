@@ -17,6 +17,9 @@ protected:
 
 private:
     QPoint offset;  // The offset for dragging
+
+signals:
+    void mousePressed(const QString &objectName);
 };
 
 #endif // DRAGGABLELABEL_H

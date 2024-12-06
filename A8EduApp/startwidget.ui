@@ -61,25 +61,37 @@
      <height>600</height>
     </rect>
    </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>531</width>
-     <height>391</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
+   <widget class="QLabel" name="pooedPoo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-50</y>
+      <width>531</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="replayButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>180</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Again!</string>
+    </property>
+   </widget>
   </widget>
   <zorder>widget</zorder>
   <zorder>learnButton</zorder>
   <zorder>quizButton</zorder>
   <zorder>resultsButton</zorder>
-  <zorder>label</zorder>
  </widget>
  <customwidgets>
   <customwidget>

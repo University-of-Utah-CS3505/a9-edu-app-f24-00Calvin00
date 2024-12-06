@@ -100,14 +100,17 @@ color: rgb(255, 255, 255);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QGraphicsView" name="graphicsView">
+  <widget class="QLabel" name="gut">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>60</y>
-     <width>681</width>
-     <height>291</height>
+     <x>130</x>
+     <y>50</y>
+     <width>551</width>
+     <height>317</height>
     </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
    </property>
   </widget>
   <zorder>label</zorder>
@@ -115,7 +118,7 @@ color: rgb(255, 255, 255);</string>
   <zorder>whyGutHealthButton</zorder>
   <zorder>howToStayHealthyButton</zorder>
   <zorder>backToStartButton</zorder>
-  <zorder>graphicsView</zorder>
+  <zorder>gut</zorder>
  </widget>
  <resources/>
  <connections/>
