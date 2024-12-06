@@ -47,7 +47,7 @@ void QuizDragDropWidget::onSubmitClicked()
     int score = quizModel->getDragDropScore();
 
     // Show the score in a QMessageBox
-    QMessageBox::information(this, "Quiz Results", QString("Your score is: %1").arg(score));
+    QMessageBox::information(this, "Quiz Results", QString("Your score is: %1").arg(score) + "/10");
 }
 
 QuizDragDropWidget::~QuizDragDropWidget()
