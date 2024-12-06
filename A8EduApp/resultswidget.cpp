@@ -5,19 +5,19 @@ ResultsWidget::ResultsWidget(QWidget *parent, QuizModel *quizModel)
     : QWidget(parent)
     , ui(new Ui::ResultsWidget)
     , quizModel(quizModel)
-    , mouthValue(0)
     , gif(new QMovie(":/gifs/explosion.gif"))
+    , mouthValue(0)
 {
     ui->setupUi(this);
     ui->explosion->setMovie(gif);
 
-    QPixmap bananaPNG = QPixmap::fromImage(QImage(":/sprites/normalPoo.png"));
+    QPixmap bananaPNG = QPixmap::fromImage(QImage(":/sprites/banana.png"));
     ui->banana->setPixmap(bananaPNG.scaled(ui->banana->size(), Qt::KeepAspectRatio));
+    ui->banana->setFrameShape(QFrame::NoFrame);
     QPixmap mouthPNG = QPixmap::fromImage(QImage(":/sprites/toilet.png"));
     ui->mouth->setPixmap(mouthPNG.scaled(ui->mouth->size(), Qt::KeepAspectRatio));
 
-    QPixmap pooPixmap = QPixmap::fromImage(QImage(":/sprites/normalPoo.png"));
-    ui->poo->setPixmap(pooPixmap.scaled(ui->poo->size(), Qt::KeepAspectRatio));
+    updatePooState(":/sprites/normalPoo.png");
 
     // Connect signals
     connect(ui->backToStartButton, &QPushButton::clicked, this, &ResultsWidget::backToStartButtonClicked);
@@ -36,13 +36,19 @@ void ResultsWidget::calculateMouthValue(const QString &food)
 {
     if (food == "banana") {
         mouthValue += 5;
+    } else if (food == "banana") {
+        mouthValue += -5;
+    } else if (food == "banana") {
+        mouthValue += 5;
+    // } else if (){
+
     }
 }
 
 void ResultsWidget::onFoodDropped()
 {
     if (mouthValue > -25 && mouthValue <= 25) {
-        updatePooState(":/sprites/sadPoo.png");
+        updatePooState(":/sprites/hardPoo.png");
     } else if (mouthValue > 25 && mouthValue <= 50) {
         updatePooState(":/sprites/normalPoo.png");
     } else if (mouthValue > 50 && mouthValue <= 75) {
@@ -58,4 +64,5 @@ void ResultsWidget::updatePooState(QString imagePath)
 {
     QPixmap pooPixmap = QPixmap::fromImage(QImage(imagePath));
     ui->poo->setPixmap(pooPixmap.scaled(ui->poo->size(), Qt::KeepAspectRatio));
+    ui->poo->setAlignment(Qt::AlignRight);
 }

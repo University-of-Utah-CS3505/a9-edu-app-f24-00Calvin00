@@ -2,6 +2,7 @@
 #define STARTWIDGET_H
 
 #include <QWidget>
+#include <QMovie>
 
 namespace Ui {
 class StartWidget;
@@ -22,6 +23,7 @@ signals:
 
 private:
     Ui::StartWidget *ui;
+    QMovie *gif;
 };
 
 #endif // STARTWIDGET_H
