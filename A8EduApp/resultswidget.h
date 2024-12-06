@@ -24,6 +24,7 @@ private:
     QuizModel *quizModel;
     QMovie *gif;
     int mouthValue;
+    void simulationToggle();
     void calculateMouthValue(const QString &food);
     void onFoodDropped();
     void updatePooState(QString imagePath);

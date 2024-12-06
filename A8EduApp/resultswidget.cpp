@@ -6,21 +6,24 @@ ResultsWidget::ResultsWidget(QWidget *parent, QuizModel *quizModel)
     , ui(new Ui::ResultsWidget)
     , quizModel(quizModel)
     , gif(new QMovie(":/gifs/explosion.gif"))
-    , mouthValue(0)
+    , mouthValue(37)
 {
     ui->setupUi(this);
     ui->explosion->setMovie(gif);
 
-    QPixmap bananaPNG = QPixmap::fromImage(QImage(":/sprites/banana.png"));
-    ui->banana->setPixmap(bananaPNG.scaled(ui->banana->size(), Qt::KeepAspectRatio));
+    QPixmap png = QPixmap::fromImage(QImage(":/sprites/mouth.png"));
+    ui->mouth->setPixmap(png.scaled(ui->mouth->size(), Qt::KeepAspectRatio));
+    ui->mouth->setFrameShape(QFrame::NoFrame);
+
+    png = QPixmap::fromImage(QImage(":/sprites/banana.png"));
+    ui->banana->setPixmap(png.scaled(ui->banana->size(), Qt::KeepAspectRatio));
     ui->banana->setFrameShape(QFrame::NoFrame);
-    QPixmap mouthPNG = QPixmap::fromImage(QImage(":/sprites/toilet.png"));
-    ui->mouth->setPixmap(mouthPNG.scaled(ui->mouth->size(), Qt::KeepAspectRatio));
 
     updatePooState(":/sprites/normalPoo.png");
 
     // Connect signals
     connect(ui->backToStartButton, &QPushButton::clicked, this, &ResultsWidget::backToStartButtonClicked);
+    connect(ui->simulationButton, &QPushButton::clicked, this, &ResultsWidget::simulationToggle);
     connect(ui->mouth, &DropLabel::foodDropped, this, &ResultsWidget::onFoodDropped);
     connect(ui->banana, &DraggableLabel::mousePressed, this, &ResultsWidget::calculateMouthValue);
 }
@@ -32,14 +35,25 @@ ResultsWidget::~ResultsWidget()
     delete gif;
 }
 
+void ResultsWidget::simulationToggle()
+{
+    if (ui->textBrowser->isHidden()) {
+        ui->simulationButton->setText("Simulation");
+        ui->textBrowser->setHidden(false);
+    } else {
+        ui->simulationButton->setText("Summary");
+        ui->textBrowser->setHidden(true);
+    }
+}
+
 void ResultsWidget::calculateMouthValue(const QString &food)
 {
     if (food == "banana") {
-        mouthValue += 5;
-    } else if (food == "banana") {
-        mouthValue += -5;
-    } else if (food == "banana") {
-        mouthValue += 5;
+        mouthValue += 7;
+    } else if (food == "meat") {
+        mouthValue -= 15;
+    } else if (food == "pickle") {
+        mouthValue += 10;
     // } else if (){
 
     }
