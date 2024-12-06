@@ -33,6 +33,7 @@ void DropLabel::dropEvent(QDropEvent *event)
 
     // Emit the answerDropped signal
     emit answerDropped(questionText, droppedText);
+    emit foodDropped();
 
     // Reset the background and show the final text after drop
     setStyleSheet("background-color: transparent;");

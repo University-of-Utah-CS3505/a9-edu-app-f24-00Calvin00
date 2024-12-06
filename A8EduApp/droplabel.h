@@ -22,10 +22,10 @@ public:
 
 signals:
     void answerDropped(const QString &question, const QString &answer);
+    void foodDropped();
 
 private:
     QString questionText;
-
 };
 
 #endif // DROPLABEL_H
