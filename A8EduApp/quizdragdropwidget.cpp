@@ -2,6 +2,7 @@
 #include "ui_quizdragdropwidget.h"
 
 #include <QMessageBox>
+#include <QPalette>
 
 QuizDragDropWidget::QuizDragDropWidget(QWidget *parent, QuizModel *QuizModel)
     : QWidget(parent) ,
@@ -9,6 +10,13 @@ QuizDragDropWidget::QuizDragDropWidget(QWidget *parent, QuizModel *QuizModel)
     quizModel(QuizModel)
 {
     ui->setupUi(this);
+
+    // Set the background color
+    QPalette palette = this->palette();
+    palette.setColor(QPalette::Window, QColor(238, 223, 242)); // Use your RGB color
+    this->setPalette(palette);
+    this->setAutoFillBackground(true); // Ensures the background is filled with the color
+
     connect(ui->backToQuizHomeButton, &QPushButton::clicked, this, &QuizDragDropWidget::backToQuizHomeButtonClicked);
     connect(ui->submitButton, &QPushButton::clicked, this, &QuizDragDropWidget::onSubmitClicked);
 

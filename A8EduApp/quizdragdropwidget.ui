@@ -95,6 +95,12 @@ background-color: rgb(207, 213, 255);</string>
         <bold>true</bold>
        </font>
       </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
+      </property>
       <property name="text">
        <string>Large Intestine</string>
       </property>
@@ -109,6 +115,12 @@ background-color: rgb(207, 213, 255);</string>
        <font>
         <bold>true</bold>
        </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
       </property>
       <property name="text">
        <string>Probiotics</string>
@@ -125,6 +137,12 @@ background-color: rgb(207, 213, 255);</string>
         <bold>true</bold>
        </font>
       </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
+      </property>
       <property name="text">
        <string>Omega-3</string>
       </property>
@@ -139,6 +157,12 @@ background-color: rgb(207, 213, 255);</string>
        <font>
         <bold>true</bold>
        </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
       </property>
       <property name="text">
        <string>Dysbiosis</string>
@@ -155,6 +179,12 @@ background-color: rgb(207, 213, 255);</string>
         <bold>true</bold>
        </font>
       </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
+      </property>
       <property name="text">
        <string>Small Intestine</string>
       </property>
@@ -169,6 +199,12 @@ background-color: rgb(207, 213, 255);</string>
        <font>
         <bold>true</bold>
        </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
       </property>
       <property name="text">
        <string>Antacids</string>
@@ -185,6 +221,12 @@ background-color: rgb(207, 213, 255);</string>
         <bold>true</bold>
        </font>
       </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
+      </property>
       <property name="text">
        <string>Gut-brain Axis</string>
       </property>
@@ -199,6 +241,12 @@ background-color: rgb(207, 213, 255);</string>
        <font>
         <bold>true</bold>
        </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
       </property>
       <property name="text">
        <string>Microbiome</string>
@@ -215,6 +263,12 @@ background-color: rgb(207, 213, 255);</string>
         <bold>true</bold>
        </font>
       </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
+      </property>
       <property name="text">
        <string>Processed foods</string>
       </property>
@@ -229,6 +283,12 @@ background-color: rgb(207, 213, 255);</string>
        <font>
         <bold>true</bold>
        </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
       </property>
       <property name="text">
        <string>Enzymes</string>
@@ -245,6 +305,12 @@ background-color: rgb(207, 213, 255);</string>
         <bold>true</bold>
        </font>
       </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
+      </property>
       <property name="text">
        <string>B12</string>
       </property>
@@ -259,6 +325,12 @@ background-color: rgb(207, 213, 255);</string>
        <font>
         <bold>true</bold>
        </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
       </property>
       <property name="text">
        <string>TMAO</string>
@@ -312,6 +384,12 @@ background-color: rgb(207, 213, 255);</string>
     </item>
     <item row="2" column="1">
      <widget class="DropLabel" name="answer2">
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
+      </property>
       <property name="text">
        <string>Drop Answer Here</string>
       </property>
@@ -370,6 +448,12 @@ background-color: rgb(207, 213, 255);</string>
     </item>
     <item row="4" column="1">
      <widget class="DropLabel" name="answer4">
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
+      </property>
       <property name="text">
        <string>Drop Answer Here</string>
       </property>
@@ -380,6 +464,12 @@ background-color: rgb(207, 213, 255);</string>
     </item>
     <item row="1" column="1">
      <widget class="DropLabel" name="answer1">
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
+      </property>
       <property name="text">
        <string>Drop Answer Here</string>
       </property>
@@ -390,6 +480,12 @@ background-color: rgb(207, 213, 255);</string>
     </item>
     <item row="5" column="1">
      <widget class="DropLabel" name="answer5">
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
+      </property>
       <property name="text">
        <string>Drop Answer Here</string>
       </property>
@@ -400,6 +496,12 @@ background-color: rgb(207, 213, 255);</string>
     </item>
     <item row="3" column="1">
      <widget class="DropLabel" name="answer3">
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
+      </property>
       <property name="text">
        <string>Drop Answer Here</string>
       </property>
@@ -453,6 +555,9 @@ background-color: rgb(207, 213, 255);</string>
         <pointsize>11</pointsize>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <property name="text">
        <string>The liver, pancreas, and gallbladder produce important _____ and bile to aid in digestion.</string>
       </property>
@@ -468,6 +573,9 @@ background-color: rgb(207, 213, 255);</string>
         <pointsize>11</pointsize>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <property name="text">
        <string>Your gut is home to trillions of tiny organisms (bacteria, viruses, fungi) called the _____.</string>
       </property>
@@ -478,6 +586,12 @@ background-color: rgb(207, 213, 255);</string>
     </item>
     <item row="2" column="1">
      <widget class="DropLabel" name="answer7">
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
+      </property>
       <property name="text">
        <string>Drop Answer Here</string>
       </property>
@@ -521,6 +635,12 @@ background-color: rgb(207, 213, 255);</string>
     </item>
     <item row="4" column="1">
      <widget class="DropLabel" name="answer9">
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
+      </property>
       <property name="text">
        <string>Drop Answer Here</string>
       </property>
@@ -531,6 +651,12 @@ background-color: rgb(207, 213, 255);</string>
     </item>
     <item row="1" column="1">
      <widget class="DropLabel" name="answer6">
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
+      </property>
       <property name="text">
        <string>Drop Answer Here</string>
       </property>
@@ -541,6 +667,12 @@ background-color: rgb(207, 213, 255);</string>
     </item>
     <item row="5" column="1">
      <widget class="DropLabel" name="answer10">
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
+      </property>
       <property name="text">
        <string>Drop Answer Here</string>
       </property>
@@ -551,6 +683,12 @@ background-color: rgb(207, 213, 255);</string>
     </item>
     <item row="3" column="1">
      <widget class="DropLabel" name="answer8">
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(250, 250, 250);</string>
+      </property>
       <property name="text">
        <string>Drop Answer Here</string>
       </property>
@@ -565,6 +703,9 @@ background-color: rgb(207, 213, 255);</string>
        <font>
         <pointsize>11</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Certain gut bacteria produce harmful chemicals like _____, which can cause cholesterol to build up.</string>
