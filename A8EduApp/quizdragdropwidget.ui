@@ -81,30 +81,15 @@ background-color: rgb(207, 213, 255);</string>
   <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>240</y>
-     <width>241</width>
-     <height>221</height>
+     <x>110</x>
+     <y>120</y>
+     <width>571</width>
+     <height>101</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="VocabSelection">
-    <item row="0" column="0">
-     <widget class="DraggableLabel" name="vocab1">
-      <property name="font">
-       <font>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>B12</string>
-      </property>
-      <property name="wordWrap">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="2">
-     <widget class="DraggableLabel" name="vocab3">
+    <item row="1" column="2">
+     <widget class="DraggableLabel" name="vocab7">
       <property name="font">
        <font>
         <bold>true</bold>
@@ -118,15 +103,60 @@ background-color: rgb(207, 213, 255);</string>
       </property>
      </widget>
     </item>
-    <item row="2" column="2">
-     <widget class="DraggableLabel" name="vocab7">
+    <item row="0" column="3">
+     <widget class="DraggableLabel" name="vocab4">
       <property name="font">
        <font>
         <bold>true</bold>
        </font>
       </property>
       <property name="text">
-       <string>Serotonin</string>
+       <string>Probiotics</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="DraggableLabel" name="vocab11">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Omega-3</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="DraggableLabel" name="vocab5">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Dysbiosis</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="DraggableLabel" name="vocab10">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Small Intestine</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -148,30 +178,45 @@ background-color: rgb(207, 213, 255);</string>
       </property>
      </widget>
     </item>
-    <item row="2" column="0">
-     <widget class="DraggableLabel" name="vocab5">
+    <item row="0" column="2">
+     <widget class="DraggableLabel" name="vocab3">
       <property name="font">
        <font>
         <bold>true</bold>
        </font>
       </property>
       <property name="text">
-       <string>Probiotics</string>
+       <string>Gut-brain Axis</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
       </property>
      </widget>
     </item>
-    <item row="2" column="1">
-     <widget class="DraggableLabel" name="vocab6">
+    <item row="1" column="3">
+     <widget class="DraggableLabel" name="vocab8">
       <property name="font">
        <font>
         <bold>true</bold>
        </font>
       </property>
       <property name="text">
-       <string>Small Intestine</string>
+       <string>Microbiome</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="DraggableLabel" name="vocab12">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Processed foods</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -179,14 +224,44 @@ background-color: rgb(207, 213, 255);</string>
      </widget>
     </item>
     <item row="1" column="1">
-     <widget class="DraggableLabel" name="vocab4">
+     <widget class="DraggableLabel" name="vocab6">
       <property name="font">
        <font>
         <bold>true</bold>
        </font>
       </property>
       <property name="text">
-       <string>Omega-3</string>
+       <string>Enzymes</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="DraggableLabel" name="vocab1">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>B12</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="DraggableLabel" name="vocab9">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>TMAO</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -198,40 +273,22 @@ background-color: rgb(207, 213, 255);</string>
   <widget class="QWidget" name="gridLayoutWidget_2">
    <property name="geometry">
     <rect>
-     <x>280</x>
-     <y>130</y>
-     <width>491</width>
-     <height>421</height>
+     <x>40</x>
+     <y>230</y>
+     <width>341</width>
+     <height>301</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="DefineSection">
-    <item row="1" column="0">
-     <widget class="QLabel" name="definition1">
+    <item row="5" column="0">
+     <widget class="QLabel" name="definition5">
       <property name="font">
        <font>
         <pointsize>11</pointsize>
        </font>
       </property>
       <property name="text">
-       <string>Your gut produces important vitamins like _____ and K.</string>
-      </property>
-      <property name="wordWrap">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="definition2">
-      <property name="font">
-       <font>
-        <pointsize>11</pointsize>
-       </font>
-      </property>
-      <property name="lineWidth">
-       <number>1</number>
-      </property>
-      <property name="text">
-       <string>Nutrients are absorbed into your bloodstream in the _____.</string>
+       <string>_____ has been linked to autoimmune diseases, such as rheumatoid arthritis, and heart disease.</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -258,19 +315,8 @@ background-color: rgb(207, 213, 255);</string>
       <property name="text">
        <string>Drop Answer Here</string>
       </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="DropLabel" name="answer1">
-      <property name="text">
-       <string>Drop Answer Here</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="1">
-     <widget class="DropLabel" name="answer4">
-      <property name="text">
-       <string>Drop Answer Here</string>
+      <property name="wordWrap">
+       <bool>true</bool>
       </property>
      </widget>
     </item>
@@ -289,10 +335,76 @@ background-color: rgb(207, 213, 255);</string>
       </property>
      </widget>
     </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="definition2">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="text">
+       <string>Nutrients are absorbed into your bloodstream in the _____.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="definition1">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Your gut produces important vitamins like _____ and K.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="DropLabel" name="answer4">
+      <property name="text">
+       <string>Drop Answer Here</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="DropLabel" name="answer1">
+      <property name="text">
+       <string>Drop Answer Here</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="DropLabel" name="answer5">
+      <property name="text">
+       <string>Drop Answer Here</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
     <item row="3" column="1">
      <widget class="DropLabel" name="answer3">
       <property name="text">
        <string>Drop Answer Here</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
       </property>
      </widget>
     </item>
@@ -301,7 +413,7 @@ background-color: rgb(207, 213, 255);</string>
   <widget class="QPushButton" name="submitButton">
    <property name="geometry">
     <rect>
-     <x>70</x>
+     <x>600</x>
      <y>560</y>
      <width>151</width>
      <height>24</height>
@@ -322,6 +434,177 @@ background-color: rgb(207, 213, 255);</string>
    </property>
    <property name="text">
     <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>230</y>
+     <width>341</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="DefineSection_2">
+    <item row="5" column="0">
+     <widget class="QLabel" name="definition10">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>The liver, pancreas, and gallbladder produce important _____ and bile to aid in digestion.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="definition9">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Your gut is home to trillions of tiny organisms (bacteria, viruses, fungi) called the _____.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="DropLabel" name="answer7">
+      <property name="text">
+       <string>Drop Answer Here</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="definition8">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Your gut and brain communicate via the _____.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="definition7">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="text">
+       <string>Food which lacks fiber, and contain many preservatives and additives are _____.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="DropLabel" name="answer9">
+      <property name="text">
+       <string>Drop Answer Here</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="DropLabel" name="answer6">
+      <property name="text">
+       <string>Drop Answer Here</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="DropLabel" name="answer10">
+      <property name="text">
+       <string>Drop Answer Here</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="DropLabel" name="answer8">
+      <property name="text">
+       <string>Drop Answer Here</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="definition6">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Certain gut bacteria produce harmful chemicals like _____, which can cause cholesterol to build up.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="instructions_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>560</y>
+     <width>471</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: black;
+background-color: rgb(207, 213, 255);</string>
+   </property>
+   <property name="text">
+    <string>Press Submit Answers to check your score. You may resubmit multiple times.</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
  </widget>
