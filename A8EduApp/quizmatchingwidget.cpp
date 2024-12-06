@@ -10,9 +10,9 @@ QuizMatchingWidget::QuizMatchingWidget(QWidget *parent, QuizModel *QuizModel)
 
     // Set the background color
     QPalette palette = this->palette();
-    palette.setColor(QPalette::Window, QColor(238, 223, 242)); // Use your RGB color
+    palette.setColor(QPalette::Window, QColor(238, 223, 242));
     this->setPalette(palette);
-    this->setAutoFillBackground(true); // Ensures the background is filled with the color
+    this->setAutoFillBackground(true);
 
     connect(ui->backToQuizHomeButton, &QPushButton::clicked, this, &QuizMatchingWidget::backToQuizHomeButtonClicked);
 }

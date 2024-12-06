@@ -24,6 +24,12 @@ ResultsWidget::ResultsWidget(QWidget *parent, QuizModel *quizModel)
     setFoodImage(ui->hotdog, ":/sprites/hotdog.png");
     setFoodImage(ui->icecream, ":/sprites/icecream.png");
 
+    // Set the background color
+    QPalette palette = this->palette();
+    palette.setColor(QPalette::Window, QColor(238, 223, 242));
+    this->setPalette(palette);
+    this->setAutoFillBackground(true);
+
     // Connect signals
     connect(ui->backToStartButton, &QPushButton::clicked, this, &ResultsWidget::backToStartButtonClicked);
     connect(ui->simulationButton, &QPushButton::clicked, this, &ResultsWidget::toggleSimulation);

@@ -14,6 +14,12 @@ StartWidget::StartWidget(QWidget *parent)
     ui->pooedPoo->setMovie(gif);
     gif->start();
 
+    // Set the background color
+    QPalette palette = this->palette();
+    palette.setColor(QPalette::Window, QColor(238, 223, 242)); // Use your RGB color
+    this->setPalette(palette);
+    this->setAutoFillBackground(true); // Ensures the background is filled with the color
+
     // Connect the start button to emit a signal
     connect(ui->learnButton, &QPushButton::clicked, this, &StartWidget::learnButtonClicked);
     connect(ui->quizButton, &QPushButton::clicked, this, &StartWidget::quizButtonClicked);
