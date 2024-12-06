@@ -9,6 +9,12 @@
         <file>banana.png</file>
         <file>liquidPoo.png</file>
         <file>hardPoo.png</file>
+        <file>mouth.png</file>
+        <file>meat.png</file>
+        <file>nut.png</file>
+        <file>pickle.png</file>
+        <file>hotdog.png</file>
+        <file>icecream.png</file>
     </qresource>
     <qresource prefix="/gifs">
         <file>pooedPoo.gif</file>

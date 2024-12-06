@@ -24,9 +24,11 @@ private:
     QuizModel *quizModel;
     QMovie *gif;
     int mouthValue;
+    void setFoodImage(QLabel* label, const QString& imagePath);
+    void toggleSimulation();
     void calculateMouthValue(const QString &food);
     void onFoodDropped();
-    void updatePooState(QString imagePath);
+    void updatePooState(QString imagePath, Qt::Alignment alignment = Qt::AlignRight, bool scale = true);
 
 signals:
     void backToStartButtonClicked();
