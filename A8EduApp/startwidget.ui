@@ -13,45 +13,6 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QPushButton" name="learnButton">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>400</y>
-     <width>161</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>LEARN</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="quizButton">
-   <property name="geometry">
-    <rect>
-     <x>321</x>
-     <y>400</y>
-     <width>161</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>QUIZ</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="resultsButton">
-   <property name="geometry">
-    <rect>
-     <x>500</x>
-     <y>400</y>
-     <width>151</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>RESULTS</string>
-   </property>
-  </widget>
   <widget class="Physics" name="widget" native="true">
    <property name="geometry">
     <rect>
@@ -87,11 +48,122 @@
      <string>Again!</string>
     </property>
    </widget>
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>180</y>
+      <width>471</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Silver</family>
+      <pointsize>55</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::Box</enum>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string>A Guide to Your Gut</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="instructions">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>440</y>
+      <width>681</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: black;
+background-color: rgb(207, 213, 255);</string>
+    </property>
+    <property name="text">
+     <string>Select a Module to begin</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="resultsButton">
+    <property name="geometry">
+     <rect>
+      <x>509</x>
+      <y>500</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RESULTS</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="learnButton">
+    <property name="geometry">
+     <rect>
+      <x>149</x>
+      <y>500</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LEARN</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="quizButton">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>500</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>QUIZ</string>
+    </property>
+   </widget>
+   <zorder>replayButton</zorder>
+   <zorder>title</zorder>
+   <zorder>pooedPoo</zorder>
+   <zorder>instructions</zorder>
+   <zorder>resultsButton</zorder>
+   <zorder>learnButton</zorder>
+   <zorder>quizButton</zorder>
   </widget>
-  <zorder>widget</zorder>
-  <zorder>learnButton</zorder>
-  <zorder>quizButton</zorder>
-  <zorder>resultsButton</zorder>
  </widget>
  <customwidgets>
   <customwidget>
