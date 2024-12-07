@@ -20,6 +20,7 @@ public:
 
     int getMatchingScore() const;
     int getDragDropScore() const;
+    int getTotalScore() const;
 
     bool isMatchingAnswerCorrect(const QString &question) const;
     bool isDragDropAnswerCorrect(const QString &question) const;

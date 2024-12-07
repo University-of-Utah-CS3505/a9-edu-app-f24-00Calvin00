@@ -16,6 +16,9 @@ public:
     explicit QuizzingHomeWidget(QWidget *parent = nullptr, QuizModel *quizModel = nullptr);
     ~QuizzingHomeWidget();
 
+protected:
+    void showEvent(QShowEvent *event) override; // Declare showEvent here
+
 signals:
     void matchingButtonClicked();
     void dragDropButtonClicked();
@@ -24,6 +27,8 @@ signals:
 private:
     Ui::QuizzingHomeWidget *ui;
     QuizModel *quizModel;
+
+    void updateScoreLabel();
 };
 
 #endif // QUIZZINGHOMEWIDGET_H

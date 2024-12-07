@@ -71,3 +71,8 @@ void QuizModel::setDragDropScore(int score)
     dragDropScore = score;
 }
 
+int QuizModel::getTotalScore() const
+{
+    return (dragDropScore + matchingScore);
+}
+
