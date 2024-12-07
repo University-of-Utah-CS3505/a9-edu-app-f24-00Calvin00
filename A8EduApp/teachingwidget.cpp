@@ -11,6 +11,7 @@ TeachingWidget::TeachingWidget(QWidget *parent)
 {
     ui->setupUi(this);
 
+    //Add Gut Image
     QPixmap gutJPEG = QPixmap::fromImage(QImage(":/sprites/gutPic1.jpeg"));
     ui->gut->setPixmap(gutJPEG.scaled(ui->gut->size(), Qt::KeepAspectRatio));
 
@@ -25,9 +26,6 @@ TeachingWidget::TeachingWidget(QWidget *parent)
     connect(ui->whyGutHealthButton, &QPushButton::clicked, this, &TeachingWidget::whyGutHealthButtonClicked);
     connect(ui->howToStayHealthyButton, &QPushButton::clicked, this, &TeachingWidget::howToStayHealthyButtonClicked);
     connect(ui->backToStartButton, &QPushButton::clicked, this, &TeachingWidget::backToStartButtonClicked);
-
-    // // Add the logic to load and display an image
-    // setupImageView();
 }
 
 // TeachingWidget Destructor
@@ -35,36 +33,3 @@ TeachingWidget::~TeachingWidget()
 {
     delete ui;
 }
-
-// // Method to setup the image in QGraphicsView
-// void TeachingWidget::setupImageView()
-// {
-//     // Check if the QGraphicsView exists
-//     if (!ui->graphicsView) {
-//         qWarning("QGraphicsView 'imageView' not found in the UI file.");
-//         return;
-//     }
-
-//     // Create a new QGraphicsScene
-//     QGraphicsScene* scene = new QGraphicsScene(ui->graphicsView);
-
-//     // Load the image into a QPixmap
-//     QPixmap pixmap(":/../gutPic1.jpeg"); // Replace with the correct resource path or file path
-//     if (pixmap.isNull()) {
-//         qWarning("Failed to load image!");
-//         return;
-//     }
-
-//     // Add the pixmap as a QGraphicsPixmapItem to the scene
-//     QGraphicsPixmapItem* pixmapItem = new QGraphicsPixmapItem(pixmap);
-//     scene->addItem(pixmapItem);
-
-//     // Set the scene to the QGraphicsView
-//     ui->graphicsView->setScene(scene);
-
-//     // Fit the image to the view while maintaining the aspect ratio
-//     ui->graphicsView->fitInView(pixmapItem, Qt::KeepAspectRatio);
-
-//     // Optional: Enable high-quality rendering
-//     ui->graphicsView->setRenderHint(QPainter::Antialiasing);
-// }
