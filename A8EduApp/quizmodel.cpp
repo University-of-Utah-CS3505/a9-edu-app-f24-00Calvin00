@@ -6,7 +6,7 @@ QuizModel::QuizModel(QObject *parent)
     , dragDropScore(0)
 {}
 
-void QuizModel::addMatchingQuestion(const QString &question, const QString &correctAnswer)
+void QuizModel::addMatchingQuestion(const QString &question, const int correctAnswer)
 {
     matchingQuestions.insert(question, correctAnswer);
 }
@@ -16,7 +16,7 @@ void QuizModel::addDragDropQuestion(const QString &question, const QString &corr
     dragDropQuestions.insert(question, correctAnswer);
 }
 
-void QuizModel::submitMatchingAnswer(const QString &question, const QString &userAnswer)
+void QuizModel::submitMatchingAnswer(const QString &question, const int userAnswer)
 {
     matchingUserAnswers.insert(question, userAnswer);
     if (isMatchingAnswerCorrect(question))
@@ -75,4 +75,9 @@ int QuizModel::getTotalScore() const
 {
     return (dragDropScore + matchingScore);
 }
+
+void QuizModel::setMatchingScore(int score) {
+    matchingScore = score;
+}
+
 

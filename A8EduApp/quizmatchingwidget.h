@@ -4,6 +4,10 @@
 #include <QWidget>
 #include "quizmodel.h"
 
+/**
+ * @class QuizMatchingWidget
+ * @brief This class adds functionality for the matching quiz..
+ */
 namespace Ui {
 class QuizMatchingWidget;
 }
@@ -37,6 +41,9 @@ signals:
      * @brief Signal emitted when the "Back to Quiz Home" button is clicked.
      */
     void backToQuizHomeButtonClicked();
+
+private slots:
+    void onSubmitClicked();
 
 private:
     Ui::QuizMatchingWidget *ui; // Pointer to the user interface.
