@@ -27,7 +27,7 @@
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(209, 160, 224);
-color: rgb(255, 255, 255);</string>
+color: rgb(0, 0, 0);</string>
    </property>
    <property name="text">
     <string>An intro to your Gut</string>
@@ -44,7 +44,7 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(209, 160, 224);
-color: rgb(255, 255, 255);</string>
+color: rgb(0, 0, 0);</string>
    </property>
    <property name="text">
     <string>Why is Gut Health important?</string>
@@ -61,7 +61,7 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(209, 160, 224);
-color: rgb(255, 255, 255);</string>
+color: rgb(0, 0, 0);</string>
    </property>
    <property name="text">
     <string>How to keep your gut healthy</string>
@@ -78,7 +78,7 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(209, 160, 224);
-color: rgb(255, 255, 255);</string>
+color: rgb(0, 0, 0);</string>
    </property>
    <property name="text">
     <string>Back</string>
@@ -92,6 +92,10 @@ color: rgb(255, 255, 255);</string>
      <width>551</width>
      <height>317</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: rgb(209, 160, 224);
+color: rgb(0, 0, 0);</string>
    </property>
    <property name="text">
     <string>TextLabel</string>
