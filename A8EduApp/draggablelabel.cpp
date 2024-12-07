@@ -21,6 +21,9 @@ void DraggableLabel::mousePressEvent(QMouseEvent *event)
         QMimeData *mimeData = new QMimeData;
         mimeData->setText(this->text());
 
+        // Emit the name of the object
+        emit mousePressed(this->objectName());
+
         QDrag *drag = new QDrag(this);
         drag->setMimeData(mimeData);
         drag->setPixmap(this->grab());

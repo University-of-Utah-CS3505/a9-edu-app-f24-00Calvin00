@@ -31,6 +31,8 @@ private:
     QImage image;  // Image to be displayed
 
     void setupImage(); // Method to load the image
+    // // New private method for setting up the image
+    // void setupImageView();
 
 signals:
     void introToGutButtonClicked();

@@ -7,14 +7,14 @@ MainWindow::MainWindow(QWidget *parent, QuizModel *QuizModel)
     // Set window size
     this->resize(800, 600);
 
+    // Create and set up the stacked widget
     stackedWidget = new QStackedWidget(this);
-    setCentralWidget(stackedWidget); // StackedWidget as central widget
+    setCentralWidget(stackedWidget);
 
-    // Create StartWidget and add it to the QStackedWidget
+    // Create and add widgets for different sections
     startWidget = new StartWidget(this);
     stackedWidget->addWidget(startWidget);
 
-    //Create quiz widgets/windows
     quizzingHomeWidget = new QuizzingHomeWidget(this, quizModel);
     stackedWidget->addWidget(quizzingHomeWidget);
 
@@ -24,11 +24,9 @@ MainWindow::MainWindow(QWidget *parent, QuizModel *QuizModel)
     quizDragDropWidget = new QuizDragDropWidget(this, quizModel);
     stackedWidget->addWidget(quizDragDropWidget);
 
-    //Create result widgets/windows
     resultsWidget = new ResultsWidget(this);
     stackedWidget->addWidget(resultsWidget);
 
-    // Create all teaching widget/windows
     teachingWidget = new TeachingWidget(this);
     stackedWidget->addWidget(teachingWidget);
 
@@ -41,8 +39,8 @@ MainWindow::MainWindow(QWidget *parent, QuizModel *QuizModel)
     howToStayHealthyWidget = new HowToStayHealthyWidget(this);
     stackedWidget->addWidget(howToStayHealthyWidget);
 
-    // Connections for Learning modules
-    connect(startWidget, &StartWidget::learnButtonClicked, this, &MainWindow::showTeachingWidget);\
+    // Set up signal-slot connections for navigation
+    connect(startWidget, &StartWidget::learnButtonClicked, this, &MainWindow::showTeachingWidget);
     connect(teachingWidget, &TeachingWidget::introToGutButtonClicked, this, &MainWindow::showIntroToGutHealthWidget);
     connect(teachingWidget, &TeachingWidget::whyGutHealthButtonClicked, this, &MainWindow::showWhyGutHealthWidget);
     connect(teachingWidget, &TeachingWidget::howToStayHealthyButtonClicked, this, &MainWindow::showHowToStayHealthyWidget);
@@ -51,18 +49,17 @@ MainWindow::MainWindow(QWidget *parent, QuizModel *QuizModel)
     connect(whyGutHealthWidget, &WhyGutHealthWidget::backToTeachingWidgetButtonClicked, this, &MainWindow::showTeachingWidget);
     connect(howToStayHealthyWidget, &HowToStayHealthyWidget::backToTeachingWidgetButtonClicked, this, &MainWindow::showTeachingWidget);
 
-    // Connections for the quiz tab
     connect(startWidget, &StartWidget::quizButtonClicked, this, &MainWindow::showQuizzingWidget);
     connect(quizzingHomeWidget, &QuizzingHomeWidget::matchingButtonClicked, this, &MainWindow::showMatchingWidget);
     connect(quizzingHomeWidget, &QuizzingHomeWidget::dragDropButtonClicked, this, &MainWindow::showDragDropWidget);
     connect(quizzingHomeWidget, &QuizzingHomeWidget::backToStartButtonClicked, this, &MainWindow::showStartWidget);
     connect(quizMatchingWidget, &QuizMatchingWidget::backToQuizHomeButtonClicked, this, &MainWindow::showQuizzingWidget);
     connect(quizDragDropWidget, &QuizDragDropWidget::backToQuizHomeButtonClicked, this, &MainWindow::showQuizzingWidget);
-    // Connections for the result tab
+
     connect(startWidget, &StartWidget::resultsButtonClicked, this, &MainWindow::showResultsWidget);
     connect(resultsWidget, &ResultsWidget::backToStartButtonClicked, this, &MainWindow::showStartWidget);
 
-    // Set start widget as first page
+    // Set initial widget to show as the starting point
     stackedWidget->setCurrentWidget(startWidget);
 }
 
@@ -70,48 +67,40 @@ MainWindow::~MainWindow()
 {
 }
 
-void MainWindow::showStartWidget()
-{
+/** Slots to switch between different widgets */
+void MainWindow::showStartWidget() {
     stackedWidget->setCurrentWidget(startWidget);
 }
 
-void MainWindow::showTeachingWidget()
-{
+void MainWindow::showTeachingWidget() {
     stackedWidget->setCurrentWidget(teachingWidget);
 }
 
-void MainWindow::showQuizzingWidget()
-{
+void MainWindow::showQuizzingWidget() {
     stackedWidget->setCurrentWidget(quizzingHomeWidget);
 }
 
-void MainWindow::showMatchingWidget()
-{
+void MainWindow::showMatchingWidget() {
     stackedWidget->setCurrentWidget(quizMatchingWidget);
 }
 
-void MainWindow::showDragDropWidget()
-{
+void MainWindow::showDragDropWidget() {
     stackedWidget->setCurrentWidget(quizDragDropWidget);
 }
 
-void MainWindow::showResultsWidget()
-{
+void MainWindow::showResultsWidget() {
     stackedWidget->setCurrentWidget(resultsWidget);
 }
 
-void MainWindow::showIntroToGutHealthWidget()
-{
+void MainWindow::showIntroToGutHealthWidget() {
     stackedWidget->setCurrentWidget(introToGutHealthWidget);
 }
 
-void MainWindow::showWhyGutHealthWidget()
-{
+void MainWindow::showWhyGutHealthWidget() {
     stackedWidget->setCurrentWidget(whyGutHealthWidget);
 }
 
-void MainWindow::showHowToStayHealthyWidget()
-{
+void MainWindow::showHowToStayHealthyWidget() {
     stackedWidget->setCurrentWidget(howToStayHealthyWidget);
 }
 

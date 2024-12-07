@@ -16,11 +16,20 @@
   <widget class="QPushButton" name="matchingButton">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>200</y>
-     <width>181</width>
-     <height>111</height>
+     <x>160</x>
+     <y>310</y>
+     <width>201</width>
+     <height>121</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>Matching Quiz</string>
@@ -29,21 +38,30 @@
   <widget class="QPushButton" name="dragDropButton">
    <property name="geometry">
     <rect>
-     <x>460</x>
-     <y>200</y>
-     <width>181</width>
-     <height>111</height>
+     <x>440</x>
+     <y>310</y>
+     <width>201</width>
+     <height>121</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
    <property name="text">
-    <string>Drag and Drop Quiz</string>
+    <string>Fill-in the blank Quiz</string>
    </property>
   </widget>
   <widget class="QPushButton" name="backToStartButton">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>0</y>
+     <x>30</x>
+     <y>10</y>
      <width>100</width>
      <height>32</height>
     </rect>
@@ -109,6 +127,52 @@ background-color: rgb(207, 213, 255);</string>
    </property>
    <property name="text">
     <string>Quiz Time!</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="currentScoreTitle">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>20</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Current Score:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="scoreNumber">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>20</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>0/20</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignmentFlag::AlignCenter</set>

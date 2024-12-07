@@ -1,10 +1,10 @@
 #include "QuizModel.h"
 
 QuizModel::QuizModel(QObject *parent)
-    : QObject(parent), matchingScore(0), dragDropScore(0)
-{
-
-}
+    : QObject(parent)
+    , matchingScore(0)
+    , dragDropScore(0)
+{}
 
 void QuizModel::addMatchingQuestion(const QString &question, const QString &correctAnswer)
 {
@@ -66,8 +66,13 @@ int QuizModel::getTotalDragDropQuestions() const
     return dragDropQuestions.size();
 }
 
-void QuizModel::setDragDropScore(int score) {
+void QuizModel::setDragDropScore(int score)
+{
     dragDropScore = score;
 }
 
+int QuizModel::getTotalScore() const
+{
+    return (dragDropScore + matchingScore);
+}
 
