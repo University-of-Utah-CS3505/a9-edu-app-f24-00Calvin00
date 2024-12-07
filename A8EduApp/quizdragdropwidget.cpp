@@ -20,6 +20,7 @@ QuizDragDropWidget::QuizDragDropWidget(QWidget *parent, QuizModel *QuizModel)
     connect(ui->backToQuizHomeButton, &QPushButton::clicked, this, &QuizDragDropWidget::backToQuizHomeButtonClicked);
     connect(ui->submitButton, &QPushButton::clicked, this, &QuizDragDropWidget::onSubmitClicked);
 
+    // Initialize the questions for the draggable answer widgets
     ui->answer1->setQuestionText("Your gut produces important vitamins like _____ and K.");
     ui->answer2->setQuestionText("Nutrients are absorbed into your bloodstream in the _____.");
     ui->answer3->setQuestionText("_____ can help restore gut balance, particularly after illness or antibiotic use.");
@@ -31,6 +32,7 @@ QuizDragDropWidget::QuizDragDropWidget(QWidget *parent, QuizModel *QuizModel)
     ui->answer9->setQuestionText("Your gut is home to trillions of tiny organisms (bacteria, viruses, fungi) called the _____.");
     ui->answer10->setQuestionText("The liver, pancreas, and gallbladder produce important _____ and bile to aid in digestion.");
 
+    // Connect each answer label to the onAnswerDropped slot
     connect(ui->answer1, &DropLabel::answerDropped, this, &QuizDragDropWidget::onAnswerDropped);
     connect(ui->answer2, &DropLabel::answerDropped, this, &QuizDragDropWidget::onAnswerDropped);
     connect(ui->answer3, &DropLabel::answerDropped, this, &QuizDragDropWidget::onAnswerDropped);
@@ -42,6 +44,7 @@ QuizDragDropWidget::QuizDragDropWidget(QWidget *parent, QuizModel *QuizModel)
     connect(ui->answer9, &DropLabel::answerDropped, this, &QuizDragDropWidget::onAnswerDropped);
     connect(ui->answer10, &DropLabel::answerDropped, this, &QuizDragDropWidget::onAnswerDropped);
 
+    // Add questions and answers to the quiz model
     quizModel->addDragDropQuestion("Your gut produces important vitamins like _____ and K.", "B12");
     quizModel->addDragDropQuestion("Nutrients are absorbed into your bloodstream in the _____.", "Small Intestine");
     quizModel->addDragDropQuestion("_____ can help restore gut balance, particularly after illness or antibiotic use.", "Probiotics");
@@ -63,17 +66,15 @@ void QuizDragDropWidget::onSubmitClicked()
 {
     quizModel->setDragDropScore(0);
 
-    // Pass each answer to the model
+    // Submit each answer to the quiz model
     for (auto it = userAnswers.begin(); it != userAnswers.end(); ++it)
     {
         quizModel->submitDragDropAnswer(it.key(), it.value());
     }
 
-    // Get the score
+    // Display results to user
     int score = quizModel->getDragDropScore();
-
-    // Show the score in a QMessageBox
-    QMessageBox::information(this, "Quiz Results", QString("Your score is: %1").arg(score) + "/10");
+    QMessageBox::information(this, "Quiz Results", QString("Your quiz score is: %1").arg(score) + "/10");
 }
 
 QuizDragDropWidget::~QuizDragDropWidget()
