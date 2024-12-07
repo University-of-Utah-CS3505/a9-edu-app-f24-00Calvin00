@@ -55,7 +55,6 @@ SOURCES += \
     Box2D/Dynamics/b2World.cpp \
     Box2D/Dynamics/b2WorldCallbacks.cpp \
     Box2D/Rope/b2Rope.cpp \
-    collapsiblesection.cpp \
     howtostayhealthywidget.cpp \
     introtoguthealthwidget.cpp \
     draggablelabel.cpp \
@@ -121,7 +120,6 @@ HEADERS += \
     Box2D/Dynamics/b2World.h \
     Box2D/Dynamics/b2WorldCallbacks.h \
     Box2D/Rope/b2Rope.h \
-    collapsiblesection.h \
     howtostayhealthywidget.h \
     introtoguthealthwidget.h \
     draggablelabel.h \

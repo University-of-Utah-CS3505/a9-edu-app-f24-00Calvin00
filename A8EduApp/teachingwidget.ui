@@ -26,8 +26,8 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(5, 4, 4);</string>
+    <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>An intro to your Gut</string>
@@ -43,8 +43,8 @@ color: rgb(5, 4, 4);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(5, 3, 5);</string>
+    <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>Why is Gut Health important?</string>
@@ -60,8 +60,8 @@ color: rgb(5, 3, 5);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(4, 1, 4);</string>
+    <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>How to keep your gut healthy</string>
@@ -77,7 +77,7 @@ color: rgb(4, 1, 4);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(127, 127, 127);
+    <string notr="true">background-color: rgb(209, 160, 224);
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
