@@ -13,14 +13,9 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
   <widget class="QPushButton" name="simulationButton">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>100</y>
-     <width>251</width>
-     <height>24</height>
      <x>140</x>
      <y>10</y>
      <width>101</width>
@@ -28,7 +23,6 @@
     </rect>
    </property>
    <property name="text">
-    <string>Results Placeholder Button</string>
     <string>Simulation</string>
    </property>
   </widget>
@@ -45,7 +39,6 @@
     <string>Back</string>
    </property>
   </widget>
-  <widget class="QTextBrowser" name="textBrowser">
   <widget class="DraggableLabel" name="banana">
    <property name="geometry">
     <rect>
@@ -83,9 +76,6 @@
   <widget class="QLabel" name="poo">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>260</y>
-     <width>491</width>
      <x>280</x>
      <y>310</y>
      <width>401</width>
