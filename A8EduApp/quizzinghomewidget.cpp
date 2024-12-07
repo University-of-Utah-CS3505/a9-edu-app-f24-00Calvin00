@@ -14,7 +14,6 @@ QuizzingHomeWidget::QuizzingHomeWidget(QWidget *parent, QuizModel *QuizModel)
     this->setPalette(palette);
     this->setAutoFillBackground(true);
 
-    //QString("Your score is: %1").arg(score) + "/10"
     updateScoreLabel();
 
     connect(ui->matchingButton, &QPushButton::clicked, this, &QuizzingHomeWidget::matchingButtonClicked);
@@ -27,6 +26,7 @@ void QuizzingHomeWidget::updateScoreLabel()
     int score = quizModel->getTotalScore();
     int totalQuestions = (quizModel->getTotalDragDropQuestions()) + quizModel->getTotalMatchingQuestions(); // Replace with the correct method name
 
+    // Display score to user
     QString scoreText = QString("%1/%2").arg(score).arg(totalQuestions);
     ui->scoreNumber->setText(scoreText);
 }
