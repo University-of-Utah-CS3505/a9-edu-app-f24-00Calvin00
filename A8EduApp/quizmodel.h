@@ -28,7 +28,7 @@ public:
      * @param question The question text.
      * @param correctAnswer The correct answer for the question.
      */
-    void addMatchingQuestion(const QString &question, const QString &correctAnswer);
+    void addMatchingQuestion(const QString &question, const int correctAnswer);
 
     /**
      * @brief Adds a drag-and-drop question to the quiz.
@@ -42,7 +42,7 @@ public:
      * @param question The question text.
      * @param userAnswer The user's answer.
      */
-    void submitMatchingAnswer(const QString &question, const QString &userAnswer);
+    void submitMatchingAnswer(const QString &question, const int userAnswer);
 
     /**
      * @brief Submits a user's answer for a drag-and-drop question and updates the score if correct.
@@ -100,12 +100,16 @@ public:
      * @param score The score to set.
      */
     void setDragDropScore(int score);
+    /**
+     * @brief Sets the score for matching questions manually.
+     * @param score The score to set.
+     */
     void setMatchingScore(int score);
 
 private:
-    QMap<QString, QString> matchingQuestions; // Stores matching questions and their correct answers.
+    QMap<QString, int> matchingQuestions; // Stores matching questions and their correct answers.
     QMap<QString, QString> dragDropQuestions; // Stores drag-and-drop questions and their correct answers.
-    QMap<QString, QString> matchingUserAnswers; // Stores user answers for matching questions.
+    QMap<QString, int> matchingUserAnswers; // Stores user answers for matching questions.
     QMap<QString, QString> dragDropUserAnswers; // Stores user answers for drag-and-drop questions.
 
     int matchingScore; // The score for matching questions.
