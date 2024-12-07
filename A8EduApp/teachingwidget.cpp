@@ -14,6 +14,12 @@ TeachingWidget::TeachingWidget(QWidget *parent)
     QPixmap gutJPEG = QPixmap::fromImage(QImage(":/sprites/gutPic1.jpeg"));
     ui->gut->setPixmap(gutJPEG.scaled(ui->gut->size(), Qt::KeepAspectRatio));
 
+    // Set the background color
+    QPalette palette = this->palette();
+    palette.setColor(QPalette::Window, QColor(238, 223, 242));
+    this->setPalette(palette);
+    this->setAutoFillBackground(true);
+
     // Connect buttons to their respective slots
     connect(ui->introToGutButton, &QPushButton::clicked, this, &TeachingWidget::introToGutButtonClicked);
     connect(ui->whyGutHealthButton, &QPushButton::clicked, this, &TeachingWidget::whyGutHealthButtonClicked);

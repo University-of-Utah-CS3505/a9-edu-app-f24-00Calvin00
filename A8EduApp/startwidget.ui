@@ -80,7 +80,7 @@
      <string>A Guide to Your Gut</string>
     </property>
     <property name="alignment">
-     <set>Qt::AlignmentFlag::AlignCenter</set>
+     <set>Qt::AlignmentFlag::AlignBottom|Qt::AlignmentFlag::AlignHCenter</set>
     </property>
     <property name="wordWrap">
      <bool>true</bool>
@@ -156,6 +156,44 @@ background-color: rgb(207, 213, 255);</string>
      <string>QUIZ</string>
     </property>
    </widget>
+   <widget class="QLabel" name="title_2">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>320</y>
+      <width>371</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Silver</family>
+      <pointsize>20</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::NoFrame</enum>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="text">
+     <string>An educational course on gut health and your own personal journey through a land of digestive wonders.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
    <zorder>replayButton</zorder>
    <zorder>title</zorder>
    <zorder>pooedPoo</zorder>
@@ -163,6 +201,7 @@ background-color: rgb(207, 213, 255);</string>
    <zorder>resultsButton</zorder>
    <zorder>learnButton</zorder>
    <zorder>quizButton</zorder>
+   <zorder>title_2</zorder>
   </widget>
  </widget>
  <customwidgets>

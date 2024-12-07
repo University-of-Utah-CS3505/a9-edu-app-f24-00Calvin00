@@ -14,7 +14,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(43, 17, 13);</string>
+   <string notr="true"/>
   </property>
   <widget class="QPushButton" name="introToGutButton">
    <property name="geometry">
@@ -26,8 +26,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(48, 21, 14);
-color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>An intro to your Gut</string>
@@ -43,8 +42,7 @@ color: rgb(255, 255, 255);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(48, 21, 14);
-color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>Why is Gut Health important?</string>
@@ -60,8 +58,7 @@ color: rgb(255, 255, 255);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(48, 21, 14);
-color: rgb(255, 255, 255);</string>
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>How to keep your gut healthy</string>
@@ -84,22 +81,6 @@ color: rgb(255, 255, 255);</string>
     <string>Back</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>-20</y>
-     <width>821</width>
-     <height>621</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(83, 43, 24);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
   <widget class="QLabel" name="gut">
    <property name="geometry">
     <rect>
@@ -113,12 +94,6 @@ color: rgb(255, 255, 255);</string>
     <string>TextLabel</string>
    </property>
   </widget>
-  <zorder>label</zorder>
-  <zorder>introToGutButton</zorder>
-  <zorder>whyGutHealthButton</zorder>
-  <zorder>howToStayHealthyButton</zorder>
-  <zorder>backToStartButton</zorder>
-  <zorder>gut</zorder>
  </widget>
  <resources/>
  <connections/>
