@@ -38,6 +38,9 @@ signals:
      */
     void backToQuizHomeButtonClicked();
 
+private slots:
+    void onSubmitClicked();
+
 private:
     Ui::QuizMatchingWidget *ui; // Pointer to the user interface.
     QuizModel *quizModel; // Pointer to the QuizModel for managing quiz data.

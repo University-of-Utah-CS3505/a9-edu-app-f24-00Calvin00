@@ -100,6 +100,7 @@ public:
      * @param score The score to set.
      */
     void setDragDropScore(int score);
+    void setMatchingScore(int score);
 
 private:
     QMap<QString, QString> matchingQuestions; // Stores matching questions and their correct answers.
