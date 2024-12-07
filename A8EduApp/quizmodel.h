@@ -12,10 +12,10 @@ class QuizModel : public QObject
 public:
     explicit QuizModel(QObject *parent = nullptr);
 
-    void addMatchingQuestion(const QString &question, const QString &correctAnswer);
+    void addMatchingQuestion(const QString &question, const int correctAnswer);
     void addDragDropQuestion(const QString &question, const QString &correctAnswer);
 
-    void submitMatchingAnswer(const QString &question, const QString &userAnswer);
+    void submitMatchingAnswer(const QString &question, const int userAnswer);
     void submitDragDropAnswer(const QString &question, const QString &userAnswer);
 
     int getMatchingScore() const;
@@ -28,14 +28,15 @@ public:
     int getTotalDragDropQuestions() const;
 
     void setDragDropScore(int score);
+    void setMatchingScore(int score);
 
 private:
     // Maps for matching and drag-and-drop questions
-    QMap<QString, QString> matchingQuestions;  // Questions mapped to correct answers
+    QMap<QString, int> matchingQuestions;  // Questions mapped to correct answers
     QMap<QString, QString> dragDropQuestions;
 
     // Store user answers
-    QMap<QString, QString> matchingUserAnswers;
+    QMap<QString, int> matchingUserAnswers;
     QMap<QString, QString> dragDropUserAnswers;
 
     // User scores for each type of question

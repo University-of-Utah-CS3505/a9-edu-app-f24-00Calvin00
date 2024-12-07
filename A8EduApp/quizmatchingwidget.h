@@ -19,9 +19,13 @@ public:
 signals:
     void backToQuizHomeButtonClicked();
 
+private slots:
+    void onSubmitClicked();
+
 private:
     Ui::QuizMatchingWidget *ui;
     QuizModel *quizModel;
+//    QMap<QString, int> userAnswers;
 };
 
 #endif // QUIZMATCHINGWIDGET_H
