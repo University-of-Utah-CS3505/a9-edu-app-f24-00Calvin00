@@ -4,6 +4,10 @@
 #include <QWidget>
 #include "quizmodel.h"
 
+/**
+ * @class QuizMatchingWidget
+ * @brief This class adds functionality for the matching quiz..
+ */
 namespace Ui {
 class QuizMatchingWidget;
 }
