@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>766</width>
-    <height>637</height>
+    <width>800</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,7 +16,7 @@
   <widget class="QPushButton" name="backToTeachingWidgetButton">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>10</x>
      <y>10</y>
      <width>100</width>
      <height>32</height>
@@ -33,10 +33,10 @@ color: rgb(255, 255, 255);</string>
   <widget class="QTextBrowser" name="textBrowser">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>0</y>
-     <width>471</width>
-     <height>151</height>
+     <x>200</x>
+     <y>40</y>
+     <width>421</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -50,17 +50,16 @@ hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot; bgcolor=&quot;#d1a0e0&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
-&lt;h1 align=&quot;center&quot; style=&quot; margin-top:40px; margin-bottom:30px; margin-left:37px; margin-right:37px; -qt-block-indent:0; text-indent:0px; line-height:180%;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:xx-large; font-weight:700; color:#ffffff;&quot;&gt;Why Your Gut Is Important&lt;/span&gt;&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;h1 align=&quot;center&quot; style=&quot; margin-top:40px; margin-bottom:30px; margin-left:20px; margin-right:20px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:xx-large; font-weight:700; color:#ffffff;&quot;&gt;Why Your Gut Is Important&lt;/span&gt;&lt;span style=&quot; font-size:xx-large; font-weight:700;&quot;&gt; &lt;/span&gt;&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QTextBrowser" name="textBrowser_2">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>160</y>
-     <width>391</width>
-     <height>471</height>
+     <x>20</x>
+     <y>140</y>
+     <width>381</width>
+     <height>391</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -74,23 +73,22 @@ hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot; bgcolor=&quot;#d1a0e0&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
-&lt;h2 style=&quot; margin-top:0px; margin-bottom:12px; margin-left:37px; margin-right:37px; -qt-block-indent:0; text-indent:0px; line-height:180%;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:x-large; font-weight:700; color:#ffffff;&quot;&gt;Why is gut health so crucial?&lt;/span&gt;&lt;span style=&quot; font-size:x-large; font-weight:700; color:#000000;&quot;&gt;    &lt;/span&gt;&lt;/h2&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:20px; margin-left:37px; margin-right:37px; -qt-block-indent:0; text-indent:0px; line-height:180%;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; color:#ffffff;&quot;&gt;        Gut health is vital for maintaining the proper function of your body. It influences nearly every system, including digestion, immunity, and even mental health.    &lt;/span&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:3px; margin-left:15px; margin-right:15px; -qt-block-indent:0; text-indent:0px; line-height:140%;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:12pt; font-weight:700; color:#ffffff;&quot;&gt;Why is gut health so crucial?&lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;        &lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:3px; margin-bottom:3px; margin-left:15px; margin-right:15px; -qt-block-indent:0; text-indent:0px; line-height:140%;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;      &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:12pt; color:#ffffff;&quot;&gt;Gut health is vital for maintaining the proper function of your body. It influences nearly every system, including digestion, immunity, and even mental health.&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;        &lt;/span&gt;&lt;/p&gt;
 &lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; color:#ffffff;&quot; style=&quot; margin-top:15px; margin-bottom:10px; margin-left:37px; margin-right:37px; -qt-block-indent:0; text-indent:0px; line-height:180%;&quot;&gt;&lt;span style=&quot; font-size:16px; font-weight:700;&quot;&gt;Whole-body health:&lt;/span&gt;&lt;span style=&quot; font-size:16px;&quot;&gt; Your gut interacts with nearly every system in your body, from digestion to immunity and mental health.&lt;/span&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-size:16px;&quot;&gt;        &lt;/span&gt;&lt;/li&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:10px; margin-left:37px; margin-right:37px; -qt-block-indent:0; text-indent:0px; line-height:180%;&quot;&gt;&lt;span style=&quot; font-size:16px; font-weight:700;&quot;&gt;Nutrient absorption:&lt;/span&gt;&lt;span style=&quot; font-size:16px;&quot;&gt; Without a healthy gut, you may not absorb essential nutrients properly, leading to deficiencies.&lt;/span&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-size:16px;&quot;&gt;        &lt;/span&gt;&lt;/li&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:10px; margin-left:37px; margin-right:37px; -qt-block-indent:0; text-indent:0px; line-height:180%;&quot;&gt;&lt;span style=&quot; font-size:16px; font-weight:700;&quot;&gt;Mental health:&lt;/span&gt;&lt;span style=&quot; font-size:16px;&quot;&gt; Your gut and brain communicate via the &lt;/span&gt;&lt;span style=&quot; font-size:16px; font-weight:700;&quot;&gt;gut-brain axis&lt;/span&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;. Poor gut health can contribute to anxiety and depression.&lt;/span&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-size:16px;&quot;&gt;        &lt;/span&gt;&lt;/li&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:25px; margin-left:37px; margin-right:37px; -qt-block-indent:0; text-indent:0px; line-height:180%;&quot;&gt;&lt;span style=&quot; font-size:16px; font-weight:700;&quot;&gt;Immune defense:&lt;/span&gt;&lt;span style=&quot; font-size:16px;&quot;&gt; A healthy gut microbiome helps protect your body from infections and strengthens your immune system.&lt;/span&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-size:16px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:12pt; color:#ffffff;&quot; style=&quot; margin-top:3px; margin-bottom:3px; margin-left:30px; margin-right:30px; -qt-block-indent:0; text-indent:0px; line-height:140%;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-size:12px; font-weight:700;&quot;&gt;Whole-body health:&lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt; Your gut interacts with nearly every system in your body, from digestion to immunity and mental health.      &lt;/span&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-size:12px;&quot;&gt;      &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:12pt; color:#ffffff;&quot; style=&quot; margin-top:3px; margin-bottom:3px; margin-left:30px; margin-right:30px; -qt-block-indent:0; text-indent:0px; line-height:140%;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-size:12px; font-weight:700;&quot;&gt;Nutrient absorption:&lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt; Without a healthy gut, you may not absorb essential nutrients properly, leading to deficiencies.      &lt;/span&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-size:12px;&quot;&gt;      &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:12pt; color:#ffffff;&quot; style=&quot; margin-top:3px; margin-bottom:3px; margin-left:30px; margin-right:30px; -qt-block-indent:0; text-indent:0px; line-height:140%;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-size:12px; font-weight:700;&quot;&gt;Mental health:&lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt; Your gut and brain communicate via the gut-brain axis. Poor gut health can contribute to anxiety and depression.      &lt;/span&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-size:12px;&quot;&gt;      &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:12pt; color:#ffffff;&quot; style=&quot; margin-top:3px; margin-bottom:3px; margin-left:30px; margin-right:30px; -qt-block-indent:0; text-indent:0px; line-height:140%;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-size:12px; font-weight:700;&quot;&gt;Immune defense:&lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt; A healthy gut microbiome helps protect your body from infections and strengthens your immune system.      &lt;/span&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-size:12px;&quot;&gt;      &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QTextBrowser" name="textBrowser_3">
    <property name="geometry">
     <rect>
-     <x>410</x>
-     <y>160</y>
-     <width>341</width>
-     <height>471</height>
+     <x>420</x>
+     <y>140</y>
+     <width>361</width>
+     <height>391</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -98,27 +96,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
    </property>
    <property name="html">
     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;title&gt;Why Your Gut Is Important - Section 2&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;title&gt;What Happens Without Gut Care?&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot; bgcolor=&quot;#d1a0e0&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    &lt;/p&gt;
-&lt;h2 style=&quot; margin-top:30px; margin-bottom:12px; margin-left:37px; margin-right:37px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:700; color:#000000;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:x-large; font-weight:700; color:#ffffff;&quot;&gt;What happens when you don’t take care of your gut?&lt;/span&gt;&lt;span style=&quot; font-size:x-large; font-weight:700; color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-size:x-large; font-weight:700;&quot;&gt;    &lt;/span&gt;&lt;/h2&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:20px; margin-left:37px; margin-right:37px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; color:#ffffff;&quot;&gt;Neglecting your gut health can have wide-ranging effects on your body, leading to various issues:&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;    &lt;/span&gt;    &lt;/p&gt;
-&lt;h3 style=&quot; margin-top:14px; margin-bottom:12px; margin-left:37px; margin-right:37px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large; font-weight:700; color:#000000;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:large; font-weight:700; color:#ffffff;&quot;&gt;Digestive Issues:&lt;/span&gt;&lt;span style=&quot; font-size:large; font-weight:700; color:#000000;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-size:large; font-weight:700;&quot;&gt;    &lt;/span&gt;&lt;/h3&gt;
+&lt;h2 align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:5px; margin-left:20px; margin-right:20px; -qt-block-indent:0; text-indent:0px; line-height:140%;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:11pt; font-weight:700; color:#ffffff;&quot;&gt;What happens when you don’t take care of your gut?&lt;/span&gt;&lt;/h2&gt;
+&lt;p style=&quot; margin-top:5px; margin-bottom:5px; margin-left:20px; margin-right:20px; -qt-block-indent:0; text-indent:0px; line-height:140%;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:11pt; color:#ffffff;&quot;&gt;Neglecting your gut health can have wide-ranging effects on your body, leading to various issues:&lt;/span&gt;&lt;/p&gt;
+&lt;h3 style=&quot; margin-top:5px; margin-bottom:5px; margin-left:20px; margin-right:20px; -qt-block-indent:0; text-indent:0px; line-height:140%;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:11pt; font-weight:700; color:#ffffff;&quot;&gt;Digestive Issues:&lt;/span&gt;&lt;/h3&gt;
 &lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; color:#ffffff;&quot; style=&quot; margin-top:15px; margin-bottom:10px; margin-left:57px; margin-right:37px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;            Problems like bloating, diarrhea, or constipation can result from an imbalance of gut bacteria (called &lt;/span&gt;&lt;span style=&quot; font-size:16px; font-weight:700;&quot;&gt;dysbiosis&lt;/span&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;).        &lt;/span&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-size:16px;&quot;&gt;        &lt;/span&gt;&lt;/li&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:25px; margin-left:57px; margin-right:37px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;            Conditions like &lt;/span&gt;&lt;span style=&quot; font-size:16px; font-weight:700;&quot;&gt;irritable bowel syndrome (IBS)&lt;/span&gt;&lt;span style=&quot; font-size:16px;&quot;&gt; or &lt;/span&gt;&lt;span style=&quot; font-size:16px; font-weight:700;&quot;&gt;inflammatory bowel disease (IBD)&lt;/span&gt;&lt;span style=&quot; font-size:16px;&quot;&gt; may worsen with poor gut health.        &lt;/span&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-size:16px;&quot;&gt;        &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;h3 style=&quot; margin-top:14px; margin-bottom:12px; margin-left:37px; margin-right:37px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large; font-weight:700; color:#000000;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:large; font-weight:700; color:#ffffff;&quot;&gt;Chronic Diseases:&lt;/span&gt;&lt;span style=&quot; font-size:large; font-weight:700; color:#000000;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-size:large; font-weight:700;&quot;&gt;    &lt;/span&gt;&lt;/h3&gt;
+&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:11pt; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:30px; margin-right:30px; -qt-block-indent:0; text-indent:0px; line-height:140%;&quot;&gt;&lt;span style=&quot; font-size:12px; font-weight:700;&quot;&gt;Digestive Problems:&lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt; Problems like bloating, diarrhea, or constipation can result from an imbalance of gut bacteria (called dysbiosis). &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:11pt; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:30px; margin-right:30px; -qt-block-indent:0; text-indent:0px; line-height:140%;&quot;&gt;&lt;span style=&quot; font-size:12px; font-weight:700;&quot;&gt;Chronic Conditions:&lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt; Conditions like irritable bowel syndrome (IBS) or inflammatory bowel disease (IBD) may worsen with poor gut health.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;h3 style=&quot; margin-top:5px; margin-bottom:5px; margin-left:20px; margin-right:20px; -qt-block-indent:0; text-indent:0px; line-height:140%;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:11pt; font-weight:700; color:#ffffff;&quot;&gt;Chronic Diseases:&lt;/span&gt;&lt;/h3&gt;
 &lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; color:#ffffff;&quot; style=&quot; margin-top:15px; margin-bottom:10px; margin-left:57px; margin-right:37px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;            &lt;/span&gt;&lt;span style=&quot; font-size:16px; font-weight:700;&quot;&gt;Dysbiosis&lt;/span&gt;&lt;span style=&quot; font-size:16px;&quot;&gt; has been linked to autoimmune diseases, such as rheumatoid arthritis, and heart disease.        &lt;/span&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-size:16px;&quot;&gt;        &lt;/span&gt;&lt;/li&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:25px; margin-left:57px; margin-right:37px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;            Certain gut bacteria produce harmful chemicals like &lt;/span&gt;&lt;span style=&quot; font-size:16px; font-weight:700;&quot;&gt;TMAO&lt;/span&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;, which can cause cholesterol to build up in your arteries, leading to heart disease.        &lt;/span&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-size:16px;&quot;&gt;        &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;h3 style=&quot; margin-top:14px; margin-bottom:12px; margin-left:37px; margin-right:37px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large; font-weight:700; color:#000000;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:large; font-weight:700; color:#ffffff;&quot;&gt;Weakened Immunity:&lt;/span&gt;&lt;span style=&quot; font-size:large; font-weight:700; color:#000000;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-size:large; font-weight:700;&quot;&gt;    &lt;/span&gt;&lt;/h3&gt;
-&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; color:#ffffff;&quot; style=&quot; margin-top:15px; margin-bottom:10px; margin-left:57px; margin-right:37px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;            Without good bacteria, your gut’s ability to fight harmful pathogens is reduced.        &lt;/span&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-size:16px;&quot;&gt;        &lt;/span&gt;&lt;/li&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:25px; margin-left:57px; margin-right:37px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;            Infections or even systemic illnesses may result if the gut barrier is compromised.        &lt;/span&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-size:16px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:11pt; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:30px; margin-right:30px; -qt-block-indent:0; text-indent:0px; line-height:140%;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;Unhealthy gut bacteria can increase inflammation, contributing to diseases like diabetes, heart disease, and obesity.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
  </widget>
