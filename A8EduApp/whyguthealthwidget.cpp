@@ -9,7 +9,7 @@ WhyGutHealthWidget::WhyGutHealthWidget(QWidget *parent)
 
     // Set the background color
     QPalette palette = this->palette();
-    palette.setColor(QPalette::Window, QColor(209, 160, 224));
+    palette.setColor(QPalette::Window, QColor(238, 223, 242));
     this->setPalette(palette);
     this->setAutoFillBackground(true);
 
