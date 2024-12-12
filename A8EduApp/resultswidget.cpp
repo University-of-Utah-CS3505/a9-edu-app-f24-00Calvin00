@@ -112,3 +112,7 @@ void ResultsWidget::updatePooState(QString imagePath, Qt::Alignment alignment, b
     ui->poo->setPixmap(pooPixmap);
     ui->poo->setAlignment(alignment);
 }
+
+void ResultsWidget::ShowQuizResults() {
+
+}

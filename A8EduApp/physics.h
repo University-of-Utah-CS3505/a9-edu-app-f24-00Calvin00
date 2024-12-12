@@ -16,6 +16,7 @@ public:
 
 public slots:
     void updateWorld();
+    void addPoop(int x, int y);
 
 private:
     b2World world;       // The Box2D world
