@@ -1,6 +1,7 @@
 #include "Physics.h"
 #include <QPainter>
 #include <QDebug>
+#include <QMouseEvent>
 
 Physics::Physics(QWidget *parent) : QWidget(parent),
     world(b2Vec2(0.0f, 10.0f)),

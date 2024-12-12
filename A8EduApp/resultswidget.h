@@ -3,9 +3,9 @@
 
 #include <QWidget>
 #include <QMovie>
-#include <quizmodel.h>
-#include <draggablelabel.h>
-#include <droplabel.h>
+#include "quizmodel.h"
+#include "draggablelabel.h"
+#include "droplabel.h"
 
 namespace Ui {
 class ResultsWidget;

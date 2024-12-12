@@ -18,6 +18,9 @@ public slots:
     void updateWorld();
     void addPoop(int x, int y);
 
+protected:
+    void mousePressEvent(QMouseEvent *event);
+
 private:
     b2World world;       // The Box2D world
     QTimer timer;        // Timer for updating the physics simulation
