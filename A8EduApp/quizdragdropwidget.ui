@@ -568,7 +568,7 @@ background-color: rgb(209, 160, 224);</string>
   <widget class="QPushButton" name="backToQuizHomeButton">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>40</x>
      <y>10</y>
      <width>100</width>
      <height>32</height>
