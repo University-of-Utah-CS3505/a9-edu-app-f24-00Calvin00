@@ -92,6 +92,7 @@ void ResultsWidget::calculateMouthValue(const QString &food)
     } else if (food == "icecream"){
         mouthValue += 30;
     }
+    ui->GutHappinessNumber->setText(QString::number(mouthValue));
 }
 
 void ResultsWidget::onFoodDropped()

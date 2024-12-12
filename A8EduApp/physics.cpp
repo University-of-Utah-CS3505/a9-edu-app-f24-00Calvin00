@@ -92,55 +92,8 @@ void Physics::paintEvent(QPaintEvent *) {
     int x = static_cast<int>(position.x);
     int y = static_cast<int>(position.y); // Flip y-axis
 
-    // printf("x: %d\n", x);
-    // printf("y: %d\n", y);
-
     // Draw the image
     painter.drawImage(x-15, y-45, image);
-
-    b2Vec2 bottomWallPosition = bottomWallBody->GetPosition();
-    QRect platformRect(
-        bottomWallPosition.x,
-        bottomWallPosition.y,
-        halfWorldWidth * 2,
-        wallWidth
-        );
-    // printf("bottomWallX: %d  " , (int)bottomWallPosition.x);
-    // printf("bottomWallY: %d\n", (int)bottomWallPosition.y);
-    painter.fillRect(platformRect, Qt::red);
-
-    b2Vec2 topWallPosition = topWallBody->GetPosition();
-    QRect platformRect2(
-        topWallPosition.x,
-        topWallPosition.y,
-        halfWorldWidth * 2,
-        wallWidth
-        );
-    // printf("topWallX: %d  " , (int)topWallPosition.x);
-    // printf("topWallY: %d\n", (int)topWallPosition.y);
-    painter.fillRect(platformRect2, Qt::red);
-
-    b2Vec2 leftWallPosition = leftWallBody->GetPosition();
-    QRect platformRect3(
-        leftWallPosition.x,
-        leftWallPosition.y,
-        wallWidth,
-        halfWorldWidth * 2
-        );
-    // printf("leftWallX: %d  " , (int)leftWallPosition.x);
-    // printf("leftWallY: %d\n", (int)leftWallPosition.y);
-    painter.fillRect(platformRect3, Qt::red);
-
-    b2Vec2 rightWallPosition = rightWallBody->GetPosition();
-    QRect platformRect4(
-        rightWallPosition.x,
-        rightWallPosition.y,
-        wallWidth,
-        halfWorldWidth * 2
-        );
-    // printf("rightWallX: %d  " , (int)rightWallPosition.x);
-    // printf(" rightWallY: %d\n", (int)rightWallPosition.y);
-    painter.fillRect(platformRect4, Qt::red);
     painter.end();
 }
 
