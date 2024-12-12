@@ -1,6 +1,5 @@
 #ifndef INTROTOGUTHEALTHWIDGET_H
 #define INTROTOGUTHEALTHWIDGET_H
-
 #include <QWidget>
 
 namespace Ui {

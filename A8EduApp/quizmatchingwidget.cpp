@@ -19,13 +19,13 @@ QuizMatchingWidget::QuizMatchingWidget(QWidget *parent, QuizModel *QuizModel)
     connect(ui->backToQuizHomeButton, &QPushButton::clicked, this, &QuizMatchingWidget::backToQuizHomeButtonClicked);
     connect(ui->submitButton, &QPushButton::clicked, this, &QuizMatchingWidget::onSubmitClicked);
 
-    quizModel->addMatchingQuestion("Vocab1", 3);
-    quizModel->addMatchingQuestion("Vocab2", 4);
-    quizModel->addMatchingQuestion("Vocab3", 7);
-    quizModel->addMatchingQuestion("Vocab4", 5);
-    quizModel->addMatchingQuestion("Vocab5", 1);
-    quizModel->addMatchingQuestion("Vocab6", 2);
-    quizModel->addMatchingQuestion("Vocab7", 6);
+    quizModel->addMatchingQuestion("Vocab1", 5);
+    quizModel->addMatchingQuestion("Vocab2", 6);
+    quizModel->addMatchingQuestion("Vocab3", 1);
+    quizModel->addMatchingQuestion("Vocab4", 2);
+    quizModel->addMatchingQuestion("Vocab5", 4);
+    quizModel->addMatchingQuestion("Vocab6", 7);
+    quizModel->addMatchingQuestion("Vocab7", 3);
     quizModel->addMatchingQuestion("Vocab8", 10);
     quizModel->addMatchingQuestion("Vocab9", 9);
     quizModel->addMatchingQuestion("Vocab10", 8);
