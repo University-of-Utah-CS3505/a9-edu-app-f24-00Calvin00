@@ -89,12 +89,16 @@ void ResultsWidget::onFoodDropped()
 {
     if (mouthValue > -25 && mouthValue <= 25) {
         updatePooState(":/sprites/hardPoo.png");
+        ui->StoolState->setText("Hard Poop! >:(");
     } else if (mouthValue > 25 && mouthValue <= 50) {
         updatePooState(":/sprites/normalPoo.png");
+        ui->StoolState->setText("Meh Poop :|");
     } else if (mouthValue > 50 && mouthValue <= 75) {
         updatePooState(":/sprites/happyPoo.png");
+        ui->StoolState->setText("Great Poop :D");
     } else if (mouthValue > 75 && mouthValue <= 125) {
         updatePooState(":/sprites/liquidPoo.png", Qt::AlignBottom, false);
+        ui->StoolState->setText("Diarrhea Poop :O");
     } else {
         ui->poo->clear();
         gif->start();

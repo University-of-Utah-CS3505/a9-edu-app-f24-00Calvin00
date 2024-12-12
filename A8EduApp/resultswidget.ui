@@ -240,9 +240,18 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <rect>
      <x>540</x>
      <y>250</y>
-     <width>101</width>
+     <width>111</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);</string>
    </property>
    <property name="text">
     <string>Gut Happiness:</string>
@@ -260,6 +269,15 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <height>20</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);</string>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -269,15 +287,71 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <rect>
      <x>520</x>
      <y>10</y>
-     <width>261</width>
+     <width>241</width>
      <height>51</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);</string>
    </property>
    <property name="text">
     <string>To keep your gut happy try to keep the number in between 50 and 75!</string>
    </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
    <property name="wordWrap">
     <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="StoolStateText">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>570</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>Stool State:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="StoolState">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>570</y>
+     <width>101</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
   <zorder>simulationButton</zorder>
@@ -295,6 +369,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
   <zorder>GutHappinessLabel</zorder>
   <zorder>GutHappinessNumber</zorder>
   <zorder>label</zorder>
+  <zorder>StoolStateText</zorder>
+  <zorder>StoolState</zorder>
  </widget>
  <customwidgets>
   <customwidget>
