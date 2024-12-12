@@ -48,10 +48,11 @@ public:
     ~TeachingWidget();
 
 private:
-    Ui::TeachingWidget *ui;
-    IntroToGutHealthWidget *introToGutHealthWidget;
-    WhyGutHealthWidget *whyGutHealthWidget;
-    HowToStayHealthyWidget *howToStayHealthyWidget;
+    Ui::TeachingWidget *ui; ///< Pointer to the UI elements for the widget.
+
+    IntroToGutHealthWidget *introToGutHealthWidget; ///< Widget for the introduction to gut health section.
+    WhyGutHealthWidget *whyGutHealthWidget; ///< Widget for explaining the importance of gut health.
+    HowToStayHealthyWidget *howToStayHealthyWidget; ///< Widget for tips on maintaining gut health.
 
 signals:
     /**
@@ -81,21 +82,6 @@ signals:
      * Enables the user to return to the starting screen of the application.
      */
     void backToStartButtonClicked();
-
-private:
-    Ui::TeachingWidget *ui; ///< Pointer to the UI elements for the widget.
-
-    IntroToGutHealthWidget *introToGutHealthWidget; ///< Widget for the introduction to gut health section.
-    WhyGutHealthWidget *whyGutHealthWidget; ///< Widget for explaining the importance of gut health.
-    HowToStayHealthyWidget *howToStayHealthyWidget; ///< Widget for tips on maintaining gut health.
-
-    // Uncomment if implementing image setup functionality
-    // /**
-    //  * @brief Sets up the view for displaying images.
-    //  *
-    //  * Prepares a QGraphicsView or other UI element for displaying visual content.
-    //  */
-    // void setupImageView();
 };
 
 #endif // TEACHINGWIDGET_H
