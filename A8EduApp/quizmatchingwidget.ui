@@ -16,7 +16,7 @@
   <widget class="QPushButton" name="backToQuizHomeButton">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>30</x>
      <y>10</y>
      <width>101</width>
      <height>31</height>

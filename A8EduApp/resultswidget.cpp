@@ -10,13 +10,14 @@ ResultsWidget::ResultsWidget(QWidget *parent, QuizModel *quizModel)
 {
     ui->setupUi(this);
     ui->explosion->setMovie(gif);
-
-    QPixmap png = QPixmap::fromImage(QImage(":/sprites/mouth.png"));
-    ui->mouth->setPixmap(png.scaled(ui->mouth->size(), Qt::KeepAspectRatio));
-    ui->mouth->setFrameShape(QFrame::NoFrame);
-
     updatePooState(":/sprites/normalPoo.png");
 
+    // Set the pixart and information box
+    QPixmap png = QPixmap::fromImage(QImage(":/sprites/mouth.png"));
+    ui->mouth->setPixmap(png.scaled(ui->mouth->size(), Qt::KeepAspectRatio));
+    ui->mouth->setStyleSheet("background-color: transparent ;");
+    ui->mouth->setFrameShape(QFrame::NoFrame);
+    ui->information->setHidden(true);
     setFoodImage(ui->banana, ":/sprites/banana.png");
     setFoodImage(ui->meat, ":/sprites/meat.png");
     setFoodImage(ui->pickle, ":/sprites/pickle.png");
@@ -56,14 +57,23 @@ void ResultsWidget::setFoodImage(QLabel* label, const QString& imagePath)
     label->setFrameShape(QFrame::NoFrame);
 }
 
+void ResultsWidget::setInformationText(const QString& text)
+{
+    ui->information->setFontPointSize(10);
+    ui->information->setText(text);
+    ui->information->setAlignment(Qt::AlignCenter);
+}
+
 void ResultsWidget::toggleSimulation()
 {
-    if (ui->textBrowser->isHidden()) {
+    if (ui->conclusion->isHidden()) {
         ui->simulationButton->setText("Simulation");
-        ui->textBrowser->setHidden(false);
+        ui->conclusion->setHidden(false);
+        ui->information->setHidden(true);
     } else {
         ui->simulationButton->setText("Summary");
-        ui->textBrowser->setHidden(true);
+        ui->conclusion->setHidden(true);
+        ui->information->setHidden(false);
     }
 }
 
@@ -89,19 +99,21 @@ void ResultsWidget::onFoodDropped()
 {
     if (mouthValue > -25 && mouthValue <= 25) {
         updatePooState(":/sprites/hardPoo.png");
-        ui->StoolState->setText("Hard Poop! >:(");
+        setInformationText("Uh oh... constipation. Try eating more fiber or dairy.");
     } else if (mouthValue > 25 && mouthValue <= 50) {
         updatePooState(":/sprites/normalPoo.png");
-        ui->StoolState->setText("Meh Poop :|");
+        setInformationText("Not bad... but could be better. Try eating more acid.");
     } else if (mouthValue > 50 && mouthValue <= 75) {
         updatePooState(":/sprites/happyPoo.png");
-        ui->StoolState->setText("Great Poop :D");
+        setInformationText("Nice job, it's the perfect consistency! Now's the time to experiment.");
     } else if (mouthValue > 75 && mouthValue <= 125) {
         updatePooState(":/sprites/liquidPoo.png", Qt::AlignBottom, false);
-        ui->StoolState->setText("Diarrhea Poop :O");
+        setInformationText("Uh oh... diarrhea! Try eating more carbs or fat.");
     } else {
+        // Make the poo explode
         ui->poo->clear();
         gif->start();
+        setInformationText("Oh no, you've burst! Now's the time to experiment.");
     }
 }
 
