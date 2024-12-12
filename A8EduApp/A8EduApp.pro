@@ -68,7 +68,6 @@ SOURCES += \
     quizzinghomewidget.cpp \
     resultswidget.cpp \
     startwidget.cpp \
-    teachingmodel.cpp \
     teachingwidget.cpp \
     whyguthealthwidget.cpp
 
@@ -132,7 +131,6 @@ HEADERS += \
     quizzinghomewidget.h \
     resultswidget.h \
     startwidget.h \
-    teachingmodel.h \
     teachingwidget.h \
     whyguthealthwidget.h
 
