@@ -50,6 +50,7 @@ bool QuizModel::isMatchingAnswerCorrect(const QString &question) const
            matchingUserAnswers.value(question) == matchingQuestions.value(question);
 }
 
+
 bool QuizModel::isDragDropAnswerCorrect(const QString &question) const
 {
     return dragDropUserAnswers.contains(question) &&

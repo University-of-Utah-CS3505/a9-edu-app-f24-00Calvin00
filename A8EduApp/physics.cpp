@@ -1,6 +1,7 @@
 #include "Physics.h"
 #include <QPainter>
 #include <QDebug>
+#include <QMouseEvent>
 
 Physics::Physics(QWidget *parent) : QWidget(parent),
     world(b2Vec2(0.0f, 10.0f)),
@@ -149,3 +150,40 @@ void Physics::updateWorld() {
     // **Trigger a repaint**
     update();
 }
+
+void Physics::addPoop(int x, int y) {
+    if (halfWorldWidth * 2 - 30 < x) {
+        x = halfWorldWidth * 2 - 30;
+    }
+    if (y < 90) {
+        y = 90;
+    }
+    // **Define the dynamic body (the bouncing box)**
+    b2BodyDef bodyDef;
+    bodyDef.type = b2_dynamicBody;
+    bodyDef.position.Set(x, y);
+
+    body = world.CreateBody(&bodyDef);
+
+    b2PolygonShape dynamicBox;
+    dynamicBox.SetAsBox(15.0f, 45.0f); // Half-widths so actual box is 30x90
+
+    // Define the dynamic body fixture.
+    b2FixtureDef fixtureDef;
+    fixtureDef.shape = &dynamicBox;
+    fixtureDef.density = 1.0f;
+    fixtureDef.friction = 0.5f;
+    fixtureDef.restitution = 0.9f;
+
+    body->SetLinearVelocity(b2Vec2(200000000.0f, 100.0f)); // Adjust values as desired
+
+    body->CreateFixture(&fixtureDef);
+}
+
+void Physics::mousePressEvent(QMouseEvent *event) {
+    if (event->button() == Qt::LeftButton) {
+        addPoop(event->pos().x(), event->pos().y());
+    }
+    QWidget::mousePressEvent(event);
+}
+

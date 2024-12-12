@@ -227,6 +227,14 @@ background-color: rgb(207, 213, 255);</string>
      <bool>true</bool>
     </property>
    </widget>
+   <zorder>title</zorder>
+   <zorder>pooedPoo</zorder>
+   <zorder>replayButton</zorder>
+   <zorder>instructions</zorder>
+   <zorder>resultsButton</zorder>
+   <zorder>learnButton</zorder>
+   <zorder>quizButton</zorder>
+   <zorder>title_2</zorder>
   </widget>
  </widget>
  <customwidgets>
