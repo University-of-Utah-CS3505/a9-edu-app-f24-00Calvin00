@@ -10,6 +10,17 @@
     <height>600</height>
    </rect>
   </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Terminal</family>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
@@ -31,6 +42,12 @@
       <height>400</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>System</family>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -43,6 +60,9 @@
       <width>81</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(209, 160, 224);</string>
     </property>
     <property name="text">
      <string>Again!</string>
@@ -59,16 +79,19 @@
     </property>
     <property name="font">
      <font>
-      <family>Silver</family>
-      <pointsize>55</pointsize>
-      <bold>true</bold>
+      <family>Ravie</family>
+      <pointsize>25</pointsize>
+      <bold>false</bold>
+      <kerning>false</kerning>
      </font>
     </property>
     <property name="autoFillBackground">
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(209, 160, 224);
+border-color: rgb(0, 0, 0);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Shape::Box</enum>
@@ -80,7 +103,7 @@
      <string>A Guide to Your Gut</string>
     </property>
     <property name="alignment">
-     <set>Qt::AlignmentFlag::AlignBottom|Qt::AlignmentFlag::AlignHCenter</set>
+     <set>Qt::AlignmentFlag::AlignCenter</set>
     </property>
     <property name="wordWrap">
      <bool>true</bool>
@@ -126,6 +149,9 @@ background-color: rgb(207, 213, 255);</string>
       <height>41</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(209, 160, 224);</string>
+    </property>
     <property name="text">
      <string>RESULTS</string>
     </property>
@@ -139,6 +165,9 @@ background-color: rgb(207, 213, 255);</string>
       <height>41</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(209, 160, 224);</string>
+    </property>
     <property name="text">
      <string>LEARN</string>
     </property>
@@ -151,6 +180,9 @@ background-color: rgb(207, 213, 255);</string>
       <width>161</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(209, 160, 224);</string>
     </property>
     <property name="text">
      <string>QUIZ</string>
@@ -167,8 +199,8 @@ background-color: rgb(207, 213, 255);</string>
     </property>
     <property name="font">
      <font>
-      <family>Silver</family>
-      <pointsize>20</pointsize>
+      <family>Terminal</family>
+      <pointsize>13</pointsize>
       <bold>true</bold>
      </font>
     </property>
@@ -176,7 +208,7 @@ background-color: rgb(207, 213, 255);</string>
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true"/>
+     <string notr="true">color: rgb(0, 0, 0);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Shape::NoFrame</enum>
