@@ -99,7 +99,8 @@ background-color: rgb(207, 213, 255);</string>
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(250, 250, 250);</string>
+       <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
        <string>Large Intestine</string>
@@ -120,7 +121,8 @@ background-color: rgb(207, 213, 255);</string>
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(250, 250, 250);</string>
+       <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
        <string>Probiotics</string>
@@ -141,7 +143,8 @@ background-color: rgb(207, 213, 255);</string>
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(250, 250, 250);</string>
+       <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
        <string>Omega-3</string>
@@ -162,7 +165,8 @@ background-color: rgb(207, 213, 255);</string>
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(250, 250, 250);</string>
+       <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
        <string>Dysbiosis</string>
@@ -183,7 +187,8 @@ background-color: rgb(207, 213, 255);</string>
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(250, 250, 250);</string>
+       <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
        <string>Small Intestine</string>
@@ -204,7 +209,8 @@ background-color: rgb(207, 213, 255);</string>
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(250, 250, 250);</string>
+       <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
        <string>Antacids</string>
@@ -225,7 +231,8 @@ background-color: rgb(207, 213, 255);</string>
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(250, 250, 250);</string>
+       <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
        <string>Gut-brain Axis</string>
@@ -246,7 +253,8 @@ background-color: rgb(207, 213, 255);</string>
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(250, 250, 250);</string>
+       <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
        <string>Microbiome</string>
@@ -267,7 +275,8 @@ background-color: rgb(207, 213, 255);</string>
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(250, 250, 250);</string>
+       <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
        <string>Processed foods</string>
@@ -288,7 +297,8 @@ background-color: rgb(207, 213, 255);</string>
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(250, 250, 250);</string>
+       <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
        <string>Enzymes</string>
@@ -309,7 +319,8 @@ background-color: rgb(207, 213, 255);</string>
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(250, 250, 250);</string>
+       <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
        <string>B12</string>
@@ -330,7 +341,8 @@ background-color: rgb(207, 213, 255);</string>
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(250, 250, 250);</string>
+       <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
        <string>TMAO</string>
@@ -359,6 +371,10 @@ background-color: rgb(207, 213, 255);</string>
         <pointsize>11</pointsize>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(209, 160, 224);</string>
+      </property>
       <property name="text">
        <string>_____ has been linked to autoimmune diseases, such as rheumatoid arthritis, and heart disease.</string>
       </property>
@@ -374,6 +390,10 @@ background-color: rgb(207, 213, 255);</string>
         <pointsize>11</pointsize>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(209, 160, 224);</string>
+      </property>
       <property name="text">
        <string>The _____ is home to your gut microbiome. It also absorbs water and helps process waste.</string>
       </property>
@@ -388,7 +408,8 @@ background-color: rgb(207, 213, 255);</string>
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(250, 250, 250);</string>
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(209, 160, 224);</string>
       </property>
       <property name="text">
        <string>Drop Answer Here</string>
@@ -405,6 +426,10 @@ background-color: rgb(207, 213, 255);</string>
         <pointsize>11</pointsize>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(209, 160, 224);</string>
+      </property>
       <property name="text">
        <string>_____ can help restore gut balance, particularly after illness or antibiotic use.</string>
       </property>
@@ -419,6 +444,10 @@ background-color: rgb(207, 213, 255);</string>
        <font>
         <pointsize>11</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(209, 160, 224);</string>
       </property>
       <property name="lineWidth">
        <number>1</number>
@@ -438,6 +467,10 @@ background-color: rgb(207, 213, 255);</string>
         <pointsize>11</pointsize>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(209, 160, 224);</string>
+      </property>
       <property name="text">
        <string>Your gut produces important vitamins like _____ and K.</string>
       </property>
@@ -452,7 +485,8 @@ background-color: rgb(207, 213, 255);</string>
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(250, 250, 250);</string>
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(209, 160, 224);</string>
       </property>
       <property name="text">
        <string>Drop Answer Here</string>
@@ -468,7 +502,8 @@ background-color: rgb(207, 213, 255);</string>
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(250, 250, 250);</string>
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(209, 160, 224);</string>
       </property>
       <property name="text">
        <string>Drop Answer Here</string>
@@ -484,7 +519,8 @@ background-color: rgb(207, 213, 255);</string>
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(250, 250, 250);</string>
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(209, 160, 224);</string>
       </property>
       <property name="text">
        <string>Drop Answer Here</string>
@@ -500,7 +536,8 @@ background-color: rgb(207, 213, 255);</string>
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(250, 250, 250);</string>
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(209, 160, 224);</string>
       </property>
       <property name="text">
        <string>Drop Answer Here</string>
@@ -521,6 +558,9 @@ background-color: rgb(207, 213, 255);</string>
      <height>24</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(209, 160, 224);</string>
+   </property>
    <property name="text">
     <string>Submit Answers</string>
    </property>
@@ -533,6 +573,9 @@ background-color: rgb(207, 213, 255);</string>
      <width>100</width>
      <height>32</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(209, 160, 224);</string>
    </property>
    <property name="text">
     <string>Back</string>
@@ -556,7 +599,8 @@ background-color: rgb(207, 213, 255);</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
        <string>The liver, pancreas, and gallbladder produce important _____ and bile to aid in digestion.</string>
@@ -574,7 +618,8 @@ background-color: rgb(207, 213, 255);</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
        <string>Your gut is home to trillions of tiny organisms (bacteria, viruses, fungi) called the _____.</string>
@@ -590,7 +635,8 @@ background-color: rgb(207, 213, 255);</string>
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(250, 250, 250);</string>
+       <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
        <string>Drop Answer Here</string>
@@ -607,6 +653,10 @@ background-color: rgb(207, 213, 255);</string>
         <pointsize>11</pointsize>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(0, 0, 0);</string>
+      </property>
       <property name="text">
        <string>Your gut and brain communicate via the _____.</string>
       </property>
@@ -621,6 +671,10 @@ background-color: rgb(207, 213, 255);</string>
        <font>
         <pointsize>11</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(0, 0, 0);</string>
       </property>
       <property name="lineWidth">
        <number>1</number>
@@ -639,7 +693,8 @@ background-color: rgb(207, 213, 255);</string>
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(250, 250, 250);</string>
+       <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
        <string>Drop Answer Here</string>
@@ -655,7 +710,8 @@ background-color: rgb(207, 213, 255);</string>
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(250, 250, 250);</string>
+       <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
        <string>Drop Answer Here</string>
@@ -671,7 +727,8 @@ background-color: rgb(207, 213, 255);</string>
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(250, 250, 250);</string>
+       <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
        <string>Drop Answer Here</string>
@@ -687,7 +744,8 @@ background-color: rgb(207, 213, 255);</string>
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(250, 250, 250);</string>
+       <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
        <string>Drop Answer Here</string>
@@ -705,7 +763,8 @@ background-color: rgb(207, 213, 255);</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">background-color: rgb(209, 160, 224);
+color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
        <string>Certain gut bacteria produce harmful chemicals like _____, which can cause cholesterol to build up.</string>

@@ -22,6 +22,9 @@
      <height>21</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(209, 160, 224);</string>
+   </property>
    <property name="text">
     <string>Back</string>
    </property>
@@ -131,6 +134,9 @@ background-color: rgb(207, 213, 255);</string>
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
      <widget class="QLabel" name="label_2">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
       <property name="text">
        <string>1. Gut microbiome</string>
       </property>
@@ -138,6 +144,9 @@ background-color: rgb(207, 213, 255);</string>
     </item>
     <item>
      <widget class="QLabel" name="label_6">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
       <property name="text">
        <string>Kills good and bad bacteria and can disrupt gut health</string>
       </property>
@@ -167,6 +176,9 @@ background-color: rgb(207, 213, 255);</string>
    <layout class="QHBoxLayout" name="horizontalLayout_2">
     <item>
      <widget class="QLabel" name="label_11">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
       <property name="text">
        <string>2. Heart disease</string>
       </property>
@@ -174,6 +186,9 @@ background-color: rgb(207, 213, 255);</string>
     </item>
     <item>
      <widget class="QLabel" name="label_12">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
       <property name="text">
        <string>If compromised, can lead to infections or systemic illnesses</string>
       </property>
@@ -203,6 +218,9 @@ background-color: rgb(207, 213, 255);</string>
    <layout class="QHBoxLayout" name="horizontalLayout_3">
     <item>
      <widget class="QLabel" name="label_3">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
       <property name="text">
        <string>3. Fermented foods</string>
       </property>
@@ -210,6 +228,9 @@ background-color: rgb(207, 213, 255);</string>
     </item>
     <item>
      <widget class="QLabel" name="label_7">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
       <property name="text">
        <string>Digests complex carbohydrates and houses trillions of microorganisms</string>
       </property>
@@ -239,6 +260,9 @@ background-color: rgb(207, 213, 255);</string>
    <layout class="QHBoxLayout" name="horizontalLayout_4">
     <item>
      <widget class="QLabel" name="label_4">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
       <property name="text">
        <string>4. Exercising Regularly</string>
       </property>
@@ -246,6 +270,9 @@ background-color: rgb(207, 213, 255);</string>
     </item>
     <item>
      <widget class="QLabel" name="label_8">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
       <property name="text">
        <string>Linked with dysbiosis and chemicals such as TMAO</string>
       </property>
@@ -275,6 +302,9 @@ background-color: rgb(207, 213, 255);</string>
    <layout class="QHBoxLayout" name="horizontalLayout_5">
     <item>
      <widget class="QLabel" name="label_5">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
       <property name="text">
        <string>5. Medications</string>
       </property>
@@ -282,6 +312,9 @@ background-color: rgb(207, 213, 255);</string>
     </item>
     <item>
      <widget class="QLabel" name="label_9">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
       <property name="text">
        <string>      Supports gut motility and microbiome diversity</string>
       </property>
@@ -311,6 +344,9 @@ background-color: rgb(207, 213, 255);</string>
    <layout class="QHBoxLayout" name="horizontalLayout_6">
     <item>
      <widget class="QLabel" name="label_10">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
       <property name="text">
        <string>6. Gut barrier</string>
       </property>
@@ -318,6 +354,9 @@ background-color: rgb(207, 213, 255);</string>
     </item>
     <item>
      <widget class="QLabel" name="label_13">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
       <property name="text">
        <string>Influences nearly every system including digestion, immunity, and mental health</string>
       </property>
@@ -347,6 +386,9 @@ background-color: rgb(207, 213, 255);</string>
    <layout class="QHBoxLayout" name="horizontalLayout_7">
     <item>
      <widget class="QLabel" name="label_14">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
       <property name="text">
        <string>7. Gut health</string>
       </property>
@@ -354,6 +396,9 @@ background-color: rgb(207, 213, 255);</string>
     </item>
     <item>
      <widget class="QLabel" name="label_15">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
       <property name="text">
        <string>Contains probiotics and introduces beneficial bacteria to your gut</string>
       </property>
@@ -383,6 +428,9 @@ background-color: rgb(207, 213, 255);</string>
    <layout class="QHBoxLayout" name="horizontalLayout_8">
     <item>
      <widget class="QLabel" name="label_16">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
       <property name="text">
        <string>8. Digestive system</string>
       </property>
@@ -390,6 +438,9 @@ background-color: rgb(207, 213, 255);</string>
     </item>
     <item>
      <widget class="QLabel" name="label_17">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
       <property name="text">
        <string>Includes hollow organs that are connected in a long, twisting tube</string>
       </property>
@@ -419,6 +470,9 @@ background-color: rgb(207, 213, 255);</string>
    <layout class="QHBoxLayout" name="horizontalLayout_10">
     <item>
      <widget class="QLabel" name="label_20">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
       <property name="text">
        <string>10. Gastrointestinal tract</string>
       </property>
@@ -426,6 +480,9 @@ background-color: rgb(207, 213, 255);</string>
     </item>
     <item>
      <widget class="QLabel" name="label_21">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
       <property name="text">
        <string>The liver, pancreas, and gullbladder are part of this.</string>
       </property>
@@ -455,6 +512,9 @@ background-color: rgb(207, 213, 255);</string>
    <layout class="QHBoxLayout" name="horizontalLayout_11">
     <item>
      <widget class="QLabel" name="label_22">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
+      </property>
       <property name="text">
        <string>9. Gut bacteria</string>
       </property>
@@ -467,6 +527,9 @@ background-color: rgb(207, 213, 255);</string>
         <width>2000</width>
         <height>2000</height>
        </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
        <string>           Creates vitamins and nutrients to fuel your gut and maintain a healthy pH balance</string>
@@ -493,6 +556,9 @@ background-color: rgb(207, 213, 255);</string>
      <width>151</width>
      <height>24</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(209, 160, 224);</string>
    </property>
    <property name="text">
     <string>Submit Answers</string>

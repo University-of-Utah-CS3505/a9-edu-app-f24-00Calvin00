@@ -22,7 +22,7 @@ void DropLabel::dragEnterEvent(QDragEnterEvent *event)
 
 void DropLabel::dragLeaveEvent(QDragLeaveEvent *event)
 {
-    setStyleSheet("background-color: rgb(250, 250, 250);");
+    setStyleSheet("background-color: rgb(209, 160, 224);");
 }
 
 void DropLabel::dropEvent(QDropEvent *event)
@@ -36,7 +36,7 @@ void DropLabel::dropEvent(QDropEvent *event)
     emit foodDropped(droppedText);
 
     // Reset the background and show the final text after drop
-    setStyleSheet("background-color: rgb(250, 250, 250);");
+    setStyleSheet("background-color: rgb(209, 160, 224);");
     event->acceptProposedAction();
 }
 
