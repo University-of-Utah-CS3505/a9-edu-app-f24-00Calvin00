@@ -24,9 +24,6 @@ private:
     WhyGutHealthWidget *whyGutHealthWidget;
     HowToStayHealthyWidget *howToStayHealthyWidget;
 
-    // // New private method for setting up the image
-    // void setupImageView();
-
 signals:
     void introToGutButtonClicked();
     void whyGutHealthButtonClicked();

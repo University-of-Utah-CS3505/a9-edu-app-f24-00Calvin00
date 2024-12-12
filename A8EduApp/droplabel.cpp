@@ -20,7 +20,7 @@ void DropLabel::dragEnterEvent(QDragEnterEvent *event)
     }
 }
 
-void DropLabel::dragLeaveEvent(QDragLeaveEvent *event)
+void DropLabel::dragLeaveEvent(QDragLeaveEvent *)
 {
     setStyleSheet("color: black; background-color:  rgb(209, 160, 224);");
 }
@@ -31,12 +31,14 @@ void DropLabel::dropEvent(QDropEvent *event)
     QString droppedText = event->mimeData()->text();
     setText(droppedText);
 
-    // Emit the answerDropped signal
-    emit answerDropped(questionText, droppedText);
-    emit foodDropped(droppedText);
-
-    // Reset the background and show the final text after drop
-    setStyleSheet("color: black; background-color:  rgb(209, 160, 224);");
+    // Emit the drop signal, reset the background, and show the final text after drop
+    if (droppedText == "") {
+        emit foodDropped(droppedText);
+        setStyleSheet("background-color: transparent ;");
+    } else {
+        emit answerDropped(questionText, droppedText);
+        setStyleSheet("background-color: rgb(250, 250, 250);");
+    }
     event->acceptProposedAction();
 }
 

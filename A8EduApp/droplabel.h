@@ -16,9 +16,15 @@ class DropLabel : public QLabel {
 public:
     /**
      * @brief Constructs a DropLabel instance.
-     * @param parent The parent widget, default is nullptr.
+     * @param The parent widget, default is nullptr.
      */
     explicit DropLabel(QWidget *parent = nullptr);
+
+    /**
+     * @brief Sets the question text for this drop label.
+     * @param text The text to be set as the question.
+     */
+    void setQuestionText(const QString &text);
 
 protected:
     /**
@@ -31,19 +37,12 @@ protected:
      * @brief Handles the drag leave event when dragging leaves the widget.
      * @param event The drag leave event.
      */
-    void dragLeaveEvent(QDragLeaveEvent *event) override;
+    void dragLeaveEvent(QDragLeaveEvent *) override;
     /**
      * @brief Handles the drop event when data is dropped onto the widget.
      * @param event The drop event.
      */
     void dropEvent(QDropEvent *event) override;
-
-public:
-    /**
-     * @brief Sets the question text for this drop label.
-     * @param text The text to be set as the question.
-     */
-    void setQuestionText(const QString &text);
 
 signals:
     /**
