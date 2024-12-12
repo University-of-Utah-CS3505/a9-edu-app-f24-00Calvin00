@@ -152,6 +152,32 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:16px; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;Prebiotics: Ensure your diet supports probiotics by feeding them with prebiotic fibers. &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
+  <widget class="QLabel" name="happyPoo">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>10</y>
+     <width>101</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>HappyPoo</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="bananaPic">
+   <property name="geometry">
+    <rect>
+     <x>547</x>
+     <y>15</y>
+     <width>111</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>bananaPic</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

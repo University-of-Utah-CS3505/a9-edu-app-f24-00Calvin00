@@ -15,6 +15,11 @@ TeachingWidget::TeachingWidget(QWidget *parent)
     QPixmap gutJPEG = QPixmap::fromImage(QImage(":/sprites/gutPic1.jpeg"));
     ui->gut->setPixmap(gutJPEG.scaled(ui->gut->size(), Qt::KeepAspectRatio));
 
+    //Add poop image
+    QPixmap poop = QPixmap::fromImage(QImage(":/sprites/happyPoo.png"));
+    ui->happyPooPic->setPixmap(poop.scaled(ui->happyPooPic->size(), Qt::KeepAspectRatio));
+    ui->happyPooPic->setFrameShape(QFrame::NoFrame);
+
     // Set the background color
     QPalette palette = this->palette();
     palette.setColor(QPalette::Window, QColor(238, 223, 242));

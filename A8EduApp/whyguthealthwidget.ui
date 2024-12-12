@@ -113,6 +113,32 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:11pt; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:30px; margin-right:30px; -qt-block-indent:0; text-indent:0px; line-height:140%;&quot;&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;Unhealthy gut bacteria can increase inflammation, contributing to diseases like diabetes, heart disease, and obesity.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
+  <widget class="QLabel" name="pooingPic">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>10</y>
+     <width>131</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>pooingPic</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="sadPooPic">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>20</y>
+     <width>121</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>sadPoo</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
