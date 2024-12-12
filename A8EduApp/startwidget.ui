@@ -72,9 +72,9 @@
     <property name="geometry">
      <rect>
       <x>180</x>
-      <y>180</y>
+      <y>80</y>
       <width>471</width>
-      <height>131</height>
+      <height>221</height>
      </rect>
     </property>
     <property name="font">
@@ -192,9 +192,9 @@ background-color: rgb(207, 213, 255);</string>
     <property name="geometry">
      <rect>
       <x>230</x>
-      <y>320</y>
+      <y>300</y>
       <width>371</width>
-      <height>111</height>
+      <height>141</height>
      </rect>
     </property>
     <property name="font">
@@ -226,14 +226,6 @@ background-color: rgb(207, 213, 255);</string>
      <bool>true</bool>
     </property>
    </widget>
-   <zorder>replayButton</zorder>
-   <zorder>title</zorder>
-   <zorder>pooedPoo</zorder>
-   <zorder>instructions</zorder>
-   <zorder>resultsButton</zorder>
-   <zorder>learnButton</zorder>
-   <zorder>quizButton</zorder>
-   <zorder>title_2</zorder>
   </widget>
  </widget>
  <customwidgets>
