@@ -114,7 +114,7 @@
      <x>20</x>
      <y>50</y>
      <width>441</width>
-     <height>471</height>
+     <height>501</height>
     </rect>
    </property>
    <property name="html">
@@ -235,6 +235,51 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <bool>true</bool>
    </property>
   </widget>
+  <widget class="QLabel" name="GutHappinessLabel">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>250</y>
+     <width>101</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Gut Happiness:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="GutHappinessNumber">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>250</y>
+     <width>63</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>10</y>
+     <width>261</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>To keep your gut happy try to keep the number in between 50 and 75!</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
   <zorder>simulationButton</zorder>
   <zorder>backToStartButton</zorder>
   <zorder>banana</zorder>
@@ -247,6 +292,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
   <zorder>hotdog</zorder>
   <zorder>icecream</zorder>
   <zorder>textBrowser</zorder>
+  <zorder>GutHappinessLabel</zorder>
+  <zorder>GutHappinessNumber</zorder>
+  <zorder>label</zorder>
  </widget>
  <customwidgets>
   <customwidget>
