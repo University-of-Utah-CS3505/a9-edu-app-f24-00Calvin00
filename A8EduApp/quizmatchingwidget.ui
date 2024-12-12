@@ -471,7 +471,7 @@ background-color: rgb(207, 213, 255);</string>
     <item>
      <widget class="QLabel" name="label_20">
       <property name="styleSheet">
-       <string notr="true">color: rgb(255, 255, 255);</string>
+       <string notr="true">color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
        <string>10. Gastrointestinal tract</string>
@@ -481,7 +481,7 @@ background-color: rgb(207, 213, 255);</string>
     <item>
      <widget class="QLabel" name="label_21">
       <property name="styleSheet">
-       <string notr="true">color: rgb(255, 255, 255);</string>
+       <string notr="true">color: rgb(0, 0, 0);</string>
       </property>
       <property name="text">
        <string>The liver, pancreas, and gullbladder are part of this.</string>
