@@ -37,7 +37,7 @@ void DropLabel::dropEvent(QDropEvent *event)
         setStyleSheet("background-color: transparent ;");
     } else {
         emit answerDropped(questionText, droppedText);
-        setStyleSheet("background-color: rgb(250, 250, 250);");
+        setStyleSheet("color: black; background-color:  rgb(209, 160, 224);");
     }
     event->acceptProposedAction();
 }
