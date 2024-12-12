@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>650</height>
+    <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,14 +16,14 @@
   <widget class="QPushButton" name="backToTeachingWidgetButton">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>10</x>
      <y>10</y>
      <width>100</width>
      <height>32</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(238, 223, 242);
+    <string notr="true">background-color: rgb(209, 160, 224);
 color: rgb(254, 254, 254);</string>
    </property>
    <property name="text">
@@ -46,17 +46,17 @@ p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot; bgcolor=&quot;#eedff2&quot;&gt;
-&lt;h1 align=&quot;center&quot; style=&quot; margin-top:40px; margin-bottom:30px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; font-weight:700; color:#000000;&quot;&gt;How to Take Care of Your Gut&lt;/span&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:700;&quot;&gt; &lt;/span&gt;&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot; bgcolor=&quot;#d1a0e0&quot;&gt;
+&lt;h1 align=&quot;center&quot; style=&quot; margin-top:40px; margin-bottom:30px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:xx-large; font-weight:700; color:#ffffff;&quot;&gt;How to Take Care of Your Gut&lt;/span&gt;&lt;span style=&quot; font-size:xx-large; font-weight:700;&quot;&gt; &lt;/span&gt;&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QTextBrowser" name="textBrowser_2">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>90</y>
+     <y>100</y>
      <width>401</width>
-     <height>371</height>
+     <height>291</height>
     </rect>
    </property>
    <property name="html">
@@ -66,28 +66,28 @@ p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot; bgcolor=&quot;#eedff2&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; color:#000000;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
-&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; font-weight:700; color:#000000;&quot;&gt;1. Eat a Gut-Friendly Diet    &lt;/span&gt;&lt;/h2&gt;
-&lt;h3 style=&quot; margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; font-weight:700; color:#000000;&quot;&gt;Foods to Eat:    &lt;/span&gt;&lt;/h3&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot; bgcolor=&quot;#d1a0e0&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    &lt;/p&gt;
+&lt;h2 style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:x-large; font-weight:700; color:#ffffff;&quot;&gt;1. Eat a Gut-Friendly Diet&lt;/span&gt;&lt;span style=&quot; font-size:x-large; font-weight:700;&quot;&gt;    &lt;/span&gt;&lt;/h2&gt;
+&lt;h3 style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:large; font-weight:700; color:#ffffff;&quot;&gt;Foods to Eat:&lt;/span&gt;&lt;span style=&quot; font-size:large; font-weight:700;&quot;&gt;    &lt;/span&gt;&lt;/h3&gt;
 &lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; color:#000000;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;High-fiber foods: Whole grains, fruits, vegetables, nuts, and seeds feed the good bacteria in your gut.        &lt;/li&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Fermented foods: Probiotics in foods like yogurt, kimchi, sauerkraut, and pickles introduce good bacteria to your gut.        &lt;/li&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Prebiotic foods: Garlic, onions, bananas, and asparagus contain fibers that feed probiotics.        &lt;/li&gt;&lt;/ul&gt;
-&lt;h3 style=&quot; margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; font-weight:700; color:#000000;&quot;&gt;Foods to Limit:    &lt;/span&gt;&lt;/h3&gt;
+&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;High-fiber foods: Whole grains, fruits, vegetables, nuts, and seeds feed the good bacteria in your gut.&lt;span style=&quot; font-family:'.AppleSystemUIFont';&quot;&gt;        &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Fermented foods: Probiotics in foods like yogurt, kimchi, sauerkraut, and pickles introduce good bacteria to your gut.&lt;span style=&quot; font-family:'.AppleSystemUIFont';&quot;&gt;        &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Prebiotic foods: Garlic, onions, bananas, and asparagus contain fibers that feed probiotics.&lt;span style=&quot; font-family:'.AppleSystemUIFont';&quot;&gt;        &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;h3 style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:large; font-weight:700; color:#ffffff;&quot;&gt;Foods to Limit:&lt;/span&gt;&lt;span style=&quot; font-size:large; font-weight:700;&quot;&gt;    &lt;/span&gt;&lt;/h3&gt;
 &lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; color:#000000;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Processed foods: These lack fiber and are full of preservatives and additives.        &lt;/li&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Foods high in sugar and saturated fats: These encourage harmful bacteria to grow.        &lt;/li&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Red meat and egg yolks (in excess): Some bacteria turn these into TMAO, a harmful chemical.    &lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Processed foods: These lack fiber and are full of preservatives and additives.&lt;span style=&quot; font-family:'.AppleSystemUIFont';&quot;&gt;        &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Foods high in sugar and saturated fats: These encourage harmful bacteria to grow.&lt;span style=&quot; font-family:'.AppleSystemUIFont';&quot;&gt;        &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Red meat and egg yolks (in excess): Some bacteria turn these into TMAO, a harmful chemical.&lt;span style=&quot; font-family:'.AppleSystemUIFont';&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QTextBrowser" name="textBrowser_3">
    <property name="geometry">
     <rect>
-     <x>420</x>
-     <y>120</y>
+     <x>430</x>
+     <y>100</y>
      <width>341</width>
-     <height>231</height>
+     <height>261</height>
     </rect>
    </property>
    <property name="html">
@@ -97,22 +97,21 @@ p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot; bgcolor=&quot;#eedff2&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
-&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; font-weight:700; color:#000000;&quot;&gt;2. Maintain Healthy Habits    &lt;/span&gt;&lt;/h2&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot; bgcolor=&quot;#d1a0e0&quot;&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:x-large; font-weight:700; color:#ffffff;&quot;&gt;3. Maintain Healthy Habits &lt;/span&gt;&lt;/h2&gt;
 &lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; color:#000000;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Stay hydrated: Water aids digestion and keeps the gut lining healthy.        &lt;/li&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Exercise regularly: Physical activity supports gut motility (movement) and microbiome diversity.        &lt;/li&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Sleep well: Poor sleep disrupts gut bacteria and leads to imbalances.        &lt;/li&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Reduce stress: Stress hormones can harm your gut lining and change your microbiome.    &lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:16px; color:#ffffff;&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;Stay hydrated: Water aids digestion and keeps the gut lining healthy. &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:16px; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;Exercise regularly: Physical activity supports gut motility (movement) and microbiome diversity. &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:16px; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;Sleep well: Poor sleep disrupts gut bacteria and leads to imbalances. &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:16px; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;Reduce stress: Stress hormones can harm your gut lining and change your microbiome. &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QTextBrowser" name="textBrowser_4">
    <property name="geometry">
     <rect>
-     <x>420</x>
+     <x>430</x>
      <y>370</y>
-     <width>331</width>
+     <width>341</width>
      <height>201</height>
     </rect>
    </property>
@@ -123,21 +122,20 @@ p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot; bgcolor=&quot;#eedff2&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; color:#000000;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
-&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; font-weight:700; color:#000000;&quot;&gt;3. Avoid Harmful Substances    &lt;/span&gt;&lt;/h2&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot; bgcolor=&quot;#d1a0e0&quot;&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:x-large; font-weight:700; color:#ffffff;&quot;&gt;4. Avoid Harmful Substances &lt;/span&gt;&lt;/h2&gt;
 &lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; color:#000000;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Minimize alcohol and tobacco: These can poison your gut microbiome and weaken the gut barrier.        &lt;/li&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Use medications cautiously: Avoid unnecessary antibiotics, as they kill good bacteria along with bad ones. Acid blockers and NSAIDs can also disrupt gut health.    &lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:16px; color:#ffffff;&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;Minimize alcohol and tobacco: These can poison your gut microbiome and weaken the gut barrier. &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:16px; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;Use medications cautiously: Avoid unnecessary antibiotics, as they kill good bacteria along with bad ones. Acid blockers and NSAIDs can also disrupt gut health. &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QTextBrowser" name="textBrowser_5">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>470</y>
+     <y>410</y>
      <width>401</width>
-     <height>161</height>
+     <height>151</height>
     </rect>
    </property>
    <property name="html">
@@ -147,12 +145,11 @@ p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot; bgcolor=&quot;#eedff2&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
-&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; font-weight:700; color:#000000;&quot;&gt;4. Consider Supplements if Needed    &lt;/span&gt;&lt;/h2&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot; bgcolor=&quot;#d1a0e0&quot;&gt;
+&lt;h2 style=&quot; margin-top:16px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times','serif'; font-size:x-large; font-weight:700; color:#ffffff;&quot;&gt;2. Consider Supplements if Needed &lt;/span&gt;&lt;/h2&gt;
 &lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; color:#000000;&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Probiotics: Supplements can replenish good bacteria, especially after taking antibiotics.        &lt;/li&gt;
-&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:13pt; color:#000000;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Prebiotics: Ensure your diet supports probiotics by feeding them with prebiotic fibers.    &lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:16px; color:#ffffff;&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;Probiotics: Supplements can replenish good bacteria, especially after taking antibiotics. &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'Times New Roman','Times','serif'; font-size:16px; color:#ffffff;&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16px;&quot;&gt;Prebiotics: Ensure your diet supports probiotics by feeding them with prebiotic fibers. &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
  </widget>
